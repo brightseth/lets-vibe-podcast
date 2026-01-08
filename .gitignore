@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.js.map
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime data
+letsvibe-agent/data/*.json
+!letsvibe-agent/data/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+
+# Audio/Media (large files)
+*.mp3
+*.wav
+*.mp4
+*.mov
+episodes/
+
+# Transcripts (may contain sensitive content)
+transcripts/
+
+# API cache
+.cache/
