@@ -4,12 +4,12 @@ Production assistant agent for **Let's Vibe!** podcast.
 
 ## Overview
 
-This agent automates podcast production workflows:
+A multi-agent system that automates podcast production:
 
-- **Guest Research** - Find and prioritize potential guests
-- **Outreach** - Generate personalized invitation messages
-- **Show Notes** - Create show notes from transcripts
-- **Social Content** - Generate content calendars and posts
+- **BookingAgent** - Guest research, outreach, scheduling
+- **ResearchAgent** - Deep research, talking points, competitive intel
+- **PromotionAgent** - Show notes, clips, social content
+- **PartnershipsAgent** - Sponsors, collaborations, revenue
 
 ## Quick Start
 
@@ -19,21 +19,46 @@ npm install
 
 # Copy environment template
 cp .env.example .env
-# Edit .env with your API keys
+# Add ANTHROPIC_API_KEY to .env
 
-# Run agent status
-npm start
+# View agent system status
+npm run agent
 
-# Run specific workflows
-npm run guest:research
-npm run guest:outreach
+# Route a task to the right agent
+npm run agent route "find sponsors for AI tools"
+
+# Run a workflow
+npm run agent:prepare "Simon Willison"
 ```
 
-## Commands
+## Agent Commands
 
 | Command | Description |
 |---------|-------------|
-| `npm start` | Show agent status |
+| `npm run agent` | Show system status |
+| `npm run agent route "task"` | Route task to appropriate agent |
+| `npm run agent:booking "task"` | Run booking agent directly |
+| `npm run agent:research "task"` | Run research agent directly |
+| `npm run agent:promotion "task"` | Run promotion agent directly |
+| `npm run agent:partnerships "task"` | Run partnerships agent directly |
+
+### Multi-Agent Workflows
+
+```bash
+# Prepare for a guest (research + talking points + social prep)
+npm run agent:prepare "Guest Name"
+
+# Post-episode production (show notes + content calendar)
+npm run agent -- post-episode 1 "Guest" "@handle" "topic1,topic2"
+
+# Weekly planning (next guests + trends + partnerships)
+npm run agent:weekly
+```
+
+## Workflow Commands
+
+| Command | Description |
+|---------|-------------|
 | `npm run guest:research` | Research and prioritize guests |
 | `npm run guest:outreach` | Generate outreach messages |
 | `npm run production:notes` | Generate show notes |
@@ -73,19 +98,55 @@ npm run guest:outreach -- --export
 ```
 letsvibe-agent/
 ├── src/
-│   ├── index.ts          # Main entry point
-│   ├── types.ts          # TypeScript types
-│   ├── config.ts         # Agent configuration
+│   ├── index.ts              # Main entry point
+│   ├── types.ts              # TypeScript types
+│   ├── config.ts             # Brand, templates, episode format
+│   ├── agents/               # Multi-agent system
+│   │   ├── orchestrator.ts   # Routes tasks, coordinates workflows
+│   │   ├── base-agent.ts     # Shared agent infrastructure
+│   │   ├── booking-agent.ts  # Guest acquisition
+│   │   ├── research-agent.ts # Deep research
+│   │   ├── promotion-agent.ts # Social content
+│   │   └── partnerships-agent.ts # Sponsors
 │   ├── data/
-│   │   └── guests.ts     # Guest database
-│   └── workflows/
+│   │   └── guests.ts         # 25 guests database
+│   └── workflows/            # Standalone workflows
 │       ├── guest-research.ts
 │       ├── outreach.ts
 │       ├── show-notes.ts
 │       └── social.ts
-├── config/               # Configuration files
-├── data/                 # Runtime data (gitignored)
-└── scripts/              # Utility scripts
+├── data/                     # Runtime data (gitignored)
+└── .env                      # API keys (gitignored)
+```
+
+## Agent System
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      ORCHESTRATOR                           │
+│    Routes tasks • Coordinates workflows • Classifies intent │
+└─────────────────────────────────────────────────────────────┘
+                              │
+         ┌────────────────────┼────────────────────┐
+         │                    │                    │
+         ▼                    ▼                    ▼
+┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
+│  🎤 BOOKING     │  │  🔬 RESEARCH    │  │  📣 PROMOTION   │
+│                 │  │                 │  │                 │
+│ • Guest search  │  │ • Guest prep    │  │ • Show notes    │
+│ • Outreach      │  │ • Talking points│  │ • Clips         │
+│ • Scheduling    │  │ • Trends        │  │ • Social posts  │
+│ • Pre-briefs    │  │ • Competitive   │  │ • Calendars     │
+└─────────────────┘  └─────────────────┘  └─────────────────┘
+         │
+         ▼
+┌─────────────────┐
+│ 🤝 PARTNERSHIPS │
+│                 │
+│ • Sponsors      │
+│ • Collaborations│
+│ • Revenue       │
+└─────────────────┘
 ```
 
 ## Guest Tiers
@@ -100,18 +161,23 @@ letsvibe-agent/
 | 5 | Adjacent Interesting | Kevin Kelly, Craig Mod |
 | 6 | Spirit/Eden Network | NODE artists |
 
-## Integrations
+## Environment Variables
 
 Configure in `.env`:
 
-- **Anthropic** - Claude API for content generation
-- **Manus** - Graphics via Nano Banana Pro
-- **Google** - Imagen 4 for images, Veo 3 for video
-- **Twitter** - Post clips and announcements
-- **Farcaster** - Web3 native audience
-- **YouTube** - Video episodes and Shorts
-- **Cal.com** - Guest scheduling
-- **Descript** - Transcription and editing
+```bash
+# Required for agents
+ANTHROPIC_API_KEY=sk-ant-...
+
+# Optional integrations
+MANUS_API_KEY=
+GOOGLE_API_KEY=
+TWITTER_API_KEY=
+FARCASTER_FID=
+YOUTUBE_API_KEY=
+CALCOM_API_KEY=
+DESCRIPT_API_KEY=
+```
 
 ## Development
 

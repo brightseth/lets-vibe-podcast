@@ -1,6 +1,6 @@
 {
   "name": "letsvibe-agent",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Production assistant agent for Let's Vibe! podcast",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,18 +12,27 @@
     "guest:research": "tsx src/workflows/guest-research.ts",
     "guest:outreach": "tsx src/workflows/outreach.ts",
     "production:notes": "tsx src/workflows/show-notes.ts",
-    "social:draft": "tsx src/workflows/social.ts"
+    "social:draft": "tsx src/workflows/social.ts",
+    "agent": "tsx src/agents/orchestrator.ts",
+    "agent:booking": "tsx src/agents/booking-agent.ts",
+    "agent:research": "tsx src/agents/research-agent.ts",
+    "agent:promotion": "tsx src/agents/promotion-agent.ts",
+    "agent:partnerships": "tsx src/agents/partnerships-agent.ts",
+    "agent:prepare": "tsx src/agents/orchestrator.ts prepare",
+    "agent:weekly": "tsx src/agents/orchestrator.ts weekly"
   },
   "keywords": [
     "letsvibe",
     "podcast",
     "agent",
     "claude",
-    "ai-assistant"
+    "ai-assistant",
+    "multi-agent"
   ],
   "author": "Seth Goldstein",
   "license": "MIT",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
