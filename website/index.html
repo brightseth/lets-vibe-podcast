@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Vibe! - A podcast for creative folks learning to vibe code</title>
+  <meta name="description" content="Weekly conversations with the creators shaping AI-assisted creativity. Hosted by Seth Goldstein and Lukas Amacher.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Let's Vibe! Podcast">
+  <meta property="og:description" content="TED Talks for vibe coders. Weekly conversations with creators shaping AI-assisted creativity.">
+  <meta property="og:image" content="/cover.png">
+  <meta property="og:url" content="https://letsvibe.fm">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Let's Vibe! Podcast">
+  <meta name="twitter:description" content="TED Talks for vibe coders. Weekly conversations with creators shaping AI-assisted creativity.">
+  <meta name="twitter:image" content="/cover.png">
+
+  <link rel="icon" type="image/png" href="/cover.png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0A0A0A;
+      --text: #FAFAFA;
+      --text-muted: #888;
+      --copper: #D4A574;
+      --magenta: #C24B8C;
+      --gradient: linear-gradient(135deg, var(--copper), var(--magenta));
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .cover {
+      width: 280px;
+      height: 280px;
+      border-radius: 24px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 20px 60px rgba(212, 165, 116, 0.15);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .hosts {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+    }
+
+    .hosts span {
+      color: var(--text);
+    }
+
+    .launch {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--gradient);
+      color: var(--bg);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .signup {
+      margin-bottom: 2.5rem;
+    }
+
+    .signup p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .signup form {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .signup input[type="email"] {
+      padding: 0.875rem 1.25rem;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background: #111;
+      color: var(--text);
+      font-size: 1rem;
+      width: 260px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .signup input[type="email"]:focus {
+      border-color: var(--copper);
+    }
+
+    .signup input[type="email"]::placeholder {
+      color: #555;
+    }
+
+    .signup button {
+      padding: 0.875rem 1.5rem;
+      background: var(--text);
+      color: var(--bg);
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .signup button:hover {
+      transform: translateY(-1px);
+      opacity: 0.9;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .links a:hover {
+      color: var(--text);
+    }
+
+    .ecosystem {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+      border-top: 1px solid #222;
+    }
+
+    .ecosystem a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+    }
+
+    .ecosystem a:hover {
+      color: var(--copper);
+    }
+
+    .success {
+      display: none;
+      color: var(--copper);
+      font-size: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .cover {
+        width: 220px;
+        height: 220px;
+      }
+
+      .signup input[type="email"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/cover.png" alt="Let's Vibe! Podcast Cover" class="cover">
+
+    <h1>Let's Vibe!</h1>
+
+    <p class="tagline">TED Talks for vibe coders.<br>Weekly conversations with creators shaping AI-assisted creativity.</p>
+
+    <p class="hosts">Hosted by <span>Seth Goldstein</span> + <span>Lukas Amacher</span></p>
+
+    <div class="launch">Launching February 2026</div>
+
+    <div class="signup">
+      <p>Get notified when we launch</p>
+      <form id="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Notify Me</button>
+      </form>
+      <p class="success" id="success-msg">You're on the list!</p>
+    </div>
+
+    <div class="links">
+      <a href="https://twitter.com/letsvibepod" target="_blank">Twitter</a>
+      <a href="https://vibecodings.vercel.app" target="_blank">vibecodings</a>
+      <a href="https://slashvibe.dev" target="_blank">/vibe</a>
+    </div>
+
+    <div class="ecosystem">
+      <a href="https://vibecodings.vercel.app">vibecodings</a>
+      <a href="https://slashvibe.dev">/vibe</a>
+      <a href="https://spiritprotocol.io">Spirit Protocol</a>
+    </div>
+  </div>
+
+  <script>
+    // Simple form handling
+    document.getElementById('signup-form').addEventListener('submit', function(e) {
+      // For now, just show success (wire up Formspree or similar later)
+      // e.preventDefault();
+      // document.getElementById('success-msg').style.display = 'block';
+      // this.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
