@@ -10,19 +10,36 @@
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
     "test": "node --test",
-    "guest:research": "tsx src/workflows/guest-research.ts",
-    "guest:outreach": "tsx src/workflows/outreach.ts",
-    "production:notes": "tsx src/workflows/show-notes.ts",
-    "social:draft": "tsx src/workflows/social.ts",
+
     "agent": "tsx src/agents/orchestrator.ts",
     "agent:booking": "tsx src/agents/booking-agent.ts",
     "agent:research": "tsx src/agents/research-agent.ts",
     "agent:promotion": "tsx src/agents/promotion-agent.ts",
     "agent:partnerships": "tsx src/agents/partnerships-agent.ts",
+    "agent:production": "tsx src/agents/production-agent.ts",
     "agent:prepare": "tsx src/agents/orchestrator.ts prepare",
     "agent:weekly": "tsx src/agents/orchestrator.ts weekly",
+
+    "guest:research": "tsx src/workflows/guest-research.ts",
+    "guest:outreach": "tsx src/workflows/outreach.ts",
+    "production:notes": "tsx src/workflows/show-notes.ts",
+    "social:draft": "tsx src/workflows/social.ts",
+
     "cover-art": "node scripts/generate-cover-art.js",
-    "cover-art:all": "node scripts/generate-cover-art.js --all"
+    "cover-art:all": "node scripts/generate-cover-art.js --all",
+    "cover-art:text": "node scripts/add-cover-text.js",
+    "cover-art:text-flux": "node scripts/add-cover-text.js --flux",
+
+    "episode:setup": "tsx src/workflows/episode-setup.ts",
+    "episode:process": "tsx src/workflows/episode-process.ts",
+    "episode:clips": "tsx src/workflows/episode-clips.ts",
+    "episode:publish": "tsx src/workflows/episode-publish.ts",
+
+    "promo:video": "tsx src/workflows/promo-video.ts",
+    "promo:trailer": "tsx src/workflows/promo-video.ts --style trailer",
+
+    "social:week": "tsx src/workflows/social-week.ts",
+    "social:quotes": "tsx src/workflows/social-quotes.ts"
   },
   "keywords": [
     "letsvibe",

@@ -51,9 +51,10 @@ npm run agent route "your task"  # Route anything to the right agent
 
 ## Cover Art
 
-**LOCKED:** Refined v2 - sculptural flowing form (Peter Saville / Skulptuur energy)
-- Location: `letsvibe-agent/data/cover-art/COVER-ART-FINAL-refined-v2.png`
-- Next: Add "LET'S VIBE!" text in Figma, export 3000x3000
+**DONE:** Final cover with text - "LET'S VIBE!" + sculptural knot form
+- Location: `letsvibe-agent/data/cover-art/FINAL-COVER-ART.png`
+- Style: Copper/magenta ribbons on black, Skulptuur energy
+- Generated with: Flux Pro via FAL
 
 **Future idea:** Commission artists for episode covers → limited edition NFTs
 

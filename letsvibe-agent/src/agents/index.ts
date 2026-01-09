@@ -38,6 +38,12 @@ export {
   findPartnerships
 } from './partnerships-agent.js';
 
+export {
+  runProductionAgent,
+  processEpisode,
+  generateIntroOutro
+} from './production-agent.js';
+
 // Orchestrator
 export {
   routeTask,

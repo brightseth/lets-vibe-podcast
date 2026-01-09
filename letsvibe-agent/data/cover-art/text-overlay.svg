@@ -1,0 +1,14 @@
+<svg width="3000" height="3000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&amp;display=swap');
+    </style>
+  </defs>
+  <text x="1500" y="600"
+        font-family="Inter, Helvetica Neue, Arial, sans-serif"
+        font-size="280"
+        font-weight="800"
+        fill="white"
+        text-anchor="middle"
+        letter-spacing="8">LET'S VIBE!</text>
+</svg>
