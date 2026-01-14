@@ -5,10 +5,10 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Let's Vibe! - A podcast for creative folks learning to vibe code",
-  description: "Weekly conversations with creators shaping AI-assisted creativity. Hosted by Seth Goldstein and Lukas Amacher.",
+  description: "Weekly conversations with creators shaping AI-assisted creativity. Hosted by Seth Goldstein and Ian Rogers.",
   openGraph: {
     title: "Let's Vibe! Podcast",
-    description: "TED Talks for vibe coders. Weekly conversations with creators shaping AI-assisted creativity.",
+    description: "Weekly podcast about vibe coding. Conversations with creators building at the intersection of AI and creativity.",
     url: "https://letsvibe.fm",
     siteName: "Let's Vibe!",
     type: "website",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Let's Vibe! Podcast",
-    description: "TED Talks for vibe coders. Weekly conversations with creators shaping AI-assisted creativity.",
+    description: "Weekly podcast about vibe coding. Seth Goldstein & Ian Rogers.",
   },
 };
 
