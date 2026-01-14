@@ -1,141 +1,134 @@
 # Let's Vibe! Podcast
 
-**A weekly podcast for creative folks learning to vibe code**
+**Weekly conversations about vibe coding with Seth Goldstein & Ian Rogers**
+
+## Quick Links
+
+| Resource | URL |
+|----------|-----|
+| **Website** | https://letsvibe-fm.vercel.app |
+| **Repo** | https://github.com/brightseth/lets-vibe-podcast |
 
 ## Overview
 
 | Field | Value |
 |-------|-------|
-| **Name** | Let's Vibe! |
-| **Hosts** | Seth Goldstein + Lukas Amacher |
+| **Hosts** | Seth Goldstein + Ian Rogers |
 | **Frequency** | Weekly |
-| **Focus** | AI-optimistic builders, vibe coding, creative technology |
-| **Initial Community** | Digital art + collector community |
-| **Expansion** | Broader creative tech, builders, founders |
+| **Format** | Opener + Guest Interview + Tutorial Clip |
+| **Duration** | 45-60 minutes |
+| **Launch** | February/March 2026 |
 
-## Origin Story
+## The Pitch
 
-**Jan 8, 2026** - tez (@thefunnyguysNFT) suggested Seth do a podcast:
-> "Honestly, you guys have to do a podcast episode together. It's going to be super inspiring for people in art, we need more ai-optimistic builders who embrace this stuff asap"
+Weekly podcast where we shoot the shit about vibe coding, interview the most interesting people building with AI, and show tutorials that become standalone clips.
 
-Seth's response:
-> "I actually think this makes sense on multiple dimensions... for recruiting, fundraising, customer adoption as well as keeping connected to smart artists/technologists we can invite... I have no interest in doing a digital art podcast (shoot me) but what about one we host every week called 'let's vibe!'"
+**Why us:**
+- Both deep in vibe coding (Seth: /vibe social layer, Ian: Platters, gallery, Better at Living)
+- Old enough to remember the Netscape playbook
+- Neither needs to impress anyone
+- Both in Paris regularly (Ledger studio when together, remote when apart)
 
-Ameesia's validation:
-> "Love that idea. You need a platform to openly speak about everything you're learning. Not just X. One that people can follow and actually learn from. You are very good at speaking about your experiences... You are eloquent and well spoken. Pod cast feels perfect."
+## Format
 
-## Strategic Value
+```
+┌─────────────────────────────────────────────────────────────┐
+│  1. OPENER (10-15 min)                                      │
+│     Seth & Ian catch up - what we built, tools, patterns    │
+├─────────────────────────────────────────────────────────────┤
+│  2. GUEST INTERVIEW (25-30 min)                             │
+│     Deep conversation - creativity meets AI                 │
+├─────────────────────────────────────────────────────────────┤
+│  3. TUTORIAL CLIP (10-15 min)                               │
+│     Hands-on walkthrough → standalone YouTube content       │
+└─────────────────────────────────────────────────────────────┘
+```
 
-1. **Recruiting** - Connect with talent
-2. **Fundraising** - Build credibility and network
-3. **Customer adoption** - Educate potential users
-4. **Network** - Stay connected to smart artists/technologists
-5. **Platform** - Own your distribution beyond X
+**Vibe:** Acquired meets Oprah — sophisticated but warm, practical not theoretical
 
-## Guest Pipeline
+## Dream Guests
 
-### Confirmed Interest
-| Guest | Handle | Status | Notes |
-|-------|--------|--------|-------|
-| tez | @thefunnyguysNFT | Invited | "Ok, would you be our first guest?" - said yes |
+### Tier 0: Unicorn Gets
+- **Andrej Karpathy** - Coined "vibe coding", ex-Tesla AI
+- **Rick Rubin** - The Creative Act, creativity philosopher
+- **Boris Dayma** - Anthropic / Claude team
 
-### Target Guests (Digital Art/Collector Community)
-- [ ] Gene Kogan (@genekogan)
-- [ ] Claire Silver (@clairesilver12)
-- [ ] Pindar Van Arman
-- [ ] Refik Anadol
-- [ ] Tyler Hobbs
-- [ ] Snowfro (Art Blocks)
-- [ ] Cozomo de' Medici
-- [ ] XCOPY
-- [ ] Beeple
+### Tier 1: Vibe Coding Pioneers
+- **steipete** - Clawdbot creator, Claude Code power user
+- **Simon Willison** - Datasette, LLM tools educator
+- **Pieter Levels** - Photo AI, ships fast
+- **swyx** - Latent Space, AI engineer
 
-### Target Guests (Vibe Coding/AI Builders)
-- [ ] Andrej Karpathy
-- [ ] Simon Willison
-- [ ] Amjad Masad (Replit)
-- [ ] Peter Steinberger (Clawdbot/Clawdis)
-- [ ] swyx
-- [ ] Pieter Levels
+### Tier 2: AI Art + Music
+- **Gene Kogan** - Abraham.ai founder, AI art OG
+- **Claire Silver** - Voice of AI-assisted art
+- **Holly Herndon** - Holly+, AI voice cloning
+- **Grimes** - Elf.tech, AI experiments
 
-### Target Guests (Spirit Protocol/Eden Adjacent)
-- [ ] Abraham.ai team
-- [ ] NODE artists
-- [ ] Eden trainers
+### Ian's Network
+- LVMH / Beats alumni
+- Ledger ecosystem builders
+- Apple Music network
 
-## Production
+## Tech Stack
 
-### Recording Setup
-- [ ] Define recording platform (Riverside.fm? Zencastr? Zoom?)
-- [ ] Equipment check for both hosts
-- [ ] Recording schedule alignment
+| Layer | Tools |
+|-------|-------|
+| **Recording** | Riverside.fm (remote) / Ledger studio (Paris) |
+| **Editing** | Descript (AI transcription + cleanup) |
+| **Hosting** | Spotify for Creators (free) |
+| **Distribution** | Apple Podcasts, YouTube, Farcaster |
+| **Website** | Next.js on Vercel |
 
-### Post-Production
-- [ ] Editing workflow
-- [ ] Show notes template
-- [ ] Thumbnail/artwork generation
+## Project Structure
 
-### Distribution
-- [ ] Spotify for Podcasters account
-- [ ] Apple Podcasts Connect
-- [ ] YouTube (video version?)
-- [ ] RSS feed setup
+```
+lets-vibe-podcast/
+├── website/              # Next.js site (Vercel deployed)
+│   └── src/app/          # App router pages
+├── letsvibe-agent/       # Multi-agent production system
+│   └── src/agents/       # Booking, research, promotion agents
+├── IAN_TLDR.md           # Summary doc for Ian
+├── VISION.md             # Full strategy document
+├── GUESTS.md             # Complete guest pipeline
+├── CLAUDE.md             # Project context for Claude Code
+└── README.md             # This file
+```
 
-## Branding
+## For Collaborators
 
-### Name Options
-1. **Let's Vibe!** (current favorite)
-2. Let's Vibe
-3. Vibe Check
-4. The Vibe Podcast
+Clone and start coding:
 
-### Visual Identity
-- Align with /vibe brand (warmer social feel)
-- Or create distinct identity?
-- Cover art needed (1400x1400 minimum for Apple)
+```bash
+git clone git@github.com:brightseth/lets-vibe-podcast.git
+cd lets-vibe-podcast
 
-### Show Format Ideas
-- **Cold open**: Interesting clip from the episode
-- **Intro**: "Welcome to Let's Vibe! I'm Seth..."
-- **Guest intro**: 2-3 min on who they are
-- **Main conversation**: 30-45 min
-- **Rapid fire**: Quick questions at end
-- **Outro**: Where to find guest, next episode tease
+# Run website locally
+cd website
+npm install
+npm run dev
+```
 
-## Launch Checklist
+## Why Now
 
-### Pre-Launch
-- [ ] Record 3 episodes before announcing (buffer)
-- [ ] Create cover art
-- [ ] Write show description
-- [ ] Set up hosting (Anchor/Spotify for Podcasters is free)
-- [ ] Submit to Apple Podcasts (takes 1-2 weeks)
-- [ ] Submit to Spotify
-- [ ] Create social accounts? Or use personal
+> "It's like Pac-Man when you eat the cherry and everything starts flashing. We're all running back through 30 years to create what we had ideas for but could never do ourselves."
 
-### Launch
-- [ ] Announce on X
-- [ ] First episode drops
-- [ ] Guest amplification
+- **Force function** - Weekly recording keeps us synced without scheduling meetings
+- **People come to us** - Best people in vibe coding want to share what they're building
+- **Show and tell** - Forces us to ship things worth talking about
+- **Access to everyone** - Podcast gives us an excuse to reach out to anyone
 
-## Timeline
+## Status
 
-| Date | Milestone |
-|------|-----------|
-| Jan 8 | Project kickoff |
-| Jan 15 | Branding + hosting setup |
-| Jan 20 | Record Episode 1 (tez?) |
-| Jan 27 | Record Episode 2 |
-| Feb 3 | Record Episode 3 |
-| Feb 10 | Launch with 3 episodes |
-
-## Notes
-
-- NODE opening (Jan 22-26) could be great content opportunity
-- Ameesia mentioned contributing to RCS coverage of NODE opening
-- Consider live recording at NODE?
+- [x] Concept aligned (Jan 14, 2026 call)
+- [x] Website live
+- [x] GitHub repo for collaboration
+- [ ] Schedule Episode 1 recording
+- [ ] Set up Spotify for Creators
+- [ ] Submit to Apple Podcasts
 
 ---
 
 *Created: January 8, 2026*
-*Status: Planning*
+*Updated: January 14, 2026*
+*Status: Ready to record*
