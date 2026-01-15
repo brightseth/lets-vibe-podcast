@@ -1,168 +1,115 @@
 # Let's Vibe! Podcast
 
-**TED Talks for vibe coders** - Weekly conversations with the creators shaping AI-assisted creativity.
+**A weekly conversation about creativity in the age of AI.**
 
-Hosts: **Seth Goldstein** + **Lukas Amacher**
-First Guest: tez (@thefunnyguysNFT) - CONFIRMED
-Launch: Feb 10, 2026 with 3 episodes
-
----
-
-## For Lucas (Collaborator Quick Start)
-
-Hey Lucas! Point your Claude here and you're in. Everything routes through the agent system.
-
-```bash
-cd ~/Projects/lets-vibe-podcast/letsvibe-agent
-npm install
-npm run agent                    # See system status
-npm run agent route "your task"  # Route anything to the right agent
-```
-
-**Your key tasks:**
-- Co-host prep and talking points
-- Guest intros and scheduling coordination
-- Tutorial segment ideas
-- Community/Discord planning
-
-**To collaborate via /vibe:** `vibe dm @seth`
+Hosts: **Seth Goldstein** + **Ian Rogers**
+Website: [letsvibe.fm](https://letsvibe.fm)
+Repo: [github.com/brightseth/lets-vibe-podcast](https://github.com/brightseth/lets-vibe-podcast)
 
 ---
 
-## Show Format (40-60 min)
+## The Partnership
+
+**Seth Goldstein** - Founder of Turntable.fm, ROOT, SiteSpecific. Building /vibe, a social layer for Claude Code. Based in SF + Paris.
+
+**Ian Rogers** - CEO of Ledger. Former Chief Digital Officer at LVMH, founder of Topspin Media, built Beats Music. He interviewed Rick Rubin about The Creative Act on Tetragrammaton. Based in Paris.
+
+**Origin Story:** Ian interviewed Rick Rubin on Tetragrammaton about "The Way of Code: The Timeless Art of Vibecoding" (September 2025). The podcast is a natural extension.
+
+---
+
+## Show Format (45 min, 3 segments)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  1. OPENER (5-10 min)                                       │
-│     Seth & Lucas catch up - tools, news, what we're building│
+│  1. THE GUEST (15 min)                                      │
+│     High-level thought leader interview                     │
+│     Rick Rubin, Karpathy, Andre 3000, Boris Dayma types     │
+│     Tetragrammaton-style contemplative                      │
 ├─────────────────────────────────────────────────────────────┤
-│  2. INTERVIEW (25-35 min)                                   │
-│     Deep conversation with guest - their journey, process   │
+│  2. THE VIBE CHECK (15 min)                                 │
+│     Seth & Ian shoot the shit                               │
+│     What we built, tools we're excited about, hot takes     │
+│     Two friends at a bar                                    │
 ├─────────────────────────────────────────────────────────────┤
-│  3. TUTORIAL CLIP (10-15 min)                               │
-│     Hands-on walkthrough - becomes standalone YouTube clip  │
-│     (Can be guest or community contributor)                 │
+│  3. THE TUTORIAL (15 min)                                   │
+│     Hands-on deep dive                                      │
+│     Screencast-friendly → becomes YouTube content           │
+│     Specific, actionable, replicable                        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**Vibe:** Acquired meets Oprah - sophisticated but warm, practical not theoretical
+**Length:** 45 minutes = SF to Palo Alto commute
+
+**Vibe:** Rick Rubin's contemplative aesthetic - warm, minimal, thoughtful
 
 ---
 
-## Cover Art
+## Why Us
 
-**DONE:** Final cover with text - "LET'S VIBE!" + sculptural knot form
-- Location: `letsvibe-agent/data/cover-art/FINAL-COVER-ART.png`
-- Style: Copper/magenta ribbons on black, Skulptuur energy
-- Generated with: Flux Pro via FAL
-
-**Future idea:** Commission artists for episode covers → limited edition NFTs
-
----
-
-## Quick Commands
-
-```bash
-cd letsvibe-agent
-
-# Agent system
-npm run agent                              # System status
-npm run agent route "your task"            # Route to right agent
-npm run agent:prepare "Guest Name"         # Full guest prep
-npm run agent:weekly                       # Weekly planning
-
-# Workflows
-npm run guest:research                     # Prioritized guest list
-npm run guest:outreach -- --export         # Generate outreach markdown
-npm run cover-art -- --style refined       # Generate cover art variations
-```
-
----
-
-## Agent System
-
-| Agent | Focus | Example Task |
-|-------|-------|--------------|
-| 🎤 Booking | Guests | "draft outreach for Simon Willison" |
-| 🔬 Research | Prep | "research vibe coding trends" |
-| 📣 Promotion | Content | "create content calendar for ep 1" |
-| 🤝 Partnerships | Revenue | "find AI tool sponsors" |
+- We've both been building things for 30 years
+- We remember the Netscape moment. This feels like that.
+- Ian has Rick Rubin relationship + Tetragrammaton context
+- Seth is deep in vibe coding daily with /vibe
+- The podcast keeps us synced without scheduling meetings
 
 ---
 
 ## Guest Pipeline
 
-**25 guests in database across 7 tiers:**
+### Tier 0: Unicorn Gets (1-2 per quarter)
+- Rick Rubin *(Ian has relationship)*
+- Andrej Karpathy *(coined "vibe coding")*
+- Andre 3000
+- Boris Dayma (Anthropic)
 
-| Tier | Category | Examples |
-|------|----------|----------|
-| 0 | Unicorn Gets | Rick Rubin, Karpathy, Boris Dayma, Ian Rogers |
-| 1 | Vibe Coding Pioneers | steipete, Simon Willison, Pieter Levels, swyx |
-| 2 | AI Art Legends | Gene Kogan, Claire Silver, Holly Herndon |
-| 3 | Collectors/Tastemakers | tez (CONFIRMED), 6529, Snowfro |
+### Tier 1: Vibe Coding Pioneers (monthly)
+- steipete (Peter Steinberger)
+- Simon Willison
+- Pieter Levels
+- swyx
 
-**Dream guests mentioned:** Karpathy (coined "vibecoding"), Rick Rubin (popularized it), Frank the Gods, steipete (Vienna), Ian Rogers (Ledger)
+### Tier 2: AI Art + Music (monthly)
+- Gene Kogan
+- Claire Silver
+- Holly Herndon
+- Grimes
 
----
-
-## Community Vision
-
-**"Product Hunt for vibe coders"**
-- Bottom-up: Submit your vibe-coded project
-- Community votes things up/down
-- Top projects get featured on show
-- Connects to vibecodings directory
-
----
-
-## Sponsors & Partners (Target)
-
-| Category | Targets |
-|----------|---------|
-| AI Platforms | Anthropic, OpenAI, Google, Meta |
-| Tools | 11 Labs, Cursor, Replit, v0 |
-| Hardware | Framework, vibestation partners |
-| Creative | Midjourney, Runway, Art Blocks |
+### Tier 3: Ian's Network
+- LVMH alumni
+- Beats/Apple Music network
+- Ledger ecosystem
+- Tetragrammaton guests
 
 ---
 
-## Inspirations
+## Production Stack
 
-- **Acquired** - Deep research, sophisticated
-- **a16z podcasts** - Tech insight
-- **Lex Fridman** - Long-form depth
-- **20 Minute VC** - Efficient format
-- **Tim Ferriss** - Practical takeaways
-- **Anthropic Claude videos** - Tutorial quality
-- **Oprah** - Warm, accessible
+| Tool | Use Case | Cost |
+|------|----------|------|
+| **Riverside.fm** | Remote recording | $29/mo |
+| **Descript** | Text-based editing | $24/mo |
+| **OpusClip** | AI clip generation | $29/mo |
+| **Spotify for Creators** | Hosting + RSS | Free |
+| **Ledger Studio** | In-person Paris | Free |
 
-**NOT:** Hype podcasts, crypto bro energy, empty superlatives
+**Total:** ~$82/month
 
----
-
-## Timeline
-
-| Date | Milestone |
-|------|-----------|
-| Jan 8 | Cover art locked ✓ |
-| Jan 15 | Final branding + Figma |
-| Jan 20 | Record Episode 1 (tez) |
-| Jan 22-26 | NODE Opening (content opp) |
-| Jan 27 | Record Episode 2 |
-| Feb 3 | Record Episode 3 |
-| Feb 10 | Launch with 3 episodes |
+See `PRODUCTION_PLAYBOOK.md` for full details.
 
 ---
 
-## Next Actions
+## Social Handles Status
 
-- [x] Cover art direction locked
-- [ ] Add text to cover art in Figma
-- [ ] Schedule recording with tez (week of Jan 20)
-- [ ] Send outreach to Tier 1 guests
-- [ ] Set up Spotify for Creators
-- [ ] Plan tutorial segment format
-- [ ] Design community submission system
+| Platform | Handle | Status |
+|----------|--------|--------|
+| Domain | letsvibe.fm | LIVE |
+| Twitter/X | @letsvibe | Unknown - need to check |
+| Twitter/X | @letsvibeshow | Alternative |
+| Instagram | @letsvibe | TAKEN (Melbourne events) |
+| YouTube | Let's Vibe! | Need to register |
+
+**Note:** @letsvibepodcast is taken by a festival podcast.
 
 ---
 
@@ -170,22 +117,26 @@ npm run cover-art -- --style refined       # Generate cover art variations
 
 | File | Purpose |
 |------|---------|
-| `VISION.md` | Full positioning, dream guests, tech stack |
-| `GUESTS.md` | Guest pipeline tracker |
-| `OUTREACH_QUEUE.md` | Generated outreach messages |
-| `letsvibe-agent/` | Multi-agent system |
-| `letsvibe-agent/data/cover-art/` | Cover art assets |
+| `website/` | Next.js site at letsvibe.fm |
+| `PRODUCTION_PLAYBOOK.md` | Full production workflow |
+| `IAN_TLDR.md` | Summary for Ian |
+| `README.md` | Project overview |
 
 ---
 
-## Skills Available
+## Next Actions
 
-- `/letsvibe` - Full podcast agent system
-- `/sara-research` - Deep research
-- `/sara-social` - Social content drafting
+- [ ] Wait for Ian's response to DM
+- [ ] Secure Twitter handle (@letsvibe or @letsvibeshow)
+- [ ] Register YouTube channel
+- [ ] Set up Spotify for Creators
+- [ ] Book first recording at Ledger studio
+
+---
+
+*"It's like Pac-Man when you eat the cherry and everything starts flashing. We're running back through 30 years to create what we had ideas for but could never do ourselves."*
 
 ---
 
 *Project: ~/Projects/lets-vibe-podcast*
-*Agent: ~/Projects/lets-vibe-podcast/letsvibe-agent*
-*Repo: Ready for collaboration*
+*Website: https://letsvibe.fm*
