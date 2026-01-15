@@ -2,46 +2,110 @@ const dreamGuests = [
   {
     tier: "Visionaries",
     guests: [
-      { name: "Andrej Karpathy", note: "Coined 'vibe coding'" },
-      { name: "Rick Rubin", note: "The Creative Act" },
-      { name: "Boris Dayma", note: "Anthropic / Claude" },
+      { name: "Andrej Karpathy", handle: "@karpathy", note: "Coined 'vibe coding'" },
+      { name: "Rick Rubin", handle: null, note: "The Way of Vibing" },
+      { name: "Boris Cherny", handle: "@bcherny", note: "Created Claude Code" },
     ]
   },
   {
     tier: "Builders",
     guests: [
-      { name: "steipete", note: "Clawdbot" },
-      { name: "Simon Willison", note: "Datasette" },
-      { name: "Pieter Levels", note: "Photo AI" },
-      { name: "swyx", note: "Latent Space" },
+      { name: "Peter Steinberger", handle: "@steipete", note: "Claude Code Anonymous" },
+      { name: "Simon Willison", handle: "@simonw", note: "LLM pioneer, Datasette" },
+      { name: "Pieter Levels", handle: "@levelsio", note: "Photo AI, $138K/mo vibe coded" },
+      { name: "swyx", handle: "@swyx", note: "Latent Space, 'AI Engineer'" },
     ]
   },
   {
     tier: "Artists",
     guests: [
-      { name: "Gene Kogan", note: "Abraham.ai" },
-      { name: "Claire Silver", note: "AI-assisted art" },
-      { name: "Holly Herndon", note: "Holly+" },
+      { name: "Gene Kogan", handle: "@genekogan", note: "Abraham.ai" },
+      { name: "Claire Silver", handle: "@clairesilver12", note: "AI-assisted art" },
+      { name: "Holly Herndon", handle: "@hollyherndon", note: "Holly+" },
     ]
   },
+];
+
+const podcastsWeFollow = [
+  { name: "Lex Fridman", handle: "@lexfridman", note: "Deep AI conversations", image: "https://unavatar.io/twitter/lexfridman" },
+  { name: "Dwarkesh Patel", handle: "@dwarkesh_sp", note: "AGI, alignment, scaling", image: "https://unavatar.io/twitter/dwarkesh_sp" },
+  { name: "Latent Space", handle: "@latentspacepod", note: "AI engineering", image: "https://unavatar.io/twitter/latentspacepod" },
+  { name: "TWIML AI", handle: "@taborML", note: "ML research", image: "https://unavatar.io/twitter/taborML" },
+  { name: "Acquired", handle: "@acquiredfm", note: "Tech history", image: "https://unavatar.io/twitter/acquiredfm" },
+];
+
+const xAccountsToFollow = [
+  { handle: "@karpathy", note: "The OG. Coined 'vibe coding'", image: "https://unavatar.io/twitter/karpathy" },
+  { handle: "@steipete", note: "Vibe coding philosopher", image: "https://unavatar.io/twitter/steipete" },
+  { handle: "@simonw", note: "Prompt injection, LLM tooling", image: "https://unavatar.io/twitter/simonw" },
+  { handle: "@levelsio", note: "Building empires with AI", image: "https://unavatar.io/twitter/levelsio" },
+  { handle: "@swyx", note: "AI Engineer category", image: "https://unavatar.io/twitter/swyx" },
+  { handle: "@bcherny", note: "Claude Code creator", image: "https://unavatar.io/twitter/bcherny" },
+  { handle: "@claudeai", note: "Official Claude", image: "https://unavatar.io/twitter/claudeai" },
+  { handle: "@AnthropicAI", note: "The company", image: "https://unavatar.io/twitter/AnthropicAI" },
+];
+
+const toolsWeUse = [
+  { name: "Claude Code", url: "https://claude.ai/claude-code", note: "The vibe coding IDE" },
+  { name: "/vibe", url: "https://slashvibe.dev", note: "Social layer for Claude Code" },
+  { name: "Cursor", url: "https://cursor.com", note: "AI-first code editor" },
+  { name: "Descript", url: "https://descript.com", note: "Text-based podcast editing" },
+  { name: "Riverside", url: "https://riverside.fm", note: "Remote recording" },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="border-b border-[var(--border)]">
-        <div className="max-w-[700px] mx-auto px-6 py-24 md:py-32">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-8">
-            Let&apos;s Vibe!
-          </h1>
-          <p className="text-xl md:text-2xl text-[var(--muted)] leading-relaxed mb-12">
-            A weekly conversation about creativity in the age of AI.
-          </p>
-          <div className="flex items-center gap-3 text-[var(--muted)]">
-            <span>Seth Goldstein</span>
-            <span>&</span>
-            <span>Ian Rogers</span>
+      <section className="border-b border-[var(--border)] bg-gradient-to-b from-[var(--surface)] to-transparent">
+        <div className="max-w-[900px] mx-auto px-6 py-20 md:py-28">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-12">
+            <div className="flex-1">
+              <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-4">
+                A podcast about vibe coding
+              </p>
+              <h1 className="text-5xl md:text-6xl font-light tracking-tight mb-6">
+                Let&apos;s Vibe!
+              </h1>
+              <p className="text-xl md:text-2xl text-[var(--muted)] leading-relaxed mb-8">
+                Weekly conversations with creators building at the intersection of AI and creativity.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="#canon"
+                  className="px-6 py-3 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+                >
+                  Start with the Canon
+                </a>
+                <a
+                  href="#guests"
+                  className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+                >
+                  See Dream Guests
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 md:gap-6">
+              <div className="text-center">
+                <img
+                  src="https://unavatar.io/twitter/goldstein"
+                  alt="Seth Goldstein"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-[var(--border)]"
+                />
+                <p className="mt-2 text-sm font-medium">Seth</p>
+                <p className="text-xs text-[var(--muted)]">Turntable.fm</p>
+              </div>
+              <span className="text-2xl text-[var(--muted)]">&</span>
+              <div className="text-center">
+                <img
+                  src="https://unavatar.io/twitter/ianrogers"
+                  alt="Ian Rogers"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-[var(--border)]"
+                />
+                <p className="mt-2 text-sm font-medium">Ian</p>
+                <p className="text-xs text-[var(--muted)]">Ledger</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -104,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* Guests */}
-      <section className="border-b border-[var(--border)]">
+      <section id="guests" className="border-b border-[var(--border)] scroll-mt-24">
         <div className="max-w-[700px] mx-auto px-6 py-20">
           <h2 className="text-2xl font-light mb-12">People we want to talk to</h2>
           <div className="space-y-12">
@@ -115,9 +179,21 @@ export default function Home() {
                 </h3>
                 <div className="space-y-3">
                   {tier.guests.map((guest) => (
-                    <div key={guest.name} className="flex justify-between items-baseline">
-                      <span>{guest.name}</span>
-                      <span className="text-[var(--muted)] text-sm">{guest.note}</span>
+                    <div key={guest.name} className="flex justify-between items-baseline gap-4">
+                      <div className="flex items-baseline gap-2">
+                        <span>{guest.name}</span>
+                        {guest.handle && (
+                          <a
+                            href={`https://x.com/${guest.handle.replace('@', '')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+                          >
+                            {guest.handle}
+                          </a>
+                        )}
+                      </div>
+                      <span className="text-[var(--muted)] text-sm text-right">{guest.note}</span>
                     </div>
                   ))}
                 </div>
@@ -143,6 +219,128 @@ export default function Home() {
             We&apos;re running back through 30 years to create what we had ideas for
             but could never do ourselves.&rdquo;
           </blockquote>
+        </div>
+      </section>
+
+      {/* The Canon */}
+      <section id="canon" className="border-b border-[var(--border)] scroll-mt-24">
+        <div className="max-w-[700px] mx-auto px-6 py-20">
+          <h2 className="text-2xl font-light mb-8">The Canon</h2>
+          <div className="space-y-8">
+            <div className="p-6 bg-[var(--surface)] rounded-lg">
+              <h3 className="text-xl mb-4">The Way of Vibing</h3>
+              <p className="text-[var(--muted)] leading-relaxed mb-4">
+                Rick Rubin&apos;s September 2025 conversation with Anthropic on Tetragrammaton.
+                The bible of vibe coding philosophy.
+              </p>
+              <p className="text-lg leading-relaxed">
+                &ldquo;The code is just the byproduct. What matters is the conversation—the dance
+                between human intention and machine capability.&rdquo;
+              </p>
+              <p className="text-sm text-[var(--muted)] mt-4">
+                From: The Way of Code: The Timeless Art of Vibecoding
+              </p>
+            </div>
+            <div>
+              <h3 className="text-sm uppercase tracking-wide text-[var(--muted)] mb-4">
+                Essential Reading
+              </h3>
+              <ul className="space-y-2 text-[var(--muted)]">
+                <li>Rick Rubin — The Creative Act: A Way of Being</li>
+                <li>Andrej Karpathy — &ldquo;Vibe Coding&rdquo; (Feb 2025)</li>
+                <li>Anthropic — Claude Code Documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Podcasts We Follow */}
+      <section className="border-b border-[var(--border)]">
+        <div className="max-w-[700px] mx-auto px-6 py-20">
+          <h2 className="text-2xl font-light mb-12">Podcasts we follow</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {podcastsWeFollow.map((podcast) => (
+              <a
+                key={podcast.name}
+                href={`https://x.com/${podcast.handle.replace('@', '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors"
+              >
+                <img
+                  src={podcast.image}
+                  alt={podcast.name}
+                  className="w-12 h-12 rounded-lg object-cover"
+                />
+                <div>
+                  <div className="font-medium">{podcast.name}</div>
+                  <div className="text-sm text-[var(--muted)]">{podcast.note}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* X Accounts */}
+      <section id="follow" className="border-b border-[var(--border)] scroll-mt-24">
+        <div className="max-w-[700px] mx-auto px-6 py-20">
+          <h2 className="text-2xl font-light mb-12">Who to follow on X</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {xAccountsToFollow.map((account) => (
+              <a
+                key={account.handle}
+                href={`https://x.com/${account.handle.replace('@', '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors text-center"
+              >
+                <img
+                  src={account.image}
+                  alt={account.handle}
+                  className="w-16 h-16 rounded-full object-cover mb-3"
+                />
+                <span className="font-medium text-sm">{account.handle}</span>
+                <p className="text-xs text-[var(--muted)] mt-1">{account.note}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tools */}
+      <section id="tools" className="border-b border-[var(--border)] scroll-mt-24">
+        <div className="max-w-[700px] mx-auto px-6 py-20">
+          <h2 className="text-2xl font-light mb-12">Tools we use</h2>
+          <div className="space-y-4">
+            {toolsWeUse.map((tool) => (
+              <a
+                key={tool.name}
+                href={tool.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-between items-baseline p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors"
+              >
+                <span className="font-medium">{tool.name}</span>
+                <span className="text-[var(--muted)] text-sm">{tool.note}</span>
+              </a>
+            ))}
+          </div>
+          <div className="mt-8 p-6 bg-[var(--surface-dark)] text-white rounded-lg">
+            <h3 className="text-lg mb-2">/vibe</h3>
+            <p className="text-gray-400 text-sm mb-4">
+              A social layer for Claude Code. DMs, presence, memory.
+            </p>
+            <a
+              href="https://slashvibe.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              slashvibe.dev &rarr;
+            </a>
+          </div>
         </div>
       </section>
 

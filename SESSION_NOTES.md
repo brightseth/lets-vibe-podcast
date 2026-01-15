@@ -4,6 +4,14 @@
 
 Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation.
 
+### Jan 15 Update
+Fleshed out website with new sections:
+- **The Canon** - Rick Rubin's "The Way of Vibing" as the bible
+- **Podcasts we follow** - Lex, Dwarkesh, Latent Space, TWIML, Acquired
+- **Who to follow on X** - @karpathy, @steipete, @simonw, @levelsio, @swyx, @bcherny, @claudeai, @AnthropicAI
+- **Tools we use** - Claude Code, /vibe (slashvibe.dev promoted), Cursor, Descript, Riverside
+- Updated all guest entries with Twitter handles
+
 ---
 
 ## What We Built

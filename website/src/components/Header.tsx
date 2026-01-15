@@ -12,22 +12,32 @@ export function Header() {
             <span className="text-lg tracking-tight">Let&apos;s Vibe!</span>
           </Link>
 
-          {/* Minimal nav - just what matters */}
-          <nav className="flex items-center gap-8">
+          {/* Minimal nav */}
+          <nav className="flex items-center gap-6">
             <Link
-              href="/about"
+              href="/#canon"
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
             >
-              About
+              Canon
             </Link>
-            <a
-              href="https://github.com/brightseth/lets-vibe-podcast"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/#guests"
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
             >
-              GitHub
-            </a>
+              Guests
+            </Link>
+            <Link
+              href="/#tools"
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+            >
+              Tools
+            </Link>
+            <Link
+              href="/#follow"
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+            >
+              Follow
+            </Link>
           </nav>
         </div>
       </div>
