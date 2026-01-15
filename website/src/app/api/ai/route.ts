@@ -28,5 +28,5 @@ Provide relevant background, recent work, and potential talking points.`,
     prompt,
   });
 
-  return result.toDataStreamResponse();
+  return result.toTextStreamResponse();
 }
