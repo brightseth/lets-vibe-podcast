@@ -1,12 +1,177 @@
-# Let's Vibe! Session Notes - Jan 14-16, 2026
+# Let's Vibe! Session Notes - Jan 14-22, 2026
 
 ## Session Summary
 
-Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation.
+Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation. Jan 21: Partnership exploration, Ten Commandments created. Jan 22: Entity setup, infrastructure planning.
 
 ---
 
-## Jan 16 Session (Latest)
+## Jan 22 Session (Latest)
+
+### Products Section Added ✅
+
+Integrated Vibestation into Let's Vibe website:
+- **New section:** "Products" between Tools and Why Now
+- **Styled:** Clean, Rick Rubin-inspired aesthetic (not CRT retro)
+- **Content:** Vibestation hardware guide featured with:
+  - Link to vibestation.guide
+  - 3-column grid: Displays, Keyboards, Furniture
+  - Pull quote explaining the concept
+  - Attribution to Seth / vibecodings ecosystem
+- **Design:** Matches Let's Vibe aesthetic perfectly
+- Ready to add more products in future
+
+---
+
+### Ten Commandments Delivered ✅
+
+Successfully created and sent to Ian:
+- **Link:** https://www.slashvibe.dev/a/let-s-vibe-ten-commandments-71812e
+- Based on what makes Acquired, Dwarkesh, Lex great + what we uniquely bring
+- **Top 4 Commandments:**
+  1. Do the work (Acquired-level prep)
+  2. Ship something buildable (tutorials mandatory)
+  3. Historical context (our 30 years = superpower)
+  4. Nothing to prove (freedom to be authentic)
+- Ian received via WhatsApp ✅
+
+### Entity Setup Decision
+
+**Ian confirmed:** "Def do America and not France"
+
+**Delaware C Corp via Stripe Atlas:**
+- All-in-one: Incorporation + EIN + Bank Account + Stripe
+- Timeline: 1-2 weeks
+- Cost: ~$500 + state fees
+- **Next step:** Decide equity split (50/50 or custom)
+
+Updated `STRIPE_SETUP.md` with full Delaware C Corp path.
+
+### Infrastructure Setup
+
+**Supabase Database:** ✅ COMPLETE
+- Project created: `lets-vibe-podcast`
+- Schema deployed successfully:
+  - `episodes` table (metadata, URLs, transcripts)
+  - `clips` table (viral moments, social content)
+  - `guests` table (CRM/pipeline tracking)
+  - Row Level Security enabled
+  - Indexes configured
+- Credentials added to `website/.env.local`
+- Credentials added to Vercel (production + preview)
+- Ian invited to Supabase project (full access)
+- Created `IAN_SUPABASE_ACCESS.md` with all details
+- Connection tested and working ✅
+
+**Team Setup Complete:**
+- Both Seth and Ian can access Supabase dashboard
+- Vercel deployments auto-connect to database
+- Ready to build admin panel and AI agents
+
+### Recording Schedule
+
+- **Episode 1:** Ian interviews Seth (Italy → NY via Riverside)
+- **Episode 2:** Seth interviews Ian
+- **Proposed:** 9am NY / 3pm Italy
+- Waiting for Ian to pick day next week
+
+---
+
+## Jan 21 Session
+
+### Ian's Response - He's IN!
+
+**Voice message feedback (walking to Eurostar for Dr. Martens board meeting):**
+
+**Mission Evolution:**
+- Was at elite event with Justin Trudeau, Katy Perry, Jacob Collier, Chris Anderson, Jimmy Wales (between DLD and Davos)
+- Realized: "The future is here, it's not evenly distributed - our job is to distribute it evenly"
+- **Like Tony Hawk building skate parks in underserved areas** - take AI superpowers to people who need them most
+- Not just creative elite, but broader community impact
+- Met with family offices (L'Oreal, Technogym) - sees opportunity to help multi-billion dollar families who won't get there on their own
+- **"Where we have the most leverage is distributing the superpower to the most people"**
+
+**Production Plan:**
+- **Ian is IN** - ready to go
+- He's in Italy next week - wants to pick recording time
+- **Episode 1:** Ian interviews Seth
+- **Episode 2:** Reverse - Seth interviews Ian
+- Then start with guests
+
+**Content Ideas:**
+- **Wants to create "10 Commandments for Let's Vibe"** (taking page from SOLIENNE Constitution)
+- Working on "link maker" tool for curating AI news weekly
+- Vision: Weekly episode + curated AI news email
+
+**Action Items from Ian:**
+1. Pick recording time next week
+2. ✅ Create 10 Commandments (COMPLETED - see TEN_COMMANDMENTS.md)
+   - Based on what makes Acquired, Dwarkesh, Lex, a16z great
+   - What vibe coding community needs
+   - What Seth + Ian uniquely bring
+   - **Top 4:** Ship something buildable, Historical context, Nothing to prove, Do the work
+3. Finish his link maker tool
+
+---
+
+### Partnership Exploration
+
+Had sync call exploring distribution partnership model. Key insights:
+
+**Partnership Structure Discussed:**
+- Distribution partner brings: existing audience, sponsorship sales, production expertise
+- Seth + Ian bring: hosts, guest access (Rick Rubin, LVMH), Paris studio, /vibe distribution
+- Agents handle: guest research, outreach, show notes, clips, social content
+- Revenue split model proposed: Partner 30% / Hosts 50% / Production reserve 20%
+
+**Sponsorship Strategy:**
+- Platform tier: Anthropic, OpenAI, Google
+- Infrastructure tier: Vercel, Supabase, Replit
+- Tools tier: Cursor, Descript, Riverside
+- Adjacent tier: Notion, Linear, Figma
+
+**Audience Clarity:**
+- FOR: Curious creatives who've heard "vibe coding" but don't know where to start
+- NOT FOR: Hardcore devs, crypto twitter, meme coin crowd, tutorial junkies
+- Tone: "Acquired meets Oprah" — sophisticated but warm
+
+**Content Gaps Identified:**
+- "What is MCP?" — Nobody explaining Model Context Protocol simply
+- Creative workflow — How artists actually use these tools
+- Business of vibe coding — Economics, sustainability
+- The cultural shift — Philosophy, not just technology
+
+### Docs Created
+- `PARTNERSHIP_PROPOSAL.md` — One-pager for Ian review
+- Updated `/backstage` page with full insights
+- Updated homepage with clearer positioning
+
+### Website Updates
+- Refined "The Premise" section with clearer audience targeting
+- Added "Acquired meets Oprah" positioning
+- Updated closing with Jan 24 launch date
+- Backstage page now includes: content opportunities, sponsorship strategy, partnership model, weekly workflow
+
+### Partnership Proposal Shared
+- Created artifact on /vibe: https://slashvibe.dev/a/let-s-vibe-partnership-proposal
+- Auto-shared with @ianrogers via DM
+- **Open question:** Revenue split structure
+  - Current proposal: Partner 30% / Seth+Ian 50% / Reserve 20%
+  - Alternative A: Equal thirds (33/33/33)
+  - Alternative B: Hosts majority (35/35/30)
+  - Seth wants him and Ian to be equal partners
+
+### Next Steps
+1. **Decide revenue split structure** with Ian
+2. Update artifact with agreed split
+3. Set up call: Seth + Ian + potential distribution partner (Matt)
+4. Finalize partnership structure
+5. Record Episode 1 (Jan 21-22)
+6. PUBLISH Jan 24 at NODE opening
+
+---
+
+## Jan 16 Session
 
 ### Website Enhancements
 - **Enhanced hero** with host photos (@seth, @ianrogers), CTAs, gradient
@@ -56,14 +221,31 @@ Sent update about agent build, launch plan, DNS setup.
 
 ---
 
-## Jan 17 - Cover Art Final
+## Jan 17 - Episode 1 Outline + Cover Art
 
-**New Cover Created with NanoBanana Pro (fal.ai):**
+**Episode 1 Outline Created:**
+- "The Vibe Coding Moment" - hybrid format (hosts + Rick Rubin clip)
+- 50-55 min: Intro → Rick clip → Discussion → Rapid Fire → Outro
+- Full doc: `EPISODE_1_OUTLINE.md`
+- Sent to Ian on /vibe for feedback
+- Key ask: Ian to reach out to Rick for clip or Tetragrammaton permission
+
+**Cover Art (NanoBanana Pro via fal.ai):**
 - Rick Rubin minimal aesthetic - warm cream background, stacked serif typography
 - "LET'S VIBE" + "creativity in the age of AI" tagline
-- Saved to `website/public/cover.png` and `letsvibe-agent/data/cover-art/FINAL-COVER-ART-v2.png`
+- Saved to `website/public/cover.png`
 
 **Generation setup:** `generate-cover.js` uses fal.ai with `FAL_KEY` env var
+
+---
+
+## TODO: Vibe Plugin Install
+
+```bash
+claude plugin add-marketplace https://github.com/VibeCodingInc/vibe-plugin.git
+claude plugin install vibe@vibe-plugins
+claude plugin enable vibe@vibe-plugins
+```
 
 ---
 
@@ -83,12 +265,13 @@ Sent update about agent build, launch plan, DNS setup.
 ## Next Session TODO
 
 1. [x] Create episode cover art ✓ (NanoBanana Pro, Jan 17)
-2. [ ] Debug Resend DNS (wait for Ian's screenshot)
-3. [ ] Get valid Anthropic API key for agent (console.anthropic.com)
-4. [ ] Register @letsvibepod on Twitter
-5. [ ] Prep Episode 1 topics and outline
+2. [x] Prep Episode 1 outline ✓ (sent to Ian for feedback)
+3. [ ] Wait for Ian's feedback on Episode 1 + Rick Rubin ask
+4. [ ] Debug Resend DNS (wait for Ian's screenshot)
+5. [ ] Register @letsvibepod on Twitter
 6. [ ] Set up Riverside.fm recording room
-7. [ ] Coordinate with Ian on recording time (after weekend)
+7. [ ] Install vibe plugin (commands saved above)
+8. [ ] Book recording time with Ian
 
 ---
 

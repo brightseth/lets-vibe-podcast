@@ -86,25 +86,25 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-4 md:gap-6">
-              <div className="text-center">
+              <a href="https://x.com/seth" target="_blank" rel="noopener noreferrer" className="text-center group">
                 <img
-                  src="https://unavatar.io/twitter/goldstein"
+                  src="https://unavatar.io/twitter/seth"
                   alt="Seth Goldstein"
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-[var(--border)]"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-[var(--border)] group-hover:border-[var(--foreground)] transition-colors"
                 />
                 <p className="mt-2 text-sm font-medium">Seth</p>
-                <p className="text-xs text-[var(--muted)]">Turntable.fm</p>
-              </div>
+                <p className="text-xs text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">@seth</p>
+              </a>
               <span className="text-2xl text-[var(--muted)]">&</span>
-              <div className="text-center">
+              <a href="https://x.com/ianrogers" target="_blank" rel="noopener noreferrer" className="text-center group">
                 <img
                   src="https://unavatar.io/twitter/ianrogers"
                   alt="Ian Rogers"
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-[var(--border)]"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-[var(--border)] group-hover:border-[var(--foreground)] transition-colors"
                 />
                 <p className="mt-2 text-sm font-medium">Ian</p>
-                <p className="text-xs text-[var(--muted)]">Ledger</p>
-              </div>
+                <p className="text-xs text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">@ianrogers</p>
+              </a>
             </div>
           </div>
         </div>
@@ -114,13 +114,19 @@ export default function Home() {
       <section className="border-b border-[var(--border)]">
         <div className="max-w-[700px] mx-auto px-6 py-20">
           <p className="text-lg leading-relaxed mb-8">
-            Every week, we talk about what we&apos;re building, share what we&apos;re learning,
-            and have a conversation with someone doing interesting work at the intersection
-            of creativity and AI.
+            Vibe coding is having its Netscape moment. Millions have heard the term but don&apos;t
+            know where to start. There&apos;s no authoritative voice contextualizing what&apos;s
+            happening—just scattered tutorials and hype.
+          </p>
+          <p className="text-lg leading-relaxed mb-8">
+            <strong>Let&apos;s Vibe!</strong> fills that gap. Every week, we talk about what we&apos;re
+            building, share what we&apos;re learning, and have a conversation with someone doing
+            interesting work at the intersection of creativity and AI.
           </p>
           <p className="text-lg leading-relaxed text-[var(--muted)]">
-            Not another tech podcast. This is for artists, musicians, writers, designers—anyone
-            who makes things and wants to understand how AI changes the craft.
+            This is for curious creatives who&apos;ve heard &ldquo;vibe coding&rdquo; but don&apos;t know
+            where to start. Artists who want to build. Founders who want to ship faster.
+            Not another developer podcast—<em>Acquired meets Oprah</em>, sophisticated but warm.
           </p>
         </div>
       </section>
@@ -226,7 +232,8 @@ export default function Home() {
       <section id="canon" className="border-b border-[var(--border)] scroll-mt-24">
         <div className="max-w-[700px] mx-auto px-6 py-20">
           <h2 className="text-2xl font-light mb-8">The Canon</h2>
-          <div className="space-y-8">
+          <div className="space-y-6">
+            {/* Rick Rubin */}
             <div className="p-6 bg-[var(--surface)] rounded-lg">
               <h3 className="text-xl mb-4">The Way of Vibing</h3>
               <p className="text-[var(--muted)] leading-relaxed mb-4">
@@ -241,15 +248,163 @@ export default function Home() {
                 From: The Way of Code: The Timeless Art of Vibecoding
               </p>
             </div>
+
+            {/* Ian's Article */}
+            <a
+              href="https://fistfulayen.com/2026/01/13/reflections-on-a-claude-code-new-year/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-6 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors"
+            >
+              <div className="flex items-start gap-4">
+                <img
+                  src="https://unavatar.io/twitter/ianrogers"
+                  alt="Ian Rogers"
+                  className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                />
+                <div>
+                  <h3 className="text-xl mb-2">Reflections on a Claude Code New Year</h3>
+                  <p className="text-sm text-[var(--muted)] mb-3">Ian Rogers · January 13, 2026</p>
+                  <p className="text-[var(--muted)] leading-relaxed mb-4">
+                    Ian built an RSVP system, digital art gallery, and music projects using Claude Code—tools
+                    he hadn&apos;t touched in over a decade. On the jump from Claude 4.0 to 4.5, Vercel, Supabase, and why building beats consuming.
+                  </p>
+                  <p className="text-lg leading-relaxed">
+                    &ldquo;What&apos;s astounding is how much I accomplished in such little time actually spent at the keyboard.&rdquo;
+                  </p>
+                  <p className="text-sm text-blue-500 mt-4">
+                    Read on FISTFULAYEN &rarr;
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            {/* Essential Reading */}
             <div>
-              <h3 className="text-sm uppercase tracking-wide text-[var(--muted)] mb-4">
+              <h3 className="text-sm uppercase tracking-wide text-[var(--muted)] mb-6">
                 Essential Reading
               </h3>
-              <ul className="space-y-2 text-[var(--muted)]">
-                <li>Rick Rubin — The Creative Act: A Way of Being</li>
-                <li>Andrej Karpathy — &ldquo;Vibe Coding&rdquo; (Feb 2025)</li>
-                <li>Anthropic — Claude Code Documentation</li>
-              </ul>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a
+                  href="https://www.amazon.com/Creative-Act-Way-Being/dp/0593652886"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors text-center"
+                >
+                  <img
+                    src="https://m.media-amazon.com/images/I/71stpY7GNAL._SY522_.jpg"
+                    alt="The Creative Act"
+                    className="w-20 h-28 object-cover rounded shadow-lg mb-3"
+                  />
+                  <span className="font-medium text-sm">The Creative Act</span>
+                  <span className="text-xs text-[var(--muted)]">Rick Rubin</span>
+                </a>
+                <a
+                  href="https://x.com/karpathy/status/1886192184808149383"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors text-center"
+                >
+                  <img
+                    src="https://unavatar.io/twitter/karpathy"
+                    alt="Andrej Karpathy"
+                    className="w-16 h-16 object-cover rounded-full mb-3"
+                  />
+                  <span className="font-medium text-sm">&ldquo;Vibe Coding&rdquo;</span>
+                  <span className="text-xs text-[var(--muted)]">Karpathy · Feb 2025</span>
+                </a>
+                <a
+                  href="https://docs.anthropic.com/en/docs/claude-code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors text-center"
+                >
+                  <img
+                    src="https://unavatar.io/twitter/AnthropicAI"
+                    alt="Anthropic"
+                    className="w-16 h-16 object-cover rounded-full mb-3"
+                  />
+                  <span className="font-medium text-sm">Claude Code Docs</span>
+                  <span className="text-xs text-[var(--muted)]">Anthropic</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Host Profiles */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Seth Profile */}
+              <div className="p-6 bg-[var(--surface-dark)] text-white rounded-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://unavatar.io/twitter/seth"
+                    alt="Seth Goldstein"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 className="text-lg font-medium">Seth Goldstein</h3>
+                    <p className="text-gray-400 text-sm">Co-host of Let&apos;s Vibe!</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                  Building /vibe, a social layer for Claude Code. Former founder of Turntable.fm, ROOT, SiteSpecific.
+                  30 years of building on the internet.
+                </p>
+                <div className="flex gap-3">
+                  <a
+                    href="https://x.com/seth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
+                  >
+                    @seth &rarr;
+                  </a>
+                  <a
+                    href="https://slashvibe.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
+                  >
+                    slashvibe.dev &rarr;
+                  </a>
+                </div>
+              </div>
+
+              {/* Ian Profile */}
+              <div className="p-6 bg-[var(--surface-dark)] text-white rounded-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <img
+                    src="https://unavatar.io/twitter/ianrogers"
+                    alt="Ian Rogers"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 className="text-lg font-medium">Ian Rogers</h3>
+                    <p className="text-gray-400 text-sm">CEO of Ledger · Co-host of Let&apos;s Vibe!</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                  Former Chief Digital Officer at LVMH, founder of Topspin Media, built Beats Music.
+                  Interviewed Rick Rubin on Tetragrammaton.
+                </p>
+                <div className="flex gap-3">
+                  <a
+                    href="https://x.com/ianrogers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
+                  >
+                    @ianrogers &rarr;
+                  </a>
+                  <a
+                    href="https://fistfulayen.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
+                  >
+                    FISTFULAYEN &rarr;
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -309,37 +464,117 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Tools */}
-      <section id="tools" className="border-b border-[var(--border)] scroll-mt-24">
+      {/* Resources */}
+      <section id="resources" className="border-b border-[var(--border)] scroll-mt-24">
         <div className="max-w-[700px] mx-auto px-6 py-20">
-          <h2 className="text-2xl font-light mb-12">Tools we use</h2>
-          <div className="space-y-4">
-            {toolsWeUse.map((tool) => (
+          <h2 className="text-2xl font-light mb-4">Resources</h2>
+          <p className="text-[var(--muted)] mb-12">
+            Software, hardware, and guides for vibe coders
+          </p>
+
+          {/* Software */}
+          <div className="mb-16">
+            <h3 className="text-sm uppercase tracking-wide text-[var(--muted)] mb-6">Software</h3>
+            <div className="space-y-4">
+              {toolsWeUse.map((tool) => (
+                <a
+                  key={tool.name}
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-between items-baseline p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors"
+                >
+                  <span className="font-medium">{tool.name}</span>
+                  <span className="text-[var(--muted)] text-sm">{tool.note}</span>
+                </a>
+              ))}
+            </div>
+            <div className="mt-6 p-6 bg-[var(--surface-dark)] text-white rounded-lg">
+              <h3 className="text-lg mb-2">/vibe</h3>
+              <p className="text-gray-400 text-sm mb-4">
+                A social layer for Claude Code. DMs, presence, memory.
+              </p>
               <a
-                key={tool.name}
-                href={tool.url}
+                href="https://slashvibe.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex justify-between items-baseline p-4 bg-[var(--surface)] rounded-lg hover:bg-[var(--surface-hover)] transition-colors"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
               >
-                <span className="font-medium">{tool.name}</span>
-                <span className="text-[var(--muted)] text-sm">{tool.note}</span>
+                slashvibe.dev &rarr;
               </a>
-            ))}
+            </div>
           </div>
-          <div className="mt-8 p-6 bg-[var(--surface-dark)] text-white rounded-lg">
-            <h3 className="text-lg mb-2">/vibe</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              A social layer for Claude Code. DMs, presence, memory.
-            </p>
-            <a
-              href="https://slashvibe.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition-colors"
-            >
-              slashvibe.dev &rarr;
-            </a>
+
+          {/* Hardware */}
+          <div>
+            <h3 className="text-sm uppercase tracking-wide text-[var(--muted)] mb-6">Hardware</h3>
+            <div className="bg-[var(--surface)] rounded-lg overflow-hidden">
+              <div className="p-8">
+                <div className="flex items-start justify-between mb-6">
+                  <div>
+                    <h4 className="text-2xl font-light mb-2">VIBESTATION</h4>
+                    <p className="text-[var(--muted)]">
+                      Curated hardware guide for vibe coders
+                    </p>
+                  </div>
+                  <a
+                    href="https://vibestation.guide"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm border border-[var(--border)] rounded-full hover:bg-[var(--surface-hover)] transition-colors whitespace-nowrap"
+                  >
+                    Visit Guide →
+                  </a>
+                </div>
+
+                <div className="space-y-6">
+                  <p className="text-lg leading-relaxed">
+                    The definitive hardware guide for grownups who suddenly find themselves coding.
+                    No CS degree required.
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="p-4 bg-[var(--background)] rounded-lg">
+                      <div className="text-2xl mb-2">💻</div>
+                      <h5 className="font-medium text-sm mb-1">Displays</h5>
+                      <p className="text-xs text-[var(--muted)]">
+                        4K monitors, ultrawide setups
+                      </p>
+                    </div>
+
+                    <div className="p-4 bg-[var(--background)] rounded-lg">
+                      <div className="text-2xl mb-2">⌨️</div>
+                      <h5 className="font-medium text-sm mb-1">Keyboards</h5>
+                      <p className="text-xs text-[var(--muted)]">
+                        Mechanical, ergonomic, minimal
+                      </p>
+                    </div>
+
+                    <div className="p-4 bg-[var(--background)] rounded-lg">
+                      <div className="text-2xl mb-2">🪑</div>
+                      <h5 className="font-medium text-sm mb-1">Furniture</h5>
+                      <p className="text-xs text-[var(--muted)]">
+                        Standing desks, ergonomic chairs
+                      </p>
+                    </div>
+                  </div>
+
+                  <blockquote className="border-l-2 border-[var(--border)] pl-4 italic text-[var(--muted)]">
+                    "You spent your career building companies, raising kids, or doing literally anything
+                    other than programming. Now Claude Code exists and suddenly you're shipping software
+                    daily. Welcome to the club."
+                  </blockquote>
+
+                  <div className="pt-4 border-t border-[var(--border)]">
+                    <div className="flex items-center gap-2 text-sm text-[var(--muted)]">
+                      <span>Created by Seth</span>
+                      <span>·</span>
+                      <span>Part of the vibecodings ecosystem</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -369,8 +604,11 @@ export default function Home() {
       {/* Next */}
       <section>
         <div className="max-w-[700px] mx-auto px-6 py-24 text-center">
+          <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-4">
+            Coming Soon
+          </p>
           <p className="text-2xl font-light mb-8">
-            Pick a day. Record Episode 1.
+            Episode 1 launches January 24, 2026
           </p>
           <p className="text-[var(--muted)]">
             Let&apos;s vibe.

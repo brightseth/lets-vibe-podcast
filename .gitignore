@@ -40,3 +40,4 @@ transcripts/
 
 # API cache
 .cache/
+.vercel

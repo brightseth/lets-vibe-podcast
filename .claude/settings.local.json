@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node generate-cover.js:*)",
+      "Bash(FAL_KEY=\"72df9244-e302-4572-bbd3-364abd610155:edf011f9ea3f955f7f09370632575b6c\" node:*)",
+      "WebSearch",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nNew cover art: Rick Rubin minimal aesthetic\n\n- Generated with NanoBanana Pro via fal.ai\n- Warm cream background, stacked serif typography\n- \"LET 'S VIBE\" + \"creativity in the age of AI\" tagline\n- Added generate-cover.js for future iterations\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Skill(vibe)",
+      "Bash(curl:*)",
+      "Bash(npm run agent:research:*)"
+    ]
+  }
+}
