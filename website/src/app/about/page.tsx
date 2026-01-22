@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-xl font-light mb-6">Ian Rogers</h2>
             <p className="text-[var(--muted)] mb-4">
-              CEO of Ledger. Former Chief Digital Officer at LVMH, founder of Topspin Media,
+              Chief Experience Officer of Ledger. Former Chief Digital Officer at LVMH, founder of Topspin Media,
               built Beats Music. He interviewed Rick Rubin about The Creative Act.
               Based in Paris.
             </p>

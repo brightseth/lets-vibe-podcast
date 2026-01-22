@@ -99,7 +99,7 @@ Find Twitter handles, Farcaster handles, and best contact approach for:
 - Rick Rubin - creativity philosophy
 - Andrej Karpathy - coined "vibe coding"
 - Boris Dayma - Anthropic/Claude team
-- Ian Rogers - Ledger CEO, former Apple Music
+- Ian Rogers - Ledger Chief Experience Officer, former Apple Music
 
 **Tier 1 (Vibe Coding Pioneers):**
 - Peter Steinberger (@steipete) - Clawdbot creator

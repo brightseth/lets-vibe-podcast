@@ -12,7 +12,7 @@ Repo: [github.com/brightseth/lets-vibe-podcast](https://github.com/brightseth/le
 
 **Seth Goldstein** - Founder of Turntable.fm, ROOT, SiteSpecific. Building /vibe, a social layer for Claude Code. Based in SF + Paris.
 
-**Ian Rogers** - CEO of Ledger. Former Chief Digital Officer at LVMH, founder of Topspin Media, built Beats Music. He interviewed Rick Rubin about The Creative Act on Tetragrammaton. Based in Paris.
+**Ian Rogers** - Chief Experience Officer of Ledger. Former Chief Digital Officer at LVMH, founder of Topspin Media, built Beats Music. He interviewed Rick Rubin about The Creative Act on Tetragrammaton. Based in Paris.
 
 **Origin Story:** Ian interviewed Rick Rubin on Tetragrammaton about "The Way of Code: The Timeless Art of Vibecoding" (September 2025). The podcast is a natural extension.
 

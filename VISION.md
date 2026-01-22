@@ -31,7 +31,7 @@
 | Rick Rubin | Legendary producer, creativity philosopher | @RickRubin | - | "The Creative Act" energy, meditation + creation |
 | Andrej Karpathy | AI educator, built AI at Tesla | @karpathy | - | Coined "vibe coding", massive reach |
 | Boris Dayma | Anthropic, Claude team | @borisdayma | @boris | Inside Claude, technical but approachable |
-| Ian Rogers | Ledger CEO, former Apple Music | @iancr | @iancr | Web3 + music + tech, connected to everyone |
+| Ian Rogers | Ledger Chief Experience Officer, former Apple Music | @iancr | @iancr | Web3 + music + tech, connected to everyone |
 
 ### Tier 1: Vibe Coding Pioneers
 

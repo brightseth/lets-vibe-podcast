@@ -1,3 +1,5 @@
+import { SubscribeForm } from "./links/subscribe-form"
+
 const dreamGuests = [
   {
     tier: "Visionaries",
@@ -110,6 +112,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Newsletter Signup */}
+      <section className="border-b border-[var(--border)] bg-[var(--surface)]">
+        <div className="max-w-[700px] mx-auto px-6 py-16">
+          <div className="flex flex-col md:flex-row md:items-center gap-8">
+            <div className="flex-1">
+              <h2 className="text-xl font-light mb-2">Get the daily links</h2>
+              <p className="text-[var(--muted)]">
+                The best of creativity, AI, and vibe coding. Curated daily.
+              </p>
+            </div>
+            <div className="flex-1">
+              <SubscribeForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The Premise */}
       <section className="border-b border-[var(--border)]">
         <div className="max-w-[700px] mx-auto px-6 py-20">
@@ -141,7 +160,7 @@ export default function Home() {
               Former founder of Turntable.fm, ROOT, SiteSpecific.
             </p>
             <p className="leading-relaxed">
-              <strong>Ian</strong> is CEO of Ledger, former Chief Digital Officer at LVMH,
+              <strong>Ian</strong> is Chief Experience Officer of Ledger, former Chief Digital Officer at LVMH,
               built Beats Music, Topspin. He interviewed Rick Rubin about The Creative Act.
             </p>
             <p className="leading-relaxed text-[var(--muted)]">
@@ -601,18 +620,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Next */}
+      {/* Subscribe CTA */}
       <section>
         <div className="max-w-[700px] mx-auto px-6 py-24 text-center">
           <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-4">
             Coming Soon
           </p>
-          <p className="text-2xl font-light mb-8">
+          <p className="text-2xl font-light mb-4">
             Episode 1 launches January 24, 2026
           </p>
-          <p className="text-[var(--muted)]">
-            Let&apos;s vibe.
+          <p className="text-[var(--muted)] mb-8">
+            Subscribe to our daily curated links on creativity, AI, and vibe coding.
           </p>
+          <div className="max-w-md mx-auto">
+            <SubscribeForm />
+          </div>
         </div>
       </section>
     </div>

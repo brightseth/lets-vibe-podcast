@@ -34,7 +34,7 @@
 | Rick Rubin | [@RickRubin](https://twitter.com/RickRubin) | - | Legendary producer | "The Creative Act" energy, creativity philosophy | Through publisher/management |
 | Andrej Karpathy | [@karpathy](https://twitter.com/karpathy) | - | AI educator, ex-Tesla AI | Coined "vibe coding", massive reach (2M+) | Twitter DM, reference his videos |
 | Boris Dayma | [@borisdayma](https://twitter.com/borisdayma) | @boris | Anthropic, Claude team | Inside Claude, approachable | Twitter, reference his threads |
-| Ian Rogers | [@iancr](https://twitter.com/iancr) | @iancr | Ledger CEO, ex-Apple Music | Connected to everyone, web3+music | Known contact, direct ask |
+| Ian Rogers | [@iancr](https://twitter.com/iancr) | @iancr | Ledger Chief Experience Officer, ex-Apple Music | Connected to everyone, web3+music | Known contact, direct ask |
 
 ### Tier 1: Vibe Coding Pioneers
 
