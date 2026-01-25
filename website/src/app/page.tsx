@@ -98,14 +98,14 @@ export default function Home() {
                 <p className="text-xs text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">@seth</p>
               </a>
               <span className="text-2xl text-[var(--muted)]">&</span>
-              <a href="https://x.com/ianrogers" target="_blank" rel="noopener noreferrer" className="text-center group">
+              <a href="https://x.com/iancr" target="_blank" rel="noopener noreferrer" className="text-center group">
                 <img
-                  src="https://unavatar.io/twitter/ianrogers"
+                  src="/ian.png"
                   alt="Ian Rogers"
                   className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-[var(--border)] group-hover:border-[var(--foreground)] transition-colors"
                 />
                 <p className="mt-2 text-sm font-medium">Ian</p>
-                <p className="text-xs text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">@ianrogers</p>
+                <p className="text-xs text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">@iancr</p>
               </a>
             </div>
           </div>
@@ -277,7 +277,7 @@ export default function Home() {
             >
               <div className="flex items-start gap-4">
                 <img
-                  src="https://unavatar.io/twitter/ianrogers"
+                  src="/ian.png"
                   alt="Ian Rogers"
                   className="w-12 h-12 rounded-full object-cover flex-shrink-0"
                 />
@@ -392,7 +392,7 @@ export default function Home() {
               <div className="p-6 bg-[var(--surface-dark)] text-white rounded-lg">
                 <div className="flex items-center gap-4 mb-4">
                   <img
-                    src="https://unavatar.io/twitter/ianrogers"
+                    src="/ian.png"
                     alt="Ian Rogers"
                     className="w-16 h-16 rounded-full object-cover"
                   />
@@ -407,12 +407,12 @@ export default function Home() {
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="https://x.com/ianrogers"
+                    href="https://x.com/iancr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
                   >
-                    @ianrogers &rarr;
+                    @iancr &rarr;
                   </a>
                   <a
                     href="https://fistfulayen.com"
