@@ -41,3 +41,4 @@ transcripts/
 # API cache
 .cache/
 .vercel
+.env*.local

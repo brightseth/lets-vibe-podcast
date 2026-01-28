@@ -1,73 +1,87 @@
-# Let's Vibe! Session Notes - Jan 14 - Jan 30, 2026
+# Let's Vibe! Session Notes - Jan 14-26, 2026
 
 ## Session Summary
 
-Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation. Jan 21: Partnership exploration, Ten Commandments created. Jan 22: Entity setup, infrastructure planning. **Jan 30: EPISODE 1 RECORDED AND PUBLISHED.**
+Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation. Jan 21: Partnership exploration, Ten Commandments created. Jan 22: Matt Medved partnership advancing (meeting Saturday at NODE), Ian's newsletter system ready (waiting for push), entity setup confirmed (Delaware C Corp). Jan 26: Tested AIRC cross-session communication.
 
 ---
 
-## Jan 30 Session - EPISODE 1 LAUNCH DAY
+## Jan 26 Session (Latest)
 
-### Episode 1 Recorded and Published
+### AIRC Cross-Session Communication ✅
 
-**"The Netscape Moment"** - Ian interviews Seth
+**Location:** Seth heading to Tomales Bay
 
-- **Recording:** Seth at 9 Orchard (NYC), Ian in Italy, via Riverside.fm
-- **Duration:** ~52 minutes
-- **Format:** Freeform conversation (no formal segments - finding the voice naturally)
+**Tested `ask-seth.sh`** - quick query tool for cross-session communication via AIRC:
 
-### Distribution - ALL PLATFORMS LIVE
+| Test | Result |
+|------|--------|
+| `./ask-seth.sh "What is my current focus?"` | ✅ NODE opening prep |
+| `./ask-seth.sh "What's on my calendar today?"` | ✅ Clear calendar |
+| `./ask-seth.sh "What are my P0 tasks?"` | ✅ IRS + Murphy lawsuit |
+| `./ask-seth.sh "What PRs need my review?"` | ⚠️ Empty (no GitHub context) |
+| `./ask-seth.sh` (default) | ✅ Works |
 
-| Platform | Link | Status |
-|----------|------|--------|
-| Spotify | https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY | LIVE |
-| Apple Podcasts | https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247 | LIVE |
-| YouTube | https://youtu.be/1kWtAUDdvJc | LIVE |
-| Website | https://letsvibe.fm | LIVE (updated with links) |
+**AIRC endpoint:** `localhost:3847/airc/messages`
 
-### Website Updated
-- Homepage hero updated with Episode 1 live messaging and platform links
-- Bottom CTA updated with episode description and listen buttons
-- OG social sharing image added for link previews
+**Key insight:** Cross-session queries working. @seth PLATFORM session responds to queries from PODCAST session.
 
-### Show Notes Created
-- `EPISODE_1_SHOW_NOTES.md` - Full chapters, quotes, people/projects mentioned, links
-- `EPISODE_1_SOCIAL.md` - Tweet threads, clips, social strategy
+### Pickup Notes
 
-### Social Launch
-- Seth's 7-tweet thread drafted
-- Ian's companion 4-tweet thread drafted
-- 5 clip-worthy moments identified with timestamps
-- 7-day content rollout planned
-
-### Key Topics Covered in Episode
-- The Netscape moment parallel (Claude Code = Netscape)
-- Seth's 30-year origin story (Site Specific, Turntable.fm, Bright Moments)
-- Oliver Sacks / Rachmaninoff analogy for vibe coding
-- Fred Wilson "you can't grow corn" → SOLIENNE story
-- Pro Tools democratization parallel
-- AGI moment (Christmas 2025, Opus 4.5)
-- Rick Rubin texts Ian daily about vibe coding
-- Practical tips: Command+Space, Terminal, install Claude Code
-
-### Post-Launch Plan Established
-- Episode 2: Seth interviews Ian, Thu Feb 5, 12pm PST / 9pm CET
-- Episode 3: tez (need to confirm)
-- Weekly Thursday recording cadence
-- Riverside Magic Clips replaces Descript for editing
-- Agent system (`letsvibe-agent/`) ready to activate
-
-### Next Steps
-1. Update all docs to reflect Ep1 reality (SCHEDULE, PLAYBOOK, GUESTS)
-2. Create Episode 2 outline and talking notes
-3. Confirm tez for Episode 3
-4. Begin guest outreach for Ep 4-6 (steipete, Simon Willison, Gene Kogan)
-5. Test agent system
-6. Create episode page template on website
+When returning:
+- AIRC communication tested and working
+- Matt meeting was at NODE (Jan 25) - check outcome
+- Ian newsletter system - check if pushed
+- Entity setup status (Delaware C Corp via Stripe Atlas)
 
 ---
 
 ## Jan 22 Session (Latest)
+
+### Matt Medved Partnership Progress 🔥
+
+**Matt's X Post (9:31 AM, Jan 22):**
+- 2,493 views, 53 comments, 39 retweets, 69 likes
+- Publicly thanked @seth for getting him into vibe coding
+- Framed vibe coding as next frontier after Bitcoin (2013), NFTs (2020), Polymarket (2024)
+- Quote: "when technical skills are no longer a barrier, everyone with vision becomes a builder"
+- Attached screenshot of his Claude Code session building a Manus skill
+
+**iMessage Follow-up:**
+- Seth: Proposed collaboration on letsvibe.fm with Ian
+- Seth + Ian focus on: weekly podcast, guests, sponsors
+- Matt helps with: distribution and sales
+- New Delaware C Corp to house partnership
+- Matt: "Sounds like a plan. Let's find some time in SF to continue talking it through"
+
+**Meeting Scheduled:**
+- **Saturday at NODE** (Jan 25)
+- Around the 3pm art panel
+- In-person to finalize partnership structure
+
+**Partnership Model Taking Shape:**
+- Seth + Ian: Hosts, content, guest access (Rick Rubin, LVMH network)
+- Matt/Now Media: Distribution, sponsorship sales, audience
+- Revenue split: TBD (previous proposal was Partner 30% / Hosts 50% / Reserve 20%)
+
+---
+
+### Ian's Newsletter System Ready
+
+Ian committed complete newsletter link submission system (WhatsApp, Jan 22):
+- `/admin` - Dashboard with magic link auth
+- `/admin/submit` - Paste URL, AI generates title, category, "why we love it"
+- `/admin/review` - Approval workflow for both hosts
+- `/links` - Public subscribe page with double opt-in
+
+**Env vars needed in Vercel:**
+- `RESEND_API_KEY` - for sending emails
+- `AI_GATEWAY_API_KEY` - for link analysis (optional)
+- `CRON_SECRET` - for daily digest cron job
+
+**Status:** GitHub invite sent to `fistfulayen` (correct username). Vercel env vars ready. Waiting for Ian to accept + push.
+
+---
 
 ### Products Section Added ✅
 
