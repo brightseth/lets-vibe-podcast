@@ -12,7 +12,10 @@
       "Bash(git push:*)",
       "Skill(vibe)",
       "Bash(curl:*)",
-      "Bash(npm run agent:research:*)"
+      "Bash(npm run agent:research:*)",
+      "Bash(git fetch:*)",
+      "Bash(vercel ls:*)",
+      "Bash(./ask-seth.sh:*)"
     ]
   }
 }

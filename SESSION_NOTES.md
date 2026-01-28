@@ -1,12 +1,87 @@
-# Let's Vibe! Session Notes - Jan 14-22, 2026
+# Let's Vibe! Session Notes - Jan 14-26, 2026
 
 ## Session Summary
 
-Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation. Jan 21: Partnership exploration, Ten Commandments created. Jan 22: Entity setup, infrastructure planning.
+Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation. Jan 21: Partnership exploration, Ten Commandments created. Jan 22: Matt Medved partnership advancing (meeting Saturday at NODE), Ian's newsletter system ready (waiting for push), entity setup confirmed (Delaware C Corp). Jan 26: Tested AIRC cross-session communication.
+
+---
+
+## Jan 26 Session (Latest)
+
+### AIRC Cross-Session Communication ✅
+
+**Location:** Seth heading to Tomales Bay
+
+**Tested `ask-seth.sh`** - quick query tool for cross-session communication via AIRC:
+
+| Test | Result |
+|------|--------|
+| `./ask-seth.sh "What is my current focus?"` | ✅ NODE opening prep |
+| `./ask-seth.sh "What's on my calendar today?"` | ✅ Clear calendar |
+| `./ask-seth.sh "What are my P0 tasks?"` | ✅ IRS + Murphy lawsuit |
+| `./ask-seth.sh "What PRs need my review?"` | ⚠️ Empty (no GitHub context) |
+| `./ask-seth.sh` (default) | ✅ Works |
+
+**AIRC endpoint:** `localhost:3847/airc/messages`
+
+**Key insight:** Cross-session queries working. @seth PLATFORM session responds to queries from PODCAST session.
+
+### Pickup Notes
+
+When returning:
+- AIRC communication tested and working
+- Matt meeting was at NODE (Jan 25) - check outcome
+- Ian newsletter system - check if pushed
+- Entity setup status (Delaware C Corp via Stripe Atlas)
 
 ---
 
 ## Jan 22 Session (Latest)
+
+### Matt Medved Partnership Progress 🔥
+
+**Matt's X Post (9:31 AM, Jan 22):**
+- 2,493 views, 53 comments, 39 retweets, 69 likes
+- Publicly thanked @seth for getting him into vibe coding
+- Framed vibe coding as next frontier after Bitcoin (2013), NFTs (2020), Polymarket (2024)
+- Quote: "when technical skills are no longer a barrier, everyone with vision becomes a builder"
+- Attached screenshot of his Claude Code session building a Manus skill
+
+**iMessage Follow-up:**
+- Seth: Proposed collaboration on letsvibe.fm with Ian
+- Seth + Ian focus on: weekly podcast, guests, sponsors
+- Matt helps with: distribution and sales
+- New Delaware C Corp to house partnership
+- Matt: "Sounds like a plan. Let's find some time in SF to continue talking it through"
+
+**Meeting Scheduled:**
+- **Saturday at NODE** (Jan 25)
+- Around the 3pm art panel
+- In-person to finalize partnership structure
+
+**Partnership Model Taking Shape:**
+- Seth + Ian: Hosts, content, guest access (Rick Rubin, LVMH network)
+- Matt/Now Media: Distribution, sponsorship sales, audience
+- Revenue split: TBD (previous proposal was Partner 30% / Hosts 50% / Reserve 20%)
+
+---
+
+### Ian's Newsletter System Ready
+
+Ian committed complete newsletter link submission system (WhatsApp, Jan 22):
+- `/admin` - Dashboard with magic link auth
+- `/admin/submit` - Paste URL, AI generates title, category, "why we love it"
+- `/admin/review` - Approval workflow for both hosts
+- `/links` - Public subscribe page with double opt-in
+
+**Env vars needed in Vercel:**
+- `RESEND_API_KEY` - for sending emails
+- `AI_GATEWAY_API_KEY` - for link analysis (optional)
+- `CRON_SECRET` - for daily digest cron job
+
+**Status:** GitHub invite sent to `fistfulayen` (correct username). Vercel env vars ready. Waiting for Ian to accept + push.
+
+---
 
 ### Products Section Added ✅
 
