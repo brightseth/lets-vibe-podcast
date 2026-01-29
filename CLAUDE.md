@@ -140,3 +140,6 @@ See `PRODUCTION_PLAYBOOK.md` for full details.
 
 *Project: ~/Projects/lets-vibe-podcast*
 *Website: https://letsvibe.fm*
+
+## Git Workflow
+Always commit and push changes before ending a session. Seth works across multiple machines (desktop/laptop).
