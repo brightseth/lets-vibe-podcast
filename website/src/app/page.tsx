@@ -71,19 +71,32 @@ export default function Home() {
               </h1>
               <p className="text-xl md:text-2xl text-[var(--muted)] leading-relaxed mb-8">
                 Weekly conversations with creators building at the intersection of AI and creativity.
+                <span className="block mt-2 text-lg">Episode 1: The Netscape Moment is live.</span>
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="#canon"
+                  href="https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-3 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
                 >
-                  Start with the Canon
+                  Listen on Spotify
                 </a>
                 <a
-                  href="#guests"
+                  href="https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
                 >
-                  See Dream Guests
+                  Apple Podcasts
+                </a>
+                <a
+                  href="https://youtu.be/1kWtAUDdvJc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+                >
+                  YouTube
                 </a>
               </div>
             </div>
@@ -624,12 +637,41 @@ export default function Home() {
       <section>
         <div className="max-w-[700px] mx-auto px-6 py-24 text-center">
           <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-4">
-            Coming Soon
+            Episode 1 — The Netscape Moment
           </p>
           <p className="text-2xl font-light mb-4">
-            Episode 1 launches January 24, 2026
+            Live now.
           </p>
-          <p className="text-[var(--muted)] mb-8">
+          <p className="text-[var(--muted)] mb-6">
+            Seth and Ian kick off the show with the origin story. 30 years of building, imposter syndrome, the Oliver Sacks piano analogy, and why the terminal is the future.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            <a
+              href="https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              Spotify
+            </a>
+            <a
+              href="https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+            >
+              Apple Podcasts
+            </a>
+            <a
+              href="https://youtu.be/1kWtAUDdvJc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+            >
+              YouTube
+            </a>
+          </div>
+          <p className="text-sm text-[var(--muted)] mb-8">
             Subscribe to our daily curated links on creativity, AI, and vibe coding.
           </p>
           <div className="max-w-md mx-auto">
