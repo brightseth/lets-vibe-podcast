@@ -237,14 +237,6 @@ export default function Home() {
                 </div>
               </div>
             ))}
-            <div>
-              <h3 className="text-sm uppercase tracking-wide text-[var(--muted)] mb-6">
-                Ian&apos;s Network
-              </h3>
-              <p className="text-[var(--muted)]">
-                LVMH, Beats, Apple Music, Ledger ecosystem
-              </p>
-            </div>
           </div>
         </div>
       </section>
