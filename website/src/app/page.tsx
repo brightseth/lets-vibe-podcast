@@ -431,7 +431,7 @@ export default async function Home() {
                   />
                   <div>
                     <h3 className="text-lg font-medium">Ian Rogers</h3>
-                    <p className="text-gray-400 text-sm">CEO of Ledger · Co-host of Let&apos;s Vibe!</p>
+                    <p className="text-gray-400 text-sm">CXO of Ledger · Co-host of Let&apos;s Vibe!</p>
                   </div>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
