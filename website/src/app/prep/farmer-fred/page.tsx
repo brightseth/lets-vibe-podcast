@@ -337,8 +337,9 @@ export default function FarmerFredTutorial() {
                 Let the audience hear a real conversation with an AI agent.
               </p>
               <p className="text-2xl font-mono text-blue-400">
-                [Fred&apos;s phone number TBD]
+                (515) 827-2463
               </p>
+              <p className="text-xs text-gray-500 mt-2">515 = Iowa area code</p>
             </div>
 
             <div className="bg-gray-900 p-4 rounded-lg">
