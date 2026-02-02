@@ -15,6 +15,12 @@ export function Header() {
           {/* Minimal nav */}
           <nav className="flex items-center gap-6">
             <Link
+              href="/clips"
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+            >
+              Clips
+            </Link>
+            <Link
               href="/#canon"
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
             >
