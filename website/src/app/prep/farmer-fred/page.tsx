@@ -5,7 +5,7 @@ export default function FarmerFredTutorial() {
       <header className="border-b border-gray-800 py-8">
         <div className="max-w-[700px] mx-auto px-6">
           <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
-            Tutorial Prep &middot; Work in Progress
+            Tutorial Prep &middot; Seth + Matt Review
           </p>
           <h1 className="text-4xl font-light">
             From Email to Phone Calls
@@ -14,7 +14,7 @@ export default function FarmerFredTutorial() {
             Building an AI agent people actually want to talk to
           </p>
           <p className="text-sm text-gray-600 mt-4">
-            15 min tutorial segment &middot; Let&apos;s Vibe! Episode TBD
+            15 min tutorial segment &middot; Let&apos;s Vibe! Episode 2
           </p>
         </div>
       </header>
@@ -222,10 +222,19 @@ export default function FarmerFredTutorial() {
                   <span>Not Twilio TTS. Twilio is just the phone line. Audio processing happens elsewhere.</span>
                 </li>
               </ul>
-              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400">
-                <p className="text-gray-500 mb-1">// POST /voice/incoming &rarr; returns TwiML</p>
-                <p>{`<Stream url="wss://your-worker/voice/ws"/>`}</p>
-                <p className="text-gray-500 mt-2">// Show: farmer-fred/src/voice.ts incoming handler</p>
+              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400 overflow-x-auto">
+                <p className="text-gray-500 mb-1">// tools/twilio.ts &mdash; TwiML that opens the WebSocket</p>
+                <pre className="whitespace-pre">{`export function twimlConnect(wsUrl: string, callSid: string) {
+  return \`<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Connect>
+    <Stream url="\${wsUrl}?callSid=\${callSid}">
+      <Parameter name="callSid" value="\${callSid}" />
+    </Stream>
+  </Connect>
+</Response>\`;
+}`}</pre>
+                <p className="text-gray-500 mt-3">// farmer-fred/src/tools/twilio.ts (154 lines)</p>
               </div>
             </div>
 
@@ -246,10 +255,35 @@ export default function FarmerFredTutorial() {
                   <span>This is the glue. Twilio speaks mulaw, ElevenLabs speaks base64. The DO translates.</span>
                 </li>
               </ul>
-              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400">
-                <p className="text-gray-500 mb-1">// The magic: two WebSockets bridged in a Durable Object</p>
-                <p>Twilio &rarr; user_audio_chunk &rarr; ElevenLabs</p>
-                <p>ElevenLabs &rarr; audio_event.audio_base_64 &rarr; Twilio</p>
+              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400 overflow-x-auto">
+                <p className="text-gray-500 mb-1">// voice.ts &mdash; FarmerFredCall Durable Object</p>
+                <pre className="whitespace-pre">{`export class FarmerFredCall {
+  private twilioWs: WebSocket | null = null;
+  private elevenLabsWs: WebSocket | null = null;
+  private callSid: string = "";
+  private transcript: TranscriptEntry[] = [];
+
+  // Twilio sends media event → forward to ElevenLabs
+  case "media":
+    if (msg.media?.payload && this.elevenLabsWs) {
+      this.elevenLabsWs.send(JSON.stringify({
+        user_audio_chunk: msg.media.payload,
+      }));
+    }
+    break;
+
+  // ElevenLabs sends audio back → forward to Twilio
+  case "audio":
+    if (this.twilioWs) {
+      this.twilioWs.send(JSON.stringify({
+        event: "media",
+        streamSid: this.streamSid,
+        media: { payload: audioEvent.audio_base_64 },
+      }));
+    }
+    break;
+}`}</pre>
+                <p className="text-gray-500 mt-3">// farmer-fred/src/voice.ts (1,540 lines)</p>
               </div>
             </div>
 
@@ -274,12 +308,37 @@ export default function FarmerFredTutorial() {
                   <span>Fred&apos;s constitution is baked into the ElevenLabs agent prompt. Same personality, voice interface.</span>
                 </li>
               </ul>
-              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400">
-                <p className="text-gray-500 mb-1">// Server tools ElevenLabs can call mid-conversation:</p>
-                <p>/voice/tools/weather &nbsp;&mdash; current conditions</p>
-                <p>/voice/tools/status &nbsp;&nbsp;&mdash; farm operations</p>
-                <p>/voice/tools/calls &nbsp;&nbsp;&mdash; recent call history</p>
-                <p>/voice/tools/community &mdash; HN feedback, partnerships</p>
+              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400 overflow-x-auto">
+                <p className="text-gray-500 mb-1">// voice.ts &mdash; ElevenLabs signed URL + agent config</p>
+                <pre className="whitespace-pre">{`// 1. Get signed URL from ElevenLabs
+const res = await fetch(
+  \`https://api.elevenlabs.io/v1/convai/conversation/get_signed_url?agent_id=\${agentId}\`,
+  { headers: { "xi-api-key": apiKey } }
+);
+const { signed_url } = await res.json();
+
+// 2. Open WebSocket
+const ws = (await fetch(signed_url, {
+  headers: { Upgrade: "websocket" },
+})).webSocket;
+ws.accept();
+
+// 3. Send config with Fred's personality + tools
+ws.send(JSON.stringify({
+  type: "conversation_initiation_client_data",
+  conversation_config_override: {
+    agent: {
+      prompt: { prompt: this.buildPrompt() },
+      first_message: "Hi, this is Farmer Fred. How can I help?",
+    },
+    tools: [
+      { name: "get_weather", url: "/voice/tools/weather" },
+      { name: "get_farm_status", url: "/voice/tools/status" },
+      { name: "get_recent_calls", url: "/voice/tools/calls" },
+      { name: "get_community", url: "/voice/tools/community" },
+    ],
+  },
+}));`}</pre>
               </div>
             </div>
 
@@ -308,12 +367,31 @@ export default function FarmerFredTutorial() {
                   <span>Next call: learnings loaded into Fred&apos;s context. He evolves with every conversation.</span>
                 </li>
               </ul>
-              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400">
-                <p className="text-gray-500 mb-1">// KV keys (the entire memory system)</p>
-                <p>call:{'{sid}'} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; transcript + summary</p>
-                <p>calls:index &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; call history (500 max)</p>
-                <p>learnings:calls &nbsp;&mdash; aggregated topics</p>
-                <p>task:call:{'{id}'} &nbsp;&nbsp;&mdash; extracted action items</p>
+              <div className="mt-4 p-3 bg-gray-800 rounded text-sm font-mono text-green-400 overflow-x-auto">
+                <p className="text-gray-500 mb-1">// voice.ts &mdash; Post-call analysis with Claude Sonnet</p>
+                <pre className="whitespace-pre">{`// After call ends, Claude analyzes the transcript:
+const analysis = await fetch("https://api.anthropic.com/v1/messages", {
+  body: JSON.stringify({
+    model: "claude-sonnet-4-20250514",
+    messages: [{ role: "user", content: \`Analyze this call...
+      Respond with JSON:
+      {
+        "summary": "One sentence",
+        "actionItems": ["..."],
+        "callerIntent": "inquiry|partnership|farming|media",
+        "keyTopics": ["..."]
+      }\`
+    }],
+  }),
+});
+
+// Store in KV:
+// call:{sid}         — transcript + AI summary
+// calls:index        — call history (500 max)
+// learnings:calls    — aggregated topics → next call's prompt
+// task:call:{id}     — extracted action items
+
+// Email summary to governance council automatically`}</pre>
               </div>
             </div>
           </div>
@@ -366,6 +444,77 @@ export default function FarmerFredTutorial() {
                   <span><strong className="text-white">You can build this tonight.</strong> Twilio + Claude + ElevenLabs. The code is on GitHub.</span>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fred's Constitution */}
+      <section className="border-b border-gray-800 py-12">
+        <div className="max-w-[700px] mx-auto px-6">
+          <div className="flex items-baseline gap-4 mb-8">
+            <span className="text-sm text-gray-600 font-mono">REFERENCE</span>
+            <h2 className="text-2xl font-light">Fred&apos;s Constitution</h2>
+          </div>
+          <p className="text-sm text-gray-500 mb-6">
+            The 6 principles with weights &mdash; from constitution.ts (317 lines).
+            This is what makes Fred principled, not just prompted.
+          </p>
+
+          <div className="space-y-3">
+            {[
+              ["1.0", "Fiduciary Duty", "Best interest of project, transparent decision-making, logged rationale"],
+              ["0.9", "Regenerative Agriculture", "Soil health > yield, carbon footprint, water conservation, biodiversity"],
+              ["0.8", "Sustainable Practices", "Organic methods when viable, minimize chemicals, long-term land health"],
+              ["0.7", "Global Citizenship", "Not US-dependent, respect local farming, learn from traditional wisdom"],
+              ["1.0", "Full Transparency", "All decisions public, budget visible, vendor relationships disclosed"],
+              ["0.8", "Human-Agent Collaboration", "Natural language interfaces, clear handoffs, respect human expertise"],
+            ].map(([weight, name, desc]) => (
+              <div key={name} className="flex gap-4 p-4 bg-gray-900 rounded-lg">
+                <span className="text-green-400 font-mono text-sm flex-shrink-0 w-8 text-right">{weight}</span>
+                <div>
+                  <p className="text-white font-medium text-sm">{name}</p>
+                  <p className="text-gray-400 text-sm">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-green-900/20 border border-green-800 p-4 rounded-lg">
+              <h3 className="text-sm uppercase tracking-wide text-green-400 mb-3">Fred CAN Do Alone</h3>
+              <ul className="space-y-1 text-gray-300 text-xs">
+                <li>&bull; Weather monitoring &amp; data logging</li>
+                <li>&bull; Routine vendor communications</li>
+                <li>&bull; Receiving inbound phone calls</li>
+                <li>&bull; Email responses</li>
+                <li>&bull; Budget tracking &amp; daily reports</li>
+                <li>&bull; Post-call summaries to council</li>
+              </ul>
+            </div>
+            <div className="bg-red-900/20 border border-red-800 p-4 rounded-lg">
+              <h3 className="text-sm uppercase tracking-wide text-red-400 mb-3">Fred MUST Get Approval</h3>
+              <ul className="space-y-1 text-gray-300 text-xs">
+                <li>&bull; Land leases &amp; payments &gt;$500</li>
+                <li>&bull; Strategic pivots</li>
+                <li>&bull; Vendor contracts &amp; equipment</li>
+                <li>&bull; Initiating outbound calls</li>
+                <li>&bull; Hiring decisions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-6 bg-gray-900 p-4 rounded-lg">
+            <h3 className="text-sm uppercase tracking-wide text-gray-500 mb-3">Governance Council</h3>
+            <div className="flex gap-8 text-sm">
+              <div>
+                <p className="text-white font-medium">Seth Goldstein</p>
+                <p className="text-gray-400">Founder &mdash; final approval on leases, payments, pivots</p>
+              </div>
+              <div>
+                <p className="text-white font-medium">Joe Nelson</p>
+                <p className="text-gray-400">CEO of Roboflow &mdash; farming expertise, Iowa land, April planting</p>
+              </div>
             </div>
           </div>
         </div>
@@ -425,19 +574,23 @@ export default function FarmerFredTutorial() {
             </div>
             <div className="flex items-start gap-3 p-3 bg-green-900/20 border border-green-800 rounded-lg">
               <span className="text-green-400 flex-shrink-0 mt-0.5">&#10003;</span>
-              <span className="text-gray-300 text-sm">Code location: proof-of-corn/farmer-fred/src/voice.ts (being built now)</span>
+              <span className="text-gray-300 text-sm">Code: farmer-fred/src/voice.ts (1,540 lines), tools/twilio.ts (154 lines), constitution.ts (317 lines)</span>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-green-900/20 border border-green-800 rounded-lg">
+              <span className="text-green-400 flex-shrink-0 mt-0.5">&#10003;</span>
+              <span className="text-gray-300 text-sm">Fred&apos;s phone number confirmed: (515) 827-2463 (Iowa area code)</span>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-green-900/20 border border-green-800 rounded-lg">
+              <span className="text-green-400 flex-shrink-0 mt-0.5">&#10003;</span>
+              <span className="text-gray-300 text-sm">Tutorial assigned to Episode 2 (Seth interviews Ian, Feb 6)</span>
             </div>
             <div className="flex items-start gap-3 p-3 bg-yellow-900/20 border border-yellow-800 rounded-lg">
               <span className="text-yellow-400 flex-shrink-0 mt-0.5">?</span>
-              <span className="text-gray-300 text-sm">Fred&apos;s phone number for live demo &mdash; ask other session</span>
+              <span className="text-gray-300 text-sm">Decide with Matt: standalone tutorial or integrated into Ian conversation?</span>
             </div>
             <div className="flex items-start gap-3 p-3 bg-yellow-900/20 border border-yellow-800 rounded-lg">
               <span className="text-yellow-400 flex-shrink-0 mt-0.5">?</span>
-              <span className="text-gray-300 text-sm">Which episode does this tutorial attach to?</span>
-            </div>
-            <div className="flex items-start gap-3 p-3 bg-yellow-900/20 border border-yellow-800 rounded-lg">
-              <span className="text-yellow-400 flex-shrink-0 mt-0.5">?</span>
-              <span className="text-gray-300 text-sm">Get voice.ts code once committed for code screenshots</span>
+              <span className="text-gray-300 text-sm">Verify Fred is answering calls &mdash; test before recording day</span>
             </div>
           </div>
         </div>
@@ -446,9 +599,14 @@ export default function FarmerFredTutorial() {
       {/* Footer */}
       <footer className="py-8">
         <div className="max-w-[700px] mx-auto px-6 text-center text-gray-600 text-sm">
-          <a href="/prep" className="hover:text-gray-400 transition-colors">
-            &larr; Back to Prep
-          </a>
+          <div className="flex justify-center gap-6">
+            <a href="/prep" className="hover:text-gray-400 transition-colors">
+              Ep 1 Prep
+            </a>
+            <a href="/prep/episode-2" className="hover:text-gray-400 transition-colors">
+              Ep 2 Prep
+            </a>
+          </div>
           <p className="mt-4">Internal prep page &middot; Not linked from public site</p>
         </div>
       </footer>
