@@ -1,3 +1,25 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Farmer Fred Tutorial — From Email to Phone Calls | Let's Vibe!",
+  description:
+    "How we gave an AI corn farmer a phone number. Twilio Media Streams + ElevenLabs Conversational AI + Cloudflare Durable Objects. 15-min tutorial prep.",
+  openGraph: {
+    title: "From Email to Phone Calls — Farmer Fred Tutorial",
+    description:
+      "Building an AI agent people actually want to talk to. Twilio + ElevenLabs + Cloudflare Durable Objects + KV memory.",
+    url: "https://letsvibe.fm/prep/farmer-fred",
+    siteName: "Let's Vibe!",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "From Email to Phone Calls — Farmer Fred Tutorial",
+    description:
+      "How we gave an AI corn farmer a phone number. 15-min tutorial walkthrough.",
+  },
+};
+
 export default function FarmerFredTutorial() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">

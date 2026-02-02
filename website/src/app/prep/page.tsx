@@ -1,3 +1,25 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Episode 1 Prep — Ian Interviews Seth | Let's Vibe!",
+  description:
+    "Recording prep for Episode 1: The Netscape Moment. 131 days of vibe coding, 13 billion tokens, Turntable.fm to SOLIENNE. The full Seth Goldstein arc.",
+  openGraph: {
+    title: "Episode 1: Ian Interviews Seth — Recording Prep",
+    description:
+      "131 days, 13 billion tokens, 45 git repos. From Turntable.fm to building an autonomous AI artist at Paris Photo.",
+    url: "https://letsvibe.fm/prep",
+    siteName: "Let's Vibe!",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Episode 1: Ian Interviews Seth — Recording Prep",
+    description:
+      "The 30-year arc: Turntable.fm → ROOT → Eden → SOLIENNE. 131 days of vibe coding.",
+  },
+};
+
 export default function PrepPage() {
   return (
     <div className="min-h-screen">

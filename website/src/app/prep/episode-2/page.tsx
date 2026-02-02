@@ -1,3 +1,25 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Episode 2 Prep — Seth Interviews Ian | Let's Vibe!",
+  description:
+    "Recording prep for Episode 2. Seth interviews Ian Rogers about Beats Music, LVMH, Ledger, Rick Rubin's daily vibe coding texts, and the return to building.",
+  openGraph: {
+    title: "Episode 2: Seth Interviews Ian — Recording Prep",
+    description:
+      "Beats Music, LVMH, Ledger, Rick Rubin texts, and the vibe coding awakening. Full interview structure + bookmarkable moments.",
+    url: "https://letsvibe.fm/prep/episode-2",
+    siteName: "Let's Vibe!",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Episode 2: Seth Interviews Ian — Recording Prep",
+    description:
+      "Beats Music → Apple Music → LVMH → Ledger → vibe coding. The full Ian Rogers arc.",
+  },
+};
+
 export default function Episode2Prep() {
   return (
     <div className="min-h-screen">
