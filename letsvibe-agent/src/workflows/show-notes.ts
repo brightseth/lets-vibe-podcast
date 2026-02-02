@@ -186,7 +186,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
   // Demo output
   const demoNotes: ShowNotes = {
-    summary: 'In this episode, Seth and Lukas talk with tez about AI-optimistic building, digital art collecting, and why we need more builders embracing AI tools.',
+    summary: 'In this episode, Seth and Ian talk with tez about AI-optimistic building, digital art collecting, and why we need more builders embracing AI tools.',
     topics: ['AI optimism in art', 'Building vs. criticizing', 'The collector perspective on AI art'],
     timestamps: [
       { time: '00:00:00', label: '"The best time to start building with AI was yesterday"', isClipWorthy: true },

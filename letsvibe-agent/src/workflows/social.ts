@@ -274,7 +274,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   };
 
   const demoNotes: ShowNotes = {
-    summary: 'tez joins Seth and Lukas to discuss why the digital art community needs more builders embracing AI tools.',
+    summary: 'tez joins Seth and Ian to discuss why the digital art community needs more builders embracing AI tools.',
     topics: [
       'AI optimism in digital art',
       'Building vs. endless debates',

@@ -457,7 +457,7 @@ export async function generateIntroOutro(customText?: {
   intro?: string;
   outro?: string;
 }): Promise<{ intro: string; outro: string }> {
-  const defaultIntro = "Welcome to Let's Vibe, the podcast for creative folks learning to vibe code. I'm Seth Goldstein, here with Lukas Amacher, and today we're talking with some incredible builders.";
+  const defaultIntro = "Welcome to Let's Vibe, the podcast for creative folks learning to vibe code. I'm Seth Goldstein, here with Ian Rogers, and today we're talking with some incredible builders.";
 
   const defaultOutro = "Thanks for vibing with us. If you enjoyed this episode, subscribe wherever you listen to podcasts, and share it with a friend who's curious about AI-assisted creativity. See you next week.";
 

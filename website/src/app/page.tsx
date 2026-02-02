@@ -1,4 +1,21 @@
-import { SubscribeForm } from "./links/subscribe-form"
+import { SubscribeForm } from "./links/subscribe-form";
+import { createAdminClient } from "@/lib/supabase/admin";
+
+async function getLatestEpisode() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SECRET_KEY;
+  if (!url || !key) return null;
+
+  const supabase = createAdminClient();
+  const { data } = await supabase
+    .from("episodes")
+    .select("number, title, slug, description, spotify_url, apple_url, youtube_url")
+    .eq("status", "published")
+    .order("number", { ascending: false })
+    .limit(1)
+    .single();
+  return data;
+}
 
 const dreamGuests = [
   {
@@ -51,11 +68,12 @@ const toolsWeUse = [
   { name: "Claude Code", url: "https://claude.ai/claude-code", note: "The vibe coding IDE" },
   { name: "/vibe", url: "https://slashvibe.dev", note: "Social layer for Claude Code" },
   { name: "Cursor", url: "https://cursor.com", note: "AI-first code editor" },
-  { name: "Descript", url: "https://descript.com", note: "Text-based podcast editing" },
-  { name: "Riverside", url: "https://riverside.fm", note: "Remote recording" },
+  { name: "Riverside", url: "https://riverside.fm", note: "Recording, editing, clips" },
 ];
 
-export default function Home() {
+export default async function Home() {
+  const latestEpisode = await getLatestEpisode();
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -71,11 +89,21 @@ export default function Home() {
               </h1>
               <p className="text-xl md:text-2xl text-[var(--muted)] leading-relaxed mb-8">
                 Weekly conversations with creators building at the intersection of AI and creativity.
-                <span className="block mt-2 text-lg">Episode 1: The Netscape Moment is live.</span>
+                <span className="block mt-2 text-lg">
+                  {latestEpisode ? (
+                    <a href={`/episodes/${latestEpisode.slug}`} className="hover:text-[var(--foreground)] transition-colors">
+                      Episode {latestEpisode.number}: {latestEpisode.title} is live.
+                    </a>
+                  ) : (
+                    <a href="/episodes/the-netscape-moment" className="hover:text-[var(--foreground)] transition-colors">
+                      Episode 1: The Netscape Moment is live.
+                    </a>
+                  )}
+                </span>
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"
+                  href={latestEpisode?.spotify_url || "https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
@@ -83,7 +111,7 @@ export default function Home() {
                   Listen on Spotify
                 </a>
                 <a
-                  href="https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"
+                  href={latestEpisode?.apple_url || "https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
@@ -91,7 +119,7 @@ export default function Home() {
                   Apple Podcasts
                 </a>
                 <a
-                  href="https://youtu.be/1kWtAUDdvJc"
+                  href={latestEpisode?.youtube_url || "https://youtu.be/1kWtAUDdvJc"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
@@ -629,17 +657,17 @@ export default function Home() {
       <section>
         <div className="max-w-[700px] mx-auto px-6 py-24 text-center">
           <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-4">
-            Episode 1 — The Netscape Moment
+            Episode {latestEpisode?.number || 1} — {latestEpisode?.title || "The Netscape Moment"}
           </p>
           <p className="text-2xl font-light mb-4">
             Live now.
           </p>
           <p className="text-[var(--muted)] mb-6">
-            Seth and Ian kick off the show with the origin story. 30 years of building, imposter syndrome, the Oliver Sacks piano analogy, and why the terminal is the future.
+            {latestEpisode?.description || "Seth and Ian kick off the show with the origin story. 30 years of building, imposter syndrome, the Oliver Sacks piano analogy, and why the terminal is the future."}
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             <a
-              href="https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"
+              href={latestEpisode?.spotify_url || "https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
@@ -647,7 +675,7 @@ export default function Home() {
               Spotify
             </a>
             <a
-              href="https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"
+              href={latestEpisode?.apple_url || "https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
@@ -655,7 +683,7 @@ export default function Home() {
               Apple Podcasts
             </a>
             <a
-              href="https://youtu.be/1kWtAUDdvJc"
+              href={latestEpisode?.youtube_url || "https://youtu.be/1kWtAUDdvJc"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"

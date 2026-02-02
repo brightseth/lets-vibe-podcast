@@ -201,7 +201,7 @@ export default function Backstage() {
               <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Wednesday</span>
               <div>
                 <p className="font-medium">Edit</p>
-                <p className="text-gray-400 text-sm">Edit in Descript, agent generates show notes from transcript</p>
+                <p className="text-gray-400 text-sm">Riverside Magic Editor + agent generates show notes from transcript</p>
               </div>
             </div>
             <div className="flex gap-4 items-start p-4 bg-gray-900 rounded-lg">
@@ -321,7 +321,7 @@ export default function Backstage() {
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-3 font-medium text-green-400">Tools</td>
-                  <td className="py-3">Cursor, Descript, Riverside</td>
+                  <td className="py-3">Cursor, Riverside, /vibe</td>
                   <td className="py-3 text-gray-500">Direct user acquisition</td>
                 </tr>
                 <tr>
@@ -485,13 +485,13 @@ export default function Backstage() {
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-3">Editing</td>
-                  <td className="py-3">Descript</td>
-                  <td className="py-3 text-gray-500">Text-based editing, AI cleanup</td>
+                  <td className="py-3">Riverside Magic Editor</td>
+                  <td className="py-3 text-gray-500">AI filler removal, enhancement</td>
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-3">Clip Generation</td>
-                  <td className="py-3">OpusClip + Agent</td>
-                  <td className="py-3 text-gray-500">AI-powered viral clip finder</td>
+                  <td className="py-3">Riverside Magic Clips</td>
+                  <td className="py-3 text-gray-500">AI-powered clip generation with captions</td>
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-3">Hosting</td>
@@ -552,28 +552,28 @@ export default function Backstage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-4 text-yellow-400">Pending</h3>
+              <h3 className="text-lg font-medium mb-4 text-green-400">Post-Launch</h3>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
-                  <span className="text-yellow-400">○</span> Deploy Supabase (schema ready)
+                  <span className="text-green-400">✓</span> Supabase deployed
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-yellow-400">○</span> Register @letsvibepod on Twitter
+                  <span className="text-green-400">✓</span> Riverside.fm recording
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-yellow-400">○</span> Set up Riverside.fm room
+                  <span className="text-green-400">✓</span> Episode 1 recorded (Jan 30)
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-yellow-400">○</span> Book recording with Ian
+                  <span className="text-green-400">✓</span> Spotify for Creators live
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-yellow-400">○</span> Ian's Rick Rubin ask
+                  <span className="text-green-400">✓</span> Apple Podcasts live
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-yellow-400">○</span> Spotify for Creators setup
+                  <span className="text-green-400">✓</span> YouTube live
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-yellow-400">○</span> Finalize distribution partnership
+                  <span className="text-yellow-400">○</span> Episode 2 (Feb 6)
                 </li>
               </ul>
             </div>
@@ -588,38 +588,31 @@ export default function Backstage() {
 
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Jan 21-22</span>
+              <span className="text-green-400 font-mono text-sm w-24 flex-shrink-0">Jan 30</span>
               <div>
-                <p className="font-medium">Record Episode 1</p>
-                <p className="text-gray-400 text-sm">Seth + Ian, "The Vibe Coding Moment"</p>
+                <p className="font-medium text-green-400">Episode 1 LIVE</p>
+                <p className="text-gray-400 text-sm">Seth + Ian, &ldquo;The Netscape Moment&rdquo; — Spotify, Apple, YouTube</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
-              <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Jan 23</span>
+              <span className="text-yellow-400 font-mono text-sm w-24 flex-shrink-0">Feb 6</span>
               <div>
-                <p className="font-medium">Post-Production</p>
-                <p className="text-gray-400 text-sm">Edit in Descript, agent generates show notes + clips</p>
+                <p className="font-medium text-yellow-400">Episode 2</p>
+                <p className="text-gray-400 text-sm">Seth interviews Ian — LVMH, Beats Music, Rick Rubin</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
-              <span className="text-yellow-400 font-mono text-sm w-24 flex-shrink-0">Jan 24</span>
+              <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Feb 13</span>
               <div>
-                <p className="font-medium text-yellow-400">PUBLISH</p>
-                <p className="text-gray-400 text-sm">NODE Public Opening (1000+ RSVPs) - maximum visibility</p>
+                <p className="font-medium">Episode 3</p>
+                <p className="text-gray-400 text-sm">tez — first outside guest (confirmed)</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
-              <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Jan 25-26</span>
+              <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Feb-Mar</span>
               <div>
-                <p className="font-medium">Promote at NODE</p>
-                <p className="text-gray-400 text-sm">Talks + Party - in-person audience</p>
-              </div>
-            </div>
-            <div className="flex gap-4 items-start">
-              <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Feb</span>
-              <div>
-                <p className="font-medium">Establish Rhythm</p>
-                <p className="text-gray-400 text-sm">Episodes 2-4, weekly cadence</p>
+                <p className="font-medium">Weekly Cadence</p>
+                <p className="text-gray-400 text-sm">Thursday recordings, Tuesday drops, guest outreach pipeline</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
@@ -633,7 +626,7 @@ export default function Backstage() {
               <span className="text-gray-500 font-mono text-sm w-24 flex-shrink-0">Q2</span>
               <div>
                 <p className="font-medium">Scale</p>
-                <p className="text-gray-400 text-sm">Distribution expansion, add video</p>
+                <p className="text-gray-400 text-sm">3-segment format, distribution expansion</p>
               </div>
             </div>
           </div>

@@ -87,30 +87,29 @@
 
 | Tool | Use Case | Cost | Notes |
 |------|----------|------|-------|
-| **Descript** | Primary editing | $24/mo Pro | Text-based editing, filler word removal |
-| **AI features** | Studio Sound, Eye Contact | Included | Noise removal, enhancement |
+| **Riverside Magic Editor** | Primary editing | Included in Pro | AI filler word removal, enhancement |
 
-**Descript Workflow:**
-1. Import Riverside recording
-2. Auto-transcribe
-3. Edit transcript (edits audio automatically)
-4. Remove filler words (one click)
-5. Apply Studio Sound enhancement
-6. Export
+**Riverside Workflow:**
+1. Record in Riverside (separate tracks per speaker)
+2. Use Magic Editor for auto filler word removal
+3. Review and trim any off-topic sections
+4. Export final audio + video
+
+**Note:** Descript removed from stack. Riverside handles filler removal and basic editing natively, eliminating the need for a separate editing tool.
 
 ### Clip Generation
 
 | Tool | Use Case | Cost | Notes |
 |------|----------|------|-------|
-| **OpusClip** | AI clip generation | $29/mo Pro | Auto-generates viral clips with captions |
-| **Descript** | Manual clips | Included | For curated selections |
+| **Riverside Magic Clips** | AI clip generation | Included in Pro | Auto-generates clips with captions |
+| **OpusClip** | Backup clip generation | $29/mo Pro | Alternative if needed |
 
-**OpusClip Workflow:**
-1. Upload full episode
-2. AI identifies "viral moments"
-3. Auto-generates 30-60 second clips
-4. Auto-captions in 20+ languages
-5. Export for social
+**Riverside Magic Clips Workflow:**
+1. After recording, Riverside auto-identifies key moments
+2. AI generates 30-60 second clips with captions
+3. Review and select top 3-5 clips
+4. Export for social (vertical format ready)
+5. Stagger releases across the week
 
 ### Hosting & Distribution
 
@@ -163,14 +162,13 @@ From that episode:
 - Format: Guest segment → Vibe Check → Tutorial
 
 ### Day 1-2 (Post-Production)
-- Import to Descript
-- Remove filler words
-- Apply Studio Sound
-- Basic cleanup
-- **Time:** ~2 hours
+- Riverside auto-processes Magic Episode (filler removal, enhancement)
+- Review and trim if needed
+- Export final audio + video
+- **Time:** ~1 hour
 
 ### Day 3 (Clips + Assets)
-- Run through OpusClip
+- Review Riverside Magic Clips
 - Select 3-5 best clips
 - Create episode thumbnail
 - Write show notes
@@ -263,10 +261,10 @@ For non-guest episodes:
 | Item | Cost |
 |------|------|
 | Riverside.fm Pro | $29 |
-| Descript Pro | $24 |
-| OpusClip Pro | $29 |
 | Domain (letsvibe.fm) | ~$13/yr |
-| **Total** | **~$82/month** |
+| **Total** | **~$30/month** |
+
+**Note:** Descript ($24/mo) removed - Riverside handles editing. OpusClip ($29/mo) removed - Riverside Magic Clips handles clip generation.
 
 ### Optional Add-ons
 - Professional editor: $200-500/episode
@@ -284,4 +282,5 @@ For non-guest episodes:
 
 ---
 
-*Last updated: January 14, 2026*
+*Last updated: January 30, 2026*
+*Status: Episode 1 live. Descript removed, Riverside handles editing + clips.*

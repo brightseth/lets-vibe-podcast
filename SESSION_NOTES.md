@@ -1,8 +1,69 @@
-# Let's Vibe! Session Notes - Jan 14-22, 2026
+# Let's Vibe! Session Notes - Jan 14 - Jan 30, 2026
 
 ## Session Summary
 
-Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation. Jan 21: Partnership exploration, Ten Commandments created. Jan 22: Entity setup, infrastructure planning.
+Major planning session. Created comprehensive agent system design for making Let's Vibe! an AI-powered media operation. Jan 21: Partnership exploration, Ten Commandments created. Jan 22: Entity setup, infrastructure planning. **Jan 30: EPISODE 1 RECORDED AND PUBLISHED.**
+
+---
+
+## Jan 30 Session - EPISODE 1 LAUNCH DAY
+
+### Episode 1 Recorded and Published
+
+**"The Netscape Moment"** - Ian interviews Seth
+
+- **Recording:** Seth at 9 Orchard (NYC), Ian in Italy, via Riverside.fm
+- **Duration:** ~52 minutes
+- **Format:** Freeform conversation (no formal segments - finding the voice naturally)
+
+### Distribution - ALL PLATFORMS LIVE
+
+| Platform | Link | Status |
+|----------|------|--------|
+| Spotify | https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY | LIVE |
+| Apple Podcasts | https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247 | LIVE |
+| YouTube | https://youtu.be/1kWtAUDdvJc | LIVE |
+| Website | https://letsvibe.fm | LIVE (updated with links) |
+
+### Website Updated
+- Homepage hero updated with Episode 1 live messaging and platform links
+- Bottom CTA updated with episode description and listen buttons
+- OG social sharing image added for link previews
+
+### Show Notes Created
+- `EPISODE_1_SHOW_NOTES.md` - Full chapters, quotes, people/projects mentioned, links
+- `EPISODE_1_SOCIAL.md` - Tweet threads, clips, social strategy
+
+### Social Launch
+- Seth's 7-tweet thread drafted
+- Ian's companion 4-tweet thread drafted
+- 5 clip-worthy moments identified with timestamps
+- 7-day content rollout planned
+
+### Key Topics Covered in Episode
+- The Netscape moment parallel (Claude Code = Netscape)
+- Seth's 30-year origin story (Site Specific, Turntable.fm, Bright Moments)
+- Oliver Sacks / Rachmaninoff analogy for vibe coding
+- Fred Wilson "you can't grow corn" → SOLIENNE story
+- Pro Tools democratization parallel
+- AGI moment (Christmas 2025, Opus 4.5)
+- Rick Rubin texts Ian daily about vibe coding
+- Practical tips: Command+Space, Terminal, install Claude Code
+
+### Post-Launch Plan Established
+- Episode 2: Seth interviews Ian, Thu Feb 5, 12pm PST / 9pm CET
+- Episode 3: tez (need to confirm)
+- Weekly Thursday recording cadence
+- Riverside Magic Clips replaces Descript for editing
+- Agent system (`letsvibe-agent/`) ready to activate
+
+### Next Steps
+1. Update all docs to reflect Ep1 reality (SCHEDULE, PLAYBOOK, GUESTS)
+2. Create Episode 2 outline and talking notes
+3. Confirm tez for Episode 3
+4. Begin guest outreach for Ep 4-6 (steipete, Simon Willison, Gene Kogan)
+5. Test agent system
+6. Create episode page template on website
 
 ---
 

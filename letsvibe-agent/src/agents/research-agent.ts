@@ -180,7 +180,7 @@ Output format:
 - Specific, actionable talking points
 - Suggested questions, not vague topics
 
-Remember: The goal is to help Seth and Lukas have natural, curious conversations - not scripted interviews.`,
+Remember: The goal is to help Seth and Ian have natural, curious conversations - not scripted interviews.`,
   tools: RESEARCH_TOOLS
 };
 

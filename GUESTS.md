@@ -1,27 +1,51 @@
 # Let's Vibe! - Complete Guest Database
 
 ## Status Legend
+- **PUBLISHED** - Episode live
 - **CONFIRMED** - Said yes, scheduling
 - **INVITED** - Reached out, awaiting response
 - **TARGET** - On the list to invite
 - **RECORDED** - Episode complete
-- **PUBLISHED** - Episode live
 
 ---
 
 ## Season 1 Pipeline
 
-### Episode 1: tez
+### Episode 1: Ian Rogers - PUBLISHED
+| Field | Value |
+|-------|-------|
+| **Guest** | Ian Rogers (co-host) |
+| **Twitter** | [@iancr](https://twitter.com/iancr) |
+| **Status** | **PUBLISHED** - January 30, 2026 |
+| **Topic** | The Netscape Moment - Ian interviews Seth about 30 years of building, imposter syndrome, SOLIENNE, vibe coding |
+| **Links** | [Spotify](https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY) · [Apple](https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247) · [YouTube](https://youtu.be/1kWtAUDdvJc) |
+
+### Episode 2: Seth interviews Ian - SCHEDULED
+| Field | Value |
+|-------|-------|
+| **Guest** | Ian Rogers (co-host) |
+| **Status** | **SCHEDULED** - Thursday, Feb 5, 12pm PST / 9pm CET |
+| **Topic** | Ian's journey - LVMH to Ledger, Beats Music, Topspin, Rick Rubin relationship, Bachelor of Arts in CS, why vibe coding clicked |
+| **Format** | Seth interviews Ian via Riverside |
+
+### Episode 3: tez - CONFIRMED
 | Field | Value |
 |-------|-------|
 | **Guest** | tez |
 | **Twitter** | [@thefunnyguysNFT](https://twitter.com/thefunnyguysNFT) |
 | **Farcaster** | @tez |
-| **Status** | **INVITED** - said "sure, lets give it a shot" |
+| **Status** | **CONFIRMED** - said "sure, lets give it a shot" - need to confirm Feb 13 date |
 | **Topic** | AI-optimistic building, digital art collecting, why we need more builders |
-| **Origin** | He suggested Seth do a podcast - natural first guest |
+| **Origin** | He suggested Seth do a podcast - natural first outside guest |
 | **Contact** | Twitter DM |
-| **Target Date** | Week of Jan 20 |
+| **Target Date** | Thursday, Feb 13 |
+
+### Episode 4-6: Outreach Targets
+| Episode | Target | Twitter | Connection | Status |
+|---------|--------|---------|------------|--------|
+| Ep 4 (Feb 20) | steipete (Peter Steinberger) | [@steipete](https://twitter.com/steipete) | Twitter DM / /vibe | TARGET |
+| Ep 5 (Feb 27) | Simon Willison | [@simonw](https://twitter.com/simonw) | Twitter DM | TARGET |
+| Ep 6 (Mar 6) | Gene Kogan | [@genekogan](https://twitter.com/genekogan) | Seth knows him | TARGET |
 
 ---
 
@@ -29,75 +53,78 @@
 
 ### Tier 0: Unicorn Gets
 
-| Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
-|------|---------|-----------|--------------|-----|------------------|
-| Rick Rubin | [@RickRubin](https://twitter.com/RickRubin) | - | Legendary producer | "The Creative Act" energy, creativity philosophy | Through publisher/management |
-| Andrej Karpathy | [@karpathy](https://twitter.com/karpathy) | - | AI educator, ex-Tesla AI | Coined "vibe coding", massive reach (2M+) | Twitter DM, reference his videos |
-| Boris Dayma | [@borisdayma](https://twitter.com/borisdayma) | @boris | Anthropic, Claude team | Inside Claude, approachable | Twitter, reference his threads |
-| Ian Rogers | [@iancr](https://twitter.com/iancr) | @iancr | Ledger Chief Experience Officer, ex-Apple Music | Connected to everyone, web3+music | Known contact, direct ask |
+| Name | Twitter | Who They Are | Why | Contact Strategy |
+|------|---------|--------------|-----|------------------|
+| Andrej Karpathy | [@karpathy](https://twitter.com/karpathy) | AI educator, ex-Tesla AI | Coined "vibe coding", massive reach (2M+) | Twitter DM after 3-4 episodes |
+| Rick Rubin | [@RickRubin](https://twitter.com/RickRubin) | Legendary producer | "The Creative Act" energy, creativity philosophy | Ian's relationship, after 5+ episodes |
+| Boris Dayma | [@borisdayma](https://twitter.com/borisdayma) | Anthropic, Claude team | Inside Claude, approachable | After show proves quality |
+| Dario Amodei | [@DarioAmodei](https://twitter.com/DarioAmodei) | Anthropic CEO | Running the company behind Claude | Through Boris/connections, after proving quality |
+| Jensen Huang | - | Nvidia CEO | GPU king, AI infrastructure | Long play, sponsor relationship first |
+
+### Tier 0.5: Celebrity Crossover (Medved Strategy)
+
+| Name | Twitter | Who They Are | Why | Contact Strategy |
+|------|---------|--------------|-----|------------------|
+| Ashton Kutcher | [@aplusk](https://twitter.com/aplusk) | Actor / VC / vibecoder | Actively vibecoding, built projects with AI | Matt Medved network |
+| Marc Andreessen | [@pmarca](https://twitter.com/pmarca) | a16z | AI investor thesis, cultural weight | Matt Medved / podcast circuit |
 
 ### Tier 1: Vibe Coding Pioneers
 
-| Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
-|------|---------|-----------|--------------|-----|------------------|
-| Peter Steinberger | [@steipete](https://twitter.com/steipete) | @steipete | Clawdbot/Clawdis creator | Built Claude Code distribution | Known via /vibe, direct |
-| Simon Willison | [@simonw](https://twitter.com/simonw) | @simonw | LLM tools, Datasette | Best AI tool educator | Twitter, reference his work |
-| Pieter Levels | [@levelsio](https://twitter.com/levelsio) | - | Indie hacker, Photo AI | $M+ with AI, ships fast | Twitter DM |
-| Riley Brown | [@rileybrown_ai](https://twitter.com/rileybrown_ai) | - | Claude content creator | Rising vibe coding voice | Twitter DM |
-| McKay Wrigley | [@mckaywrigley](https://twitter.com/mckaywrigley) | - | Chatbot UI, educator | Open source AI tools | Twitter DM |
-| swyx | [@swyx](https://twitter.com/swyx) | @swyx | AI engineer, educator | Latent Space pod, AI scene | Twitter, podcast swap |
-| Sahil Lavingia | [@shl](https://twitter.com/shl) | @shl | Gumroad founder | AI-first building | Twitter DM |
+| Name | Twitter | Who They Are | Why | Contact Strategy |
+|------|---------|--------------|-----|------------------|
+| Peter Steinberger | [@steipete](https://twitter.com/steipete) | Clawdbot/Clawdis creator | Built Claude Code distribution | Known via /vibe, direct |
+| Simon Willison | [@simonw](https://twitter.com/simonw) | LLM tools, Datasette | Best AI tool educator | Twitter DM |
+| Pieter Levels | [@levelsio](https://twitter.com/levelsio) | Indie hacker, Photo AI | $M+ with AI, ships fast | Twitter DM |
+| Riley Brown | [@rileybrown_ai](https://twitter.com/rileybrown_ai) | Claude content creator | Rising vibe coding voice | Twitter DM |
+| swyx | [@swyx](https://twitter.com/swyx) | AI engineer, educator | Latent Space pod, AI scene | Twitter, podcast swap |
 
-### Tier 2: Digital Art / AI Art Legends
+### Tier 2: Digital Art / AI Art
 
-| Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
-|------|---------|-----------|--------------|-----|------------------|
-| Gene Kogan | [@genekogan](https://twitter.com/genekogan) | @gene | Abraham.ai founder | AI art OG, deep thinker | Personal contact |
-| Claire Silver | [@clairesilver12](https://twitter.com/clairesilver12) | @clairesilver | AI artist, advocate | Voice of AI-assisted art | Twitter DM |
-| Refik Anadol | [@refikinadol](https://twitter.com/refikinadol) | - | Data sculpture artist | Mainstream AI art success | Via gallery/management |
-| Tyler Hobbs | [@tylerxhobbs](https://twitter.com/tylerxhobbs) | - | Fidenza, generative art | Generative art legend | Twitter DM |
-| XCOPY | [@xcopyart](https://twitter.com/xcopyart) | - | Crypto art icon | Iconic, influential | Twitter DM |
-| Holly Herndon | [@hollyherndon](https://twitter.com/hollyherndon) | @holly | AI music pioneer | Holly+, voice cloning art | Twitter/email |
-| Mat Dryhurst | [@matdryhurst](https://twitter.com/matdryhurst) | @mat | AI music, Spawning | AI ethics in art | Twitter/email |
-| Grimes | [@Grimezsz](https://twitter.com/Grimezsz) | - | Artist, AI experimenter | Elf.tech, AI voice | Management |
-| RAC | [@RAC](https://twitter.com/RAC) | @rac | Grammy winner, crypto | Music + crypto + AI | Twitter DM |
+| Name | Twitter | Who They Are | Why |
+|------|---------|--------------|-----|
+| Gene Kogan | [@genekogan](https://twitter.com/genekogan) | Abraham.ai founder | AI art OG, Seth's contact |
+| Claire Silver | [@clairesilver12](https://twitter.com/clairesilver12) | AI artist, advocate | Voice of AI-assisted art |
+| Holly Herndon | [@hollyherndon](https://twitter.com/hollyherndon) | AI music pioneer | Holly+, voice cloning art |
+| Refik Anadol | [@refikinadol](https://twitter.com/refikinadol) | Data sculpture artist | Mainstream AI art success |
 
-### Tier 3: Collectors / Tastemakers
+### Tier 3: Ian's Network
+- LVMH alumni
+- Beats/Apple Music network
+- Ledger ecosystem
+- Tetragrammaton guests
 
-| Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
-|------|---------|-----------|--------------|-----|------------------|
-| Cozomo de' Medici | [@CozomoMedici](https://twitter.com/CozomoMedici) | - | Major collector | Taste, resources, audience | Twitter DM |
-| 6529 | [@punk6529](https://twitter.com/punk6529) | @6529 | OM, thought leader | Deep thinker, huge following | Twitter DM |
-| Snowfro | [@ArtBlocks_io](https://twitter.com/ArtBlocks_io) | @snowfro | Art Blocks founder | Platform builder | Twitter DM |
-| VincentVanDough | [@Vince_Van_Dough](https://twitter.com/Vince_Van_Dough) | - | Collector, voice | Collector perspective | Twitter DM |
-| gmoney | [@gaboratorymoneyNFT](https://twitter.com/gaboratorymoneyNFT) | @gmoney | Collector, 9dcc | Culture + fashion | Twitter DM |
+---
 
-### Tier 4: Creative Tool Builders
+## Team
 
-| Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
-|------|---------|-----------|--------------|-----|------------------|
-| Cristóbal Valenzuela | [@c_valenzuelab](https://twitter.com/c_valenzuelab) | - | Runway ML CEO | Creative AI tools leader | Twitter/email |
-| David Holz | - | - | Midjourney founder | Dominant creative AI | Hard to reach |
-| Demi Guo | [@daboratoryemiguo](https://twitter.com/daboratoryemiguo) | - | Pika Labs co-founder | Video AI | Twitter DM |
-| Mati Staniszewski | [@maboratoritaniszewski](https://twitter.com/maboratoritaniszewski) | - | ElevenLabs CEO | Voice AI for creators | Twitter/email |
+| Role | Name | Terms |
+|------|------|-------|
+| **Co-host** | Seth Goldstein | Founder |
+| **Co-host** | Ian Rogers | Founder |
+| **Executive Producer** | Matt Medved (nft now) | 10% equity, 20% commission on sponsorship |
 
-### Tier 5: Adjacent Interesting People
+### Matt Medved — What He Brings
+- **Distribution:** nft now cross-posting (600K+ followers)
+- **Sponsorship:** Relationships at Anthropic, Vercel, Google, Nvidia, Replit, Stripe, Coinbase, Ledger
+- **Strategy:** Optimize for bookmarks on X, tutorials as moat, ship fast don't wait for sponsors
+- **Network:** Celebrity and tech guest connections
 
-| Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
-|------|---------|-----------|--------------|-----|------------------|
-| Kevin Kelly | [@kevin2kelly](https://twitter.com/kevin2kelly) | - | Wired co-founder | 1000 true fans, AI optimist | Email via site |
-| Craig Mod | [@craigmod](https://twitter.com/craigmod) | - | Writer, walker | Creative process, tools | Email/Twitter |
-| Austin Kleon | [@austinkleon](https://twitter.com/austinkleon) | - | "Steal Like an Artist" | Creative process | Email |
-| James Clear | [@JamesClear](https://twitter.com/JamesClear) | - | Atomic Habits | Process, habits | Management |
+---
 
-### Tier 6: Spirit Protocol / Eden Network
+## Sponsor Pipeline (from Medved conversation)
 
-| Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
-|------|---------|-----------|--------------|-----|------------------|
-| NODE artists | various | various | Opening roster | Jan 22-26 timing | Through Phil |
-| Vanessa Rosa | - | - | Eden | AI agents | Personal |
-| Phil | - | - | NODE Foundation | Institutional perspective | Personal |
-| Ameesia Marold | - | - | RCS contributor | Already engaged | iMessage |
+| Company | Why | Contact |
+|---------|-----|---------|
+| Anthropic | We use Claude, they want developer stories | Matt + direct |
+| Vercel | Deploy target, dev audience overlap | Matt |
+| Google | Gemini push, AI developer market | Matt |
+| Nvidia | GPU ecosystem, Jensen visibility play | Matt |
+| Replit | Vibecoding adjacent, dev tools | Direct |
+| Stripe | Dev-loved brand, payment infra | Matt |
+| Coinbase | Crypto + AI crossover | Matt |
+| Ledger | Ian is CXO, natural fit | Ian direct |
+
+**Strategy:** Ship 3-5 episodes first, build proof, then approach with numbers.
 
 ---
 
@@ -105,56 +132,18 @@
 
 ### Standard Invite
 
-**Subject:** Let's Vibe! Podcast - Would love to have you on
-
 Hey [NAME],
 
-Seth here. I'm launching a weekly podcast with Lukas Amacher called "Let's Vibe!" - it's for creative people learning to build with AI. Not another tech podcast for developers - this is specifically for artists, collectors, and creatives who want to vibe code.
+Seth here from Let's Vibe! - a weekly podcast I co-host with Ian Rogers about creativity in the age of AI. We just launched Episode 1 and it's getting great traction.
 
 Your work on [SPECIFIC THING] is exactly the kind of story we want to tell. Would you be up for a ~45 min conversation about [TOPIC]?
 
-Remote friendly, no prep needed - just a good chat about what you're building and thinking about.
+Remote friendly via Riverside, no prep needed - just a good chat about what you're building.
 
-Let me know if you're interested and we can find a time.
+letsvibe.fm
 
 Best,
 Seth
-
-P.S. [PERSONAL NOTE OR CONNECTION]
-
----
-
-### For Big Gets (Tier 0)
-
-**Subject:** Quick question about creativity + AI
-
-Hi [NAME],
-
-I've been thinking a lot about [THEIR WORK/BOOK/PROJECT] and how it applies to the new wave of creative tools we're seeing with AI.
-
-I'm starting a podcast called "Let's Vibe!" focused on creative people building with AI - not the technical side, but the human/creative side. Your perspective on [SPECIFIC ANGLE] would be incredibly valuable.
-
-Would you have 45 minutes for a conversation? We'd work around your schedule entirely.
-
-Either way, thank you for [SPECIFIC THING THAT INFLUENCED ME].
-
-Best,
-Seth Goldstein
-
----
-
-## Booking Workflow
-
-1. **Research** - Confirm handles, recent work, angle
-2. **Draft** - Personalize outreach template
-3. **Send** - Twitter DM or email
-4. **Track** - Update status in this doc
-5. **Follow up** - 1 week if no response
-6. **Schedule** - Use Cal.com link
-7. **Prep** - Share format doc, any topics
-8. **Record** - Riverside.fm
-9. **Thank** - Send thank you note
-10. **Promote** - Tag guest on release
 
 ---
 
@@ -166,17 +155,11 @@ Seth Goldstein
 | Jan 8 | tez | Twitter DM | Yes! |
 | | | | |
 
-### Scheduled
-| Date | Guest | Topic |
-|------|-------|-------|
-| TBD | tez | Ep 1 |
-| | | |
-
 ### Recorded
 | Date | Guest | Episode # | Status |
 |------|-------|-----------|--------|
-| | | | |
+| Jan 30 | Ian Rogers | Ep 1 | PUBLISHED |
 
 ---
 
-*Last updated: January 8, 2026*
+*Last updated: February 1, 2026*

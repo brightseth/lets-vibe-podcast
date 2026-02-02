@@ -32,8 +32,8 @@ export const AGENT_CONFIG: AgentConfig = {
 // Podcast branding
 export const BRAND = {
   name: 'Let\'s Vibe!',
-  tagline: 'Vibecoding for creatives',
-  hosts: ['Seth Goldstein', 'Lukas Amacher'],
+  tagline: 'Creativity in the age of AI',
+  hosts: ['Seth Goldstein', 'Ian Rogers'],
   description: 'A weekly podcast for creative folks learning to vibe code. We talk to AI-optimistic builders, artists, and technologists about what they\'re making, how they\'re using AI tools, and where this is all going.',
   tone: {
     style: 'Conversational, not interview-y',
@@ -104,7 +104,7 @@ export const OUTREACH_TEMPLATES = {
     subject: 'Let\'s Vibe! Podcast - Would love to have you on',
     body: `Hey {{NAME}},
 
-Seth here. I'm launching a weekly podcast with Lukas Amacher called "Let's Vibe!" - it's for creative people learning to build with AI. Not another tech podcast for developers - this is specifically for artists, collectors, and creatives who want to vibe code.
+Seth here from Let's Vibe! - a weekly podcast I co-host with Ian Rogers about creativity in the age of AI. We just launched Episode 1 and it's getting great traction.
 
 Your work on {{SPECIFIC_THING}} is exactly the kind of story we want to tell. Would you be up for a ~45 min conversation about {{TOPIC}}?
 
