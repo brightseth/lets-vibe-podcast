@@ -601,48 +601,85 @@ const analysis = await fetch(
         <div className="max-w-[800px] w-full">
           <h2 className="text-5xl font-light mb-12">Links &amp; Resources</h2>
 
+          <p className="text-gray-500 mb-8">Verified live links &mdash; open these tabs before recording</p>
+
           <div className="space-y-4">
             <a href="https://proofofcorn.com" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
               <div>
                 <p className="text-white font-medium">proofofcorn.com</p>
-                <p className="text-gray-500 text-sm">The live site &mdash; Fred&apos;s decisions, budget, operations</p>
+                <p className="text-gray-500 text-sm">Homepage &mdash; the story, decision log, dashboard</p>
               </div>
               <span className="text-gray-600">&rarr;</span>
             </a>
 
-            <div className="flex items-center justify-between p-5 bg-gray-900 rounded-xl">
+            <a href="https://proofofcorn.com/fred" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
               <div>
-                <p className="text-white font-medium">farmer-fred.sethgoldstein.workers.dev</p>
-                <p className="text-gray-500 text-sm">Cloudflare Worker &mdash; API, voice routes, call logs</p>
+                <p className="text-white font-medium">proofofcorn.com/fred</p>
+                <p className="text-gray-500 text-sm">Fred&apos;s constitution, governance council, activity feed</p>
               </div>
-            </div>
+              <span className="text-gray-600">&rarr;</span>
+            </a>
 
-            <div className="flex items-center justify-between p-5 bg-gray-900 rounded-xl">
+            <a href="https://proofofcorn.com/call" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
               <div>
-                <p className="text-white font-medium font-mono">/calls</p>
-                <p className="text-gray-500 text-sm">Call history with transcripts &amp; AI summaries</p>
+                <p className="text-white font-medium">proofofcorn.com/call</p>
+                <p className="text-gray-500 text-sm">Call Fred page &mdash; phone number + how it works</p>
               </div>
-            </div>
+              <span className="text-gray-600">&rarr;</span>
+            </a>
 
-            <div className="flex items-center justify-between p-5 bg-gray-900 rounded-xl">
+            <a href="https://proofofcorn.com/dashboard" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
               <div>
-                <p className="text-white font-medium">Source: voice.ts</p>
-                <p className="text-gray-500 text-sm">1,540 lines &mdash; Durable Object bridge, ElevenLabs integration, post-call analysis</p>
+                <p className="text-white font-medium">proofofcorn.com/dashboard</p>
+                <p className="text-gray-500 text-sm">Metrics, weather, operations transparency</p>
               </div>
-            </div>
+              <span className="text-gray-600">&rarr;</span>
+            </a>
 
-            <div className="flex items-center justify-between p-5 bg-gray-900 rounded-xl">
+            <a href="https://proofofcorn.com/log" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
               <div>
-                <p className="text-white font-medium">Source: constitution.ts</p>
-                <p className="text-gray-500 text-sm">317 lines &mdash; 6 principles, governance council, autonomy rules</p>
+                <p className="text-white font-medium">proofofcorn.com/log</p>
+                <p className="text-gray-500 text-sm">Decision log &mdash; every decision Fred has made, publicly</p>
               </div>
-            </div>
+              <span className="text-gray-600">&rarr;</span>
+            </a>
+
+            <a href="https://farmer-fred.sethgoldstein.workers.dev/calls" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
+              <div>
+                <p className="text-white font-medium">farmer-fred.sethgoldstein.workers.dev/calls</p>
+                <p className="text-gray-500 text-sm">39 calls with transcripts &amp; AI summaries (raw JSON)</p>
+              </div>
+              <span className="text-gray-600">&rarr;</span>
+            </a>
+
+            <a href="https://news.ycombinator.com/item?id=42735511" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
+              <div>
+                <p className="text-white font-medium">Hacker News #1</p>
+                <p className="text-gray-500 text-sm">160+ points, 108+ comments &mdash; the original launch</p>
+              </div>
+              <span className="text-gray-600">&rarr;</span>
+            </a>
+
+            <a href="https://github.com/brightseth/proof-of-corn" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
+              <div>
+                <p className="text-white font-medium">github.com/brightseth/proof-of-corn</p>
+                <p className="text-gray-500 text-sm">Source code &mdash; voice.ts (1,540 lines), constitution.ts (317 lines)</p>
+              </div>
+              <span className="text-gray-600">&rarr;</span>
+            </a>
 
             <div className="flex items-center justify-between p-5 bg-blue-900/20 border border-blue-800 rounded-xl">
               <div>
                 <p className="text-blue-400 font-medium text-2xl font-mono">(515) 827-2463</p>
-                <p className="text-gray-500 text-sm">Call Fred live</p>
+                <p className="text-gray-500 text-sm">Call Fred live &mdash; 39 calls and counting</p>
               </div>
             </div>
           </div>
