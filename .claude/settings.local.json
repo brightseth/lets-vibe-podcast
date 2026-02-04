@@ -15,7 +15,14 @@
       "Bash(npm run agent:research:*)",
       "Bash(git fetch:*)",
       "Bash(vercel ls:*)",
-      "Bash(./ask-seth.sh:*)"
+      "Bash(./ask-seth.sh:*)",
+      "Bash(cat:*)",
+      "WebFetch(domain:xcancel.com)",
+      "Bash(python3:*)",
+      "Bash(xargs:*)",
+      "Bash(test:*)",
+      "Bash(node -e \"const c = require\\(''/Users/sethstudio1/.claude/skills/api-credentials/credentials.json''\\); console.log\\(''Accounts:'', Object.keys\\(c.twitter || {}\\)\\); Object.entries\\(c.twitter || {}\\).forEach\\(\\([k,v]\\) => console.log\\(k + '':'', v.api_key ? ''has api_key'' : ''MISSING api_key'', v.access_token ? ''has access_token'' : ''MISSING access_token''\\)\\)\")",
+      "Bash(node tweet.js:*)"
     ]
   }
 }
