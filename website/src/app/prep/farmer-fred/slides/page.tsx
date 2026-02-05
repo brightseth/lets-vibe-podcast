@@ -622,11 +622,11 @@ const analysis = await fetch(
               <span className="text-gray-600">&rarr;</span>
             </a>
 
-            <a href="https://proofofcorn.com/call" target="_blank" rel="noopener noreferrer"
+            <a href="tel:+19292991010"
               className="flex items-center justify-between p-5 bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors">
               <div>
-                <p className="text-white font-medium">proofofcorn.com/call</p>
-                <p className="text-gray-500 text-sm">Call Fred page &mdash; phone number + how it works</p>
+                <p className="text-white font-medium">(929) 299-1010</p>
+                <p className="text-gray-500 text-sm">Call Fred directly</p>
               </div>
               <span className="text-gray-600">&rarr;</span>
             </a>

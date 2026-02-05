@@ -15,7 +15,17 @@
       "Bash(npm run agent:research:*)",
       "Bash(git fetch:*)",
       "Bash(vercel ls:*)",
-      "Bash(./ask-seth.sh:*)"
+      "Bash(./ask-seth.sh:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(npx next build)",
+      "Bash(git commit:*)",
+      "Bash(npx tsc:*)",
+      "Bash(for pkg in resend @supabase/ssr @react-email/components)",
+      "Bash(do echo -n \"$pkg: \")",
+      "Bash(test:*)",
+      "Bash(done)",
+      "Bash(git check-ignore:*)",
+      "Bash(node run.js:*)"
     ]
   }
 }

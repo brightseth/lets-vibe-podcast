@@ -85,7 +85,7 @@ const xAccountsToFollow = [
 ];
 
 const toolsWeUse = [
-  { name: "Claude Code", url: "https://claude.ai/claude-code", note: "The vibe coding IDE" },
+  { name: "Claude Code", url: "https://docs.anthropic.com/en/docs/claude-code", note: "The vibe coding IDE" },
   { name: "/vibe", url: "https://slashvibe.dev", note: "Social layer for Claude Code" },
   { name: "Cursor", url: "https://cursor.com", note: "AI-first code editor" },
   { name: "Riverside", url: "https://riverside.fm", note: "Recording, editing, clips" },
@@ -115,7 +115,7 @@ export default async function Home() {
                       Episode {latestEpisode.number}: {latestEpisode.title} is live.
                     </a>
                   ) : (
-                    <a href="/episodes/the-netscape-moment" className="hover:text-[var(--foreground)] transition-colors">
+                    <a href="/episodes/1" className="hover:text-[var(--foreground)] transition-colors">
                       Episode 1: The Netscape Moment is live.
                     </a>
                   )}
