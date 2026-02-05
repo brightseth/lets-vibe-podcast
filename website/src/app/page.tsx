@@ -590,7 +590,7 @@ export default async function Home() {
                     </p>
                   </div>
                   <a
-                    href="https://vibestation.guide"
+                    href="https://gear.letsvibe.fm"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 text-sm border border-[var(--border)] rounded-full hover:bg-[var(--surface-hover)] transition-colors whitespace-nowrap"
