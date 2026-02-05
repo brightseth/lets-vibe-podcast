@@ -72,31 +72,42 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
   },
   {
     number: 2,
-    slug: 'agents-propose-humans-sign',
-    title: 'Agents Propose, Humans Sign',
+    slug: 'seth-interviews-ian',
+    title: 'Seth Interviews Ian',
     guest: 'Ian Rogers',
     guestHandle: '@iancr',
     guestBio:
-      'CXO of Ledger. Building ledger-agent-intents for the OpenClaw hackathon — AI agents draft transactions, but only humans with hardware wallets can approve them.',
+      'CXO of Ledger. Former Chief Digital Officer at LVMH, founder of Topspin Media, built Beats Music. He interviewed Rick Rubin on Tetragrammaton about "The Way of Code." Texts with Rick daily about vibe coding.',
     description:
-      'Ian walks through building ledger-agent-intents for the OpenClaw hackathon. AI agents that can propose transactions but need a human with a Ledger to sign. Plus: prediction markets, Bad Bunny at the Grammys, and the Farmer Fred architecture deep dive.',
+      'Seth turns the tables and interviews Ian about his 30-year arc: the BA in Computer Science that no longer exists, Topspin Media, building Beats Music with Jimmy Iovine, transforming LVMH as CDO, and the vibe coding awakening. Plus: what Rick Rubin texts him every day, and the OpenClaw hackathon tutorial.',
     duration: 'TBD',
     date: 'Feb 6, 2026',
     status: 'upcoming',
-    topics: ['OpenClaw', 'Hardware wallets', 'AI agents', 'Tutorial'],
-    showNotes: `Episode 2 dives into the intersection of AI agents and crypto security. Ian is building ledger-agent-intents for Circle's USDC OpenClaw Hackathon — a system where AI agents can draft transaction intents, but only humans with a Ledger hardware wallet can approve them.
+    topics: ['Ian Rogers', 'Beats Music', 'LVMH', 'Rick Rubin', 'OpenClaw'],
+    showNotes: `Seth interviews Ian Rogers about his full arc — one of the most interesting people in tech who's never done an extended interview about his journey.
 
-The tutorial segment covers the Farmer Fred architecture: Twilio Media Streams + Cloudflare Durable Objects + ElevenLabs, and how to give an AI agent a phone number, a voice, and a constitution.`,
+**The Origin Story**: A Bachelor of Arts in Computer Science (a degree that no longer exists), early internet days, and founding Topspin Media — Shopify for musicians before Shopify existed.
+
+**The Music Industry Arc**: How do you end up building Beats Music with Jimmy Iovine and Dr. Dre? The Apple acquisition, what Apple was like from the inside, and the unexpected pivot to LVMH as Chief Digital Officer.
+
+**The Vibe Coding Awakening**: Rick Rubin texts Ian every day about vibe coding. The Pro Tools parallel — Ian was there for that revolution too. His Claude Code New Year: RSVP systems, art galleries, and music projects shipped with "minimal keyboard time."
+
+**Tutorial Segment**: "Agents Propose, Humans Sign" — Ian's OpenClaw hackathon project for Ledger agent intents. AI agents draft transaction proposals, but only humans with hardware wallets can approve them.`,
     chapters: [
-      { time: '0:00', title: 'Intro — What we shipped this week' },
-      { time: '10:00', title: 'OpenClaw and the agent intent pattern' },
-      { time: '25:00', title: 'Tutorial: Farmer Fred architecture walkthrough' },
+      { time: '0:00', title: 'Turn the Tables — Seth interviews Ian' },
+      { time: '5:00', title: 'The BA in Computer Science' },
+      { time: '15:00', title: 'Topspin Media — Shopify for musicians' },
+      { time: '25:00', title: 'Beats Music → Apple Music' },
+      { time: '35:00', title: 'LVMH — Chief Digital Officer' },
+      { time: '45:00', title: 'The Vibe Coding Awakening — Rick Rubin texts' },
+      { time: '55:00', title: 'Tutorial: Agents Propose, Humans Sign (OpenClaw)' },
     ],
     links: [
+      { label: "Ian's blog: Reflections on a Claude Code New Year", url: 'https://fistfulayen.com/2026/01/13/reflections-on-a-claude-code-new-year/' },
+      { label: 'Ian on X', url: 'https://x.com/iancr' },
       { label: 'Ian\'s repo: ledger-agent-intents', url: 'https://github.com/fistfulayen/ledger-agent-intents' },
-      { label: 'OpenClaw Hackathon', url: 'https://www.openclaw.xyz/' },
-      { label: 'Episode 2 planning page', url: '/plan/ep2' },
       { label: 'Episode 2 prep notes', url: '/prep/episode-2' },
+      { label: 'OpenClaw tutorial plan', url: '/plan/ep2' },
     ],
   },
 ];

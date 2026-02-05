@@ -25,7 +25,13 @@
       "Bash(test:*)",
       "Bash(done)",
       "Bash(git check-ignore:*)",
-      "Bash(node run.js:*)"
+      "Bash(node run.js:*)",
+      "WebFetch(domain:vibestation.guide)",
+      "Bash(vercel:*)",
+      "Bash(vercel projects ls:*)",
+      "Bash(dig:*)",
+      "Bash(nslookup:*)",
+      "Bash(whois:*)"
     ]
   }
 }

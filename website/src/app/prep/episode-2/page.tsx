@@ -33,7 +33,7 @@ export default function Episode2Prep() {
             Seth Interviews Ian
           </h1>
           <p className="text-xl text-gray-400">
-            Thursday Feb 6, 10am EST / 4pm CET &middot; Riverside
+            Wednesday Feb 5, 11am EST / 5pm CET &middot; Riverside
           </p>
           <p className="text-sm text-gray-500 mt-4">
             Internal prep &middot; Seth + Matt review
