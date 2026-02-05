@@ -33,7 +33,7 @@ npm-debug.log*
 *.wav
 *.mp4
 *.mov
-episodes/
+/episodes/
 
 # Transcripts (may contain sensitive content)
 transcripts/

@@ -1,20 +1,40 @@
 import { SubscribeForm } from "./links/subscribe-form";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { episodes } from "@/data/episodes";
+
+function getLatestEpisodeFromData() {
+  const live = episodes.filter((ep) => ep.status === 'live');
+  if (live.length === 0) return null;
+  const latest = live[live.length - 1];
+  return {
+    number: latest.number,
+    title: latest.title,
+    slug: latest.slug,
+    description: latest.description,
+    spotify_url: latest.spotifyUrl,
+    apple_url: latest.appleUrl,
+    youtube_url: latest.youtubeUrl,
+  };
+}
 
 async function getLatestEpisode() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SECRET_KEY;
-  if (!url || !key) return null;
+  if (!url || !key) return getLatestEpisodeFromData();
 
-  const supabase = createAdminClient();
-  const { data } = await supabase
-    .from("episodes")
-    .select("number, title, slug, description, spotify_url, apple_url, youtube_url")
-    .eq("status", "published")
-    .order("number", { ascending: false })
-    .limit(1)
-    .single();
-  return data;
+  try {
+    const supabase = createAdminClient();
+    const { data } = await supabase
+      .from("episodes")
+      .select("number, title, slug, description, spotify_url, apple_url, youtube_url")
+      .eq("status", "published")
+      .order("number", { ascending: false })
+      .limit(1)
+      .single();
+    return data ?? getLatestEpisodeFromData();
+  } catch {
+    return getLatestEpisodeFromData();
+  }
 }
 
 const dreamGuests = [
