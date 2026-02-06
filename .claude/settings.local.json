@@ -31,7 +31,14 @@
       "Bash(vercel projects ls:*)",
       "Bash(dig:*)",
       "Bash(nslookup:*)",
-      "Bash(whois:*)"
+      "Bash(whois:*)",
+      "Bash(npm run build:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(npm run dev:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs:*)",
+      "Bash(git checkout:*)"
     ]
   }
 }

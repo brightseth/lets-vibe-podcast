@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ep 2 Plan: OpenClaw Setup Guide | Let's Vibe!",
+  title: "Ep 2 Plan: OpenClaw 101 | Let's Vibe!",
   robots: "noindex, nofollow",
 };
 
@@ -14,9 +14,9 @@ export default function Ep2Plan() {
           <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
             Episode 2 Tutorial Segment
           </p>
-          <h1 className="text-4xl font-light">OpenClaw Setup Guide</h1>
+          <h1 className="text-4xl font-light">OpenClaw 101</h1>
           <p className="text-gray-400 mt-4">
-            General advice for getting started &middot; ~15 min
+            A practical guide to setting up OpenClaw &middot; ~15 min segment
           </p>
           <p className="text-gray-600 text-sm mt-2">
             Unlisted page for Seth, Ian & Matt &middot; Not linked from public site
@@ -24,259 +24,297 @@ export default function Ep2Plan() {
         </div>
       </header>
 
-      {/* Framing */}
-      <section className="border-b border-gray-800 py-10">
+      {/* Updated Feb 5 Note */}
+      <section className="border-b border-gray-800 py-6 bg-yellow-900/10">
         <div className="max-w-[900px] mx-auto px-6">
-          <div className="bg-blue-900/30 border border-blue-700 p-6 rounded-lg">
-            <h3 className="text-blue-300 font-medium mb-2">📝 Framing Note</h3>
-            <p className="text-gray-300">
-              This is NOT a step-by-step tutorial or a specific project walkthrough.
-              This is a <strong>conversation</strong> about how to think about setting up
-              an AI assistant that runs on your own machine.
-            </p>
+          <div className="flex items-start gap-3">
+            <span className="text-yellow-400 text-lg">*</span>
+            <div>
+              <p className="text-yellow-200 font-medium">Updated per Ian&apos;s feedback (Feb 5)</p>
+              <p className="text-gray-400 text-sm mt-1">
+                Skipping Ledger intents for now &mdash; they pivoted today, will cover next week.
+                This segment is now a general OpenClaw setup guide.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* The Questions */}
+      {/* The Questions to Answer */}
       <section className="border-b border-gray-800 py-12">
         <div className="max-w-[900px] mx-auto px-6">
-          <h2 className="text-2xl font-light mb-8">The Questions to Answer</h2>
-          <p className="text-gray-400 mb-6">
-            Ian&apos;s outline for the tutorial segment:
+          <h2 className="text-2xl font-light mb-6">The Questions This Segment Answers</h2>
+          <p className="text-gray-400 mb-8">
+            Ian&apos;s framing: practical advice for people considering OpenClaw.
           </p>
 
           <div className="space-y-4">
-            {/* Question 1 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-green-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">1. Do You Want to Do It?</h3>
-                <span className="text-gray-500 text-sm font-mono">3 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">Why should you? Why shouldn&apos;t you?</p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div className="bg-green-900/20 p-4 rounded-lg">
-                  <p className="text-green-400 text-sm font-medium mb-2">Why you might want OpenClaw:</p>
-                  <ul className="text-gray-400 text-sm space-y-1">
-                    <li>&bull; You want an AI that can DO things (not just chat)</li>
-                    <li>&bull; You care about privacy — runs on your machine</li>
-                    <li>&bull; You want to connect it to your real tools</li>
-                    <li>&bull; You&apos;re curious about agentic AI</li>
-                    <li>&bull; You build things and want a persistent collaborator</li>
-                  </ul>
-                </div>
-                <div className="bg-red-900/20 p-4 rounded-lg">
-                  <p className="text-red-400 text-sm font-medium mb-2">Why you might NOT:</p>
-                  <ul className="text-gray-400 text-sm space-y-1">
-                    <li>&bull; You want something that &ldquo;just works&rdquo;</li>
-                    <li>&bull; Not comfortable with command line</li>
-                    <li>&bull; Don&apos;t want to think about security</li>
-                    <li>&bull; ChatGPT/Claude.ai already does what you need</li>
-                    <li>&bull; You want polished consumer UX</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Question 2 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-yellow-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">2. How Far Should You Go?</h3>
-                <span className="text-gray-500 text-sm font-mono">3 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">Levels of commitment</p>
-
-              <div className="space-y-3">
-                <div className="bg-gray-800 p-3 rounded">
-                  <p className="text-yellow-400 text-sm font-medium">Level 1: Curious</p>
-                  <p className="text-gray-400 text-sm">Run CLI locally. Talk to it in terminal. No channels, no integrations.</p>
-                </div>
-                <div className="bg-gray-800 p-3 rounded">
-                  <p className="text-yellow-400 text-sm font-medium">Level 2: Connected</p>
-                  <p className="text-gray-400 text-sm">Connect one channel (Signal/Telegram). Message from your phone.</p>
-                </div>
-                <div className="bg-gray-800 p-3 rounded">
-                  <p className="text-yellow-400 text-sm font-medium">Level 3: Integrated</p>
-                  <p className="text-gray-400 text-sm">Email, calendar, web browsing, file access. Real tasks. Think about security.</p>
-                </div>
-                <div className="bg-gray-800 p-3 rounded">
-                  <p className="text-yellow-400 text-sm font-medium">Level 4: Autonomous</p>
-                  <p className="text-gray-400 text-sm">Heartbeats, cron jobs, proactive actions. Most people shouldn&apos;t start here.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Question 3 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-blue-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">3. What Should You Turn Off and On?</h3>
-                <span className="text-gray-500 text-sm font-mono">2 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">Security is about tradeoffs</p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <p className="text-red-400 text-sm font-medium mb-2">Start OFF:</p>
-                  <ul className="text-gray-400 text-sm space-y-1">
-                    <li>&bull; <code className="bg-gray-800 px-1 rounded text-xs">exec</code> — shell commands</li>
-                    <li>&bull; <code className="bg-gray-800 px-1 rounded text-xs">browser</code> — web automation</li>
-                    <li>&bull; Automatic email sending</li>
-                    <li>&bull; Anything irreversible</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-green-400 text-sm font-medium mb-2">Safe to turn ON:</p>
-                  <ul className="text-gray-400 text-sm space-y-1">
-                    <li>&bull; Reading specific directories</li>
-                    <li>&bull; Web search (Brave API)</li>
-                    <li>&bull; Receiving messages (inbound)</li>
-                    <li>&bull; Calendar read access</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="bg-blue-900/30 p-3 rounded mt-4">
-                <p className="text-blue-300 text-sm">
-                  <strong>Golden rule:</strong> If it can spend money, send messages to others, or delete data — require explicit approval.
-                </p>
-              </div>
-            </div>
-
-            {/* Question 4 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-purple-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">4. How Do You Do It?</h3>
-                <span className="text-gray-500 text-sm font-mono">2 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">The actual setup (high level)</p>
-
-              <ol className="text-gray-400 text-sm space-y-2 list-decimal list-inside">
-                <li>Install via npm: <code className="bg-gray-800 px-1 rounded text-xs">npm install -g openclaw</code></li>
-                <li>Run the onboarding wizard: <code className="bg-gray-800 px-1 rounded text-xs">openclaw onboard</code></li>
-                <li>Set up your API key (Anthropic, OpenAI, etc.)</li>
-                <li>Configure your workspace (SOUL.md, MEMORY.md)</li>
-                <li>Optionally: add channels, skills, automations</li>
-              </ol>
-
-              <p className="text-gray-500 text-sm mt-4">
-                Docs: <a href="https://docs.openclaw.ai" className="text-blue-400 hover:underline">docs.openclaw.ai</a>
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-blue-500">
+              <p className="font-medium text-blue-400">1. Do you want to do it?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                Who is OpenClaw for? What&apos;s the pitch? Who should wait?
               </p>
             </div>
 
-            {/* Question 5 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-red-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">5. What Are the Pitfalls?</h3>
-                <span className="text-gray-500 text-sm font-mono">2 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">What trips people up</p>
-
-              <div className="space-y-2">
-                {[
-                  ["Giving too much access too fast", "Start minimal. Add capabilities as you need them."],
-                  ["Not setting up workspace properly", "SOUL.md, MEMORY.md — the agent needs context."],
-                  ["Ignoring security implications", "It can read files and send messages. Treat it accordingly."],
-                  ["Expecting it to 'just work'", "You'll configure, debug, and iterate."],
-                  ["Server without understanding exposure", "Local first. Server later, if ever."],
-                ].map(([problem, solution]) => (
-                  <div key={problem} className="flex gap-3">
-                    <span className="text-red-400">✗</span>
-                    <div>
-                      <span className="text-gray-300 text-sm">{problem}</span>
-                      <span className="text-gray-500 text-sm"> — {solution}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-green-500">
+              <p className="font-medium text-green-400">2. Why should you?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                The benefits: local AI agents, MCP integrations, the ecosystem, shipping speed.
+              </p>
             </div>
 
-            {/* Question 6 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-teal-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">6. What Might You Try?</h3>
-                <span className="text-gray-500 text-sm font-mono">1 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">Use cases that work well</p>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                {[
-                  ["Morning briefing", "Weather, calendar, email summary"],
-                  ["Research assistant", "Web search + file reading"],
-                  ["Writing companion", "Drafts, edits, feedback"],
-                  ["Code helper", "Explain, debug, suggest"],
-                  ["Memory keeper", "Notes, todos, context"],
-                  ["Message triage", "Summarize, prioritize, draft"],
-                ].map(([title, desc]) => (
-                  <div key={title} className="bg-gray-800 p-3 rounded">
-                    <p className="text-teal-400 text-sm font-medium">{title}</p>
-                    <p className="text-gray-500 text-xs">{desc}</p>
-                  </div>
-                ))}
-              </div>
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-red-500">
+              <p className="font-medium text-red-400">3. Why shouldn&apos;t you?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                The risks: 386 malicious plugins found, security model, when Claude Code is better.
+              </p>
             </div>
 
-            {/* Question 7 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-orange-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">7. Why Is This Interesting?</h3>
-                <span className="text-gray-500 text-sm font-mono">1 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">The bigger picture</p>
-
-              <ul className="text-gray-400 text-sm space-y-1">
-                <li>&bull; First time: AI that knows your context, runs local, takes real actions</li>
-                <li>&bull; Your data stays local. Privacy by default.</li>
-                <li>&bull; Persists — memory across sessions</li>
-                <li>&bull; You control the capabilities</li>
-                <li>&bull; Open source — see exactly what it does</li>
-              </ul>
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-yellow-500">
+              <p className="font-medium text-yellow-400">4. If you do, how far should you go?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                Conservative setup vs. full power user. Where to start.
+              </p>
             </div>
 
-            {/* Question 8 */}
-            <div className="bg-gray-900 p-6 rounded-lg border-l-4 border-pink-500">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-medium">8. Where Does This Go From Here?</h3>
-                <span className="text-gray-500 text-sm font-mono">1 min</span>
-              </div>
-              <p className="text-gray-300 font-medium mb-3">The future</p>
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-purple-500">
+              <p className="font-medium text-purple-400">5. What should you turn off and on?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                Settings recommendations. Privacy toggles. Model choices.
+              </p>
+            </div>
 
-              <ul className="text-gray-400 text-sm space-y-1">
-                <li>&bull; Agents that collaborate with each other</li>
-                <li>&bull; Real economic activity (payments, contracts)</li>
-                <li>&bull; Persistent memory that compounds over time</li>
-                <li>&bull; Security infrastructure to trust them with more</li>
-                <li>&bull; Leverage that used to require a team — available to everyone</li>
-              </ul>
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-cyan-500">
+              <p className="font-medium text-cyan-400">6. How do you do it?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                Quick walkthrough: install, first run, key commands.
+              </p>
+            </div>
 
-              <blockquote className="text-gray-500 text-sm italic mt-4 border-l-2 border-gray-700 pl-4">
-                &ldquo;We&apos;re early. But the direction is clear.&rdquo;
-              </blockquote>
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-orange-500">
+              <p className="font-medium text-orange-400">7. What are the pitfalls?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                Common mistakes, things that trip people up, what to watch for.
+              </p>
+            </div>
+
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-pink-500">
+              <p className="font-medium text-pink-400">8. What might you try?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                First project ideas. Quick wins. What Seth + Ian have built.
+              </p>
+            </div>
+
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-teal-500">
+              <p className="font-medium text-teal-400">9. What are the use cases?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                Where OpenClaw shines vs. other tools. The killer apps.
+              </p>
+            </div>
+
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-indigo-500">
+              <p className="font-medium text-indigo-400">10. Why is this interesting?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                The bigger picture. Why this matters beyond productivity.
+              </p>
+            </div>
+
+            <div className="bg-gray-900 p-5 rounded-lg border-l-4 border-white">
+              <p className="font-medium text-white">11. Where does this go from here?</p>
+              <p className="text-gray-400 text-sm mt-2">
+                The roadmap. What&apos;s coming. Where to follow along.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Resources */}
+      {/* Segment Flow */}
+      <section className="border-b border-gray-800 py-12">
+        <div className="max-w-[900px] mx-auto px-6">
+          <h2 className="text-2xl font-light mb-6">Suggested Flow (~15 min)</h2>
+
+          <div className="space-y-6">
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <div className="flex items-baseline justify-between mb-3">
+                <h3 className="text-lg font-medium">Part 1: The Why</h3>
+                <span className="text-gray-500 text-sm font-mono">3 min</span>
+              </div>
+              <ul className="text-gray-400 text-sm space-y-2">
+                <li>&bull; What is OpenClaw? (for people who missed the hype)</li>
+                <li>&bull; Why it&apos;s having a moment (100K stars, CNBC coverage)</li>
+                <li>&bull; Ian&apos;s personal journey with it</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <div className="flex items-baseline justify-between mb-3">
+                <h3 className="text-lg font-medium">Part 2: The Decision</h3>
+                <span className="text-gray-500 text-sm font-mono">4 min</span>
+              </div>
+              <ul className="text-gray-400 text-sm space-y-2">
+                <li>&bull; Should you vs. shouldn&apos;t you</li>
+                <li>&bull; OpenClaw vs. Claude Code &mdash; when to use which</li>
+                <li>&bull; The security considerations (386 malicious plugins)</li>
+                <li>&bull; How far to go &mdash; conservative vs. power user</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <div className="flex items-baseline justify-between mb-3">
+                <h3 className="text-lg font-medium">Part 3: The Setup</h3>
+                <span className="text-gray-500 text-sm font-mono">4 min</span>
+              </div>
+              <ul className="text-gray-400 text-sm space-y-2">
+                <li>&bull; Quick install walkthrough</li>
+                <li>&bull; Key settings to configure</li>
+                <li>&bull; What to turn off for safety</li>
+                <li>&bull; First run experience</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <div className="flex items-baseline justify-between mb-3">
+                <h3 className="text-lg font-medium">Part 4: The Vision</h3>
+                <span className="text-gray-500 text-sm font-mono">4 min</span>
+              </div>
+              <ul className="text-gray-400 text-sm space-y-2">
+                <li>&bull; Use cases that get us excited</li>
+                <li>&bull; What Seth + Ian are building with it</li>
+                <li>&bull; Where this goes from here</li>
+                <li>&bull; Resources to follow along</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Points */}
+      <section className="border-b border-gray-800 py-12">
+        <div className="max-w-[900px] mx-auto px-6">
+          <h2 className="text-2xl font-light mb-6">Key Points to Hit</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-green-900/20 border border-green-800 p-4 rounded-lg">
+              <p className="text-green-400 font-medium mb-2">Pro: Local-First</p>
+              <p className="text-gray-400 text-sm">
+                Runs on your machine. Your data stays local. No cloud dependency.
+              </p>
+            </div>
+            <div className="bg-green-900/20 border border-green-800 p-4 rounded-lg">
+              <p className="text-green-400 font-medium mb-2">Pro: MCP Ecosystem</p>
+              <p className="text-gray-400 text-sm">
+                Massive plugin ecosystem. Integrates with everything.
+              </p>
+            </div>
+            <div className="bg-red-900/20 border border-red-800 p-4 rounded-lg">
+              <p className="text-red-400 font-medium mb-2">Con: Security Risks</p>
+              <p className="text-gray-400 text-sm">
+                386 malicious plugins found. Verify everything.
+              </p>
+            </div>
+            <div className="bg-red-900/20 border border-red-800 p-4 rounded-lg">
+              <p className="text-red-400 font-medium mb-2">Con: Complexity</p>
+              <p className="text-gray-400 text-sm">
+                More setup required than Claude Code. Not for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Analogies */}
+      <section className="border-b border-gray-800 py-12">
+        <div className="max-w-[900px] mx-auto px-6">
+          <h2 className="text-2xl font-light mb-6">Analogies to Use</h2>
+          <p className="text-gray-400 mb-6">Ian has plenty of these from his journey:</p>
+
+          <div className="space-y-4">
+            <div className="bg-gray-900 p-4 rounded-lg">
+              <p className="font-medium mb-1">Pro Tools analogy</p>
+              <p className="text-gray-400 text-sm">
+                Ian was there for Pro Tools democratizing music production.
+                Same pattern happening now with code.
+              </p>
+            </div>
+            <div className="bg-gray-900 p-4 rounded-lg">
+              <p className="font-medium mb-1">The BA in Computer Science</p>
+              <p className="text-gray-400 text-sm">
+                A degree that doesn&apos;t exist anymore predicted this moment &mdash;
+                computers as creative tools, not just engineering tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Links */}
       <section className="py-12">
         <div className="max-w-[900px] mx-auto px-6">
-          <h2 className="text-2xl font-light mb-6">Resources to Mention</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-gray-900 p-4 rounded-lg">
-              <p className="text-gray-300 font-medium">Documentation</p>
-              <a href="https://docs.openclaw.ai" className="text-blue-400 text-sm hover:underline">docs.openclaw.ai</a>
-            </div>
-            <div className="bg-gray-900 p-4 rounded-lg">
-              <p className="text-gray-300 font-medium">GitHub</p>
-              <a href="https://github.com/openclaw/openclaw" className="text-blue-400 text-sm hover:underline">github.com/openclaw/openclaw</a>
-            </div>
-            <div className="bg-gray-900 p-4 rounded-lg">
-              <p className="text-gray-300 font-medium">Community</p>
-              <a href="https://discord.gg/clawd" className="text-blue-400 text-sm hover:underline">discord.gg/clawd</a>
-            </div>
-          </div>
+          <h2 className="text-2xl font-light mb-6">Reference Links</h2>
+          <ul className="space-y-3">
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/OpenClaw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 underline"
+              >
+                OpenClaw - Wikipedia
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.cnbc.com/2026/02/02/openclaw-open-source-ai-agent-rise-controversy-clawdbot-moltbot-moltbook.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 underline"
+              >
+                CNBC: OpenClaw Rise & Controversy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.opensourceforu.com/2026/02/ai-assistant-openclaw-hosts-hundreds-of-crypto-stealing-malicious-plugins/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 underline"
+              >
+                ClawHub Malware Warning (386 malicious plugins)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://fistfulayen.com/2026/01/13/reflections-on-a-claude-code-new-year/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 underline"
+              >
+                Ian&apos;s blog: Reflections on a Claude Code New Year
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
+
+      {/* Coming Next Week */}
+      <section className="border-t border-gray-800 py-12 bg-purple-900/10">
+        <div className="max-w-[900px] mx-auto px-6">
+          <h2 className="text-2xl font-light mb-4">Coming Next Week</h2>
+          <p className="text-gray-400">
+            Ledger agent intents &mdash; Ian&apos;s pivot today makes it even cooler.
+            Save the &ldquo;Agents Propose, Humans Sign&rdquo; thesis for Episode 3.
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 py-8">
+        <div className="max-w-[900px] mx-auto px-6 text-center text-gray-500 text-sm">
+          <p>Let&apos;s Vibe! Episode 2 Tutorial Planning &middot; Unlisted</p>
+          <p className="mt-2">Updated Feb 5, 2026</p>
+        </div>
+      </footer>
     </div>
   );
 }
