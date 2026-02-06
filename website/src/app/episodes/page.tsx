@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { episodes } from '@/data/episodes';
+import { getAllEpisodes } from '@/lib/episodes';
 
 export const metadata: Metadata = {
   title: "Episodes | Let's Vibe!",
@@ -13,7 +13,8 @@ const statusBadge = {
   recorded: { label: "In Production", className: "bg-yellow-100 text-yellow-800" },
 };
 
-export default function EpisodesPage() {
+export default async function EpisodesPage() {
+  const episodes = await getAllEpisodes();
   return (
     <div className="min-h-screen">
       {/* Header */}

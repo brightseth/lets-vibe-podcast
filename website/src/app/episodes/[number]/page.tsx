@@ -1,23 +1,21 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { episodes, type EpisodeData } from '@/data/episodes';
+import { getEpisodeByNumber, getAllEpisodeNumbers, getAllEpisodes } from '@/lib/episodes';
+import { EpisodePlayer } from '@/components/EpisodePlayer';
 
-function getEpisode(number: string): EpisodeData | undefined {
-  const num = parseInt(number, 10);
-  return episodes.find((ep) => ep.number === num);
+export async function generateStaticParams() {
+  const numbers = await getAllEpisodeNumbers();
+  return numbers.map((num) => ({ number: String(num) }));
 }
 
-export function generateStaticParams() {
-  return episodes.map((ep) => ({ number: String(ep.number) }));
-}
-
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { number: string };
-}): Metadata {
-  const episode = getEpisode(params.number);
+  params: Promise<{ number: string }>;
+}): Promise<Metadata> {
+  const { number } = await params;
+  const episode = await getEpisodeByNumber(parseInt(number, 10));
   if (!episode) return { title: 'Episode Not Found' };
 
   return {
@@ -50,14 +48,16 @@ const statusBadge = {
   },
 };
 
-export default function EpisodePage({
+export default async function EpisodePage({
   params,
 }: {
-  params: { number: string };
+  params: Promise<{ number: string }>;
 }) {
-  const episode = getEpisode(params.number);
+  const { number } = await params;
+  const episode = await getEpisodeByNumber(parseInt(number, 10));
   if (!episode) notFound();
 
+  const episodes = await getAllEpisodes();
   const episodeIndex = episodes.findIndex((ep) => ep.number === episode.number);
   const prevEpisode = episodeIndex > 0 ? episodes[episodeIndex - 1] : null;
   const nextEpisode =
@@ -158,6 +158,20 @@ export default function EpisodePage({
           </div>
         </div>
       </section>
+
+      {/* Episode Player */}
+      {episode.status === 'live' && (episode.youtubeUrl || episode.spotifyUrl) && (
+        <section className="border-b border-[var(--border)]">
+          <div className="max-w-[900px] mx-auto px-6 py-8">
+            <EpisodePlayer
+              youtubeUrl={episode.youtubeUrl}
+              spotifyUrl={episode.spotifyUrl}
+              appleUrl={episode.appleUrl}
+              title={`${episode.title} - Let's Vibe! Episode ${episode.number}`}
+            />
+          </div>
+        </section>
+      )}
 
       {/* Guest Bio */}
       <section className="border-b border-[var(--border)] bg-[var(--surface)]">

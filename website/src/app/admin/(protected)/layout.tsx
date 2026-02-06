@@ -37,6 +37,12 @@ export default async function LinksAdminLayout({
                 Dashboard
               </Link>
               <Link
+                href="/admin/episodes"
+                className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+              >
+                Episodes
+              </Link>
+              <Link
                 href="/admin/submit"
                 className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
               >

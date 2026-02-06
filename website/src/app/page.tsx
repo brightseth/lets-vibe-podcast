@@ -1,41 +1,5 @@
 import { SubscribeForm } from "./links/subscribe-form";
-import { createAdminClient } from "@/lib/supabase/admin";
-import { episodes } from "@/data/episodes";
-
-function getLatestEpisodeFromData() {
-  const live = episodes.filter((ep) => ep.status === 'live');
-  if (live.length === 0) return null;
-  const latest = live[live.length - 1];
-  return {
-    number: latest.number,
-    title: latest.title,
-    slug: latest.slug,
-    description: latest.description,
-    spotify_url: latest.spotifyUrl,
-    apple_url: latest.appleUrl,
-    youtube_url: latest.youtubeUrl,
-  };
-}
-
-async function getLatestEpisode() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.SUPABASE_SECRET_KEY;
-  if (!url || !key) return getLatestEpisodeFromData();
-
-  try {
-    const supabase = createAdminClient();
-    const { data } = await supabase
-      .from("episodes")
-      .select("number, title, slug, description, spotify_url, apple_url, youtube_url")
-      .eq("status", "published")
-      .order("number", { ascending: false })
-      .limit(1)
-      .single();
-    return data ?? getLatestEpisodeFromData();
-  } catch {
-    return getLatestEpisodeFromData();
-  }
-}
+import { getLatestEpisode as fetchLatestEpisode } from "@/lib/episodes";
 
 const dreamGuests = [
   {
@@ -92,7 +56,16 @@ const toolsWeUse = [
 ];
 
 export default async function Home() {
-  const latestEpisode = await getLatestEpisode();
+  const ep = await fetchLatestEpisode();
+  const latestEpisode = ep ? {
+    number: ep.number,
+    title: ep.title,
+    slug: ep.slug,
+    description: ep.description,
+    spotify_url: ep.spotify_url,
+    apple_url: ep.apple_url,
+    youtube_url: ep.youtube_url,
+  } : null;
 
   return (
     <div className="min-h-screen">
