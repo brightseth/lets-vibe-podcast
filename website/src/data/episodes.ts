@@ -83,7 +83,7 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     duration: '58 min',
     date: 'Feb 5, 2026',
     status: 'live',
-    spotifyUrl: 'https://open.spotify.com/show/letsvibe',
+    spotifyUrl: 'https://open.spotify.com/episode/5Z0L991KKkLf34mVTORBDl',
     appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
     youtubeUrl: 'https://www.youtube.com/watch?v=tlyWhCRzJWY',
     topics: ['OpenClaw', 'Rick Rubin', 'ClawCon', 'Security', 'Vibe Coding'],
