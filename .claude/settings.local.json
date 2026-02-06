@@ -33,7 +33,12 @@
       "Bash(vercel projects ls:*)",
       "Bash(dig:*)",
       "Bash(nslookup:*)",
+<<<<<<< Updated upstream
       "Bash(whois:*)"
+>>>>>>> Stashed changes
+=======
+      "Bash(whois:*)",
+      "Bash(npm run build:*)"
 >>>>>>> Stashed changes
     ]
   }
