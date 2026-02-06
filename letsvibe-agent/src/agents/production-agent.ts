@@ -252,7 +252,7 @@ const toolHandlers: Record<string, (input: Record<string, unknown>) => Promise<s
   },
 
   async generate_voice(input) {
-    const { text, voice_type, output_name } = input;
+    const { text, voice_type, output_name } = input as { text: string; voice_type: string; output_name: string };
     // In production, this would call 11 Labs API
     const voiceSettings = {
       intro: { stability: 0.5, similarity_boost: 0.8, style: 0.3 },
@@ -312,7 +312,7 @@ const toolHandlers: Record<string, (input: Record<string, unknown>) => Promise<s
   },
 
   async generate_quote_card(input) {
-    const { quote, speaker, platform = 'twitter' } = input;
+    const { quote, speaker, platform = 'twitter' } = input as { quote: string; speaker: string; platform?: string };
     const aspectRatios = {
       twitter: '16:9',
       instagram: '1:1',
@@ -402,14 +402,21 @@ ${include_links ? '- [Resource](url)' : '- Resource'}
  * Run the production agent
  */
 export async function runProductionAgent(task: string): Promise<string> {
-  return runAgent({
-    name: 'Production',
-    emoji: '🎬',
-    systemPrompt: PRODUCTION_CONTEXT,
-    tools: productionTools,
-    toolHandlers,
-    task
-  });
+  const result = await runAgent(
+    {
+      name: 'Production',
+      description: 'Post-recording production agent',
+      systemPrompt: PRODUCTION_CONTEXT,
+      tools: productionTools,
+    },
+    task,
+    async (toolName: string, toolInput: Record<string, unknown>) => {
+      const handler = toolHandlers[toolName];
+      if (!handler) throw new Error(`Unknown tool: ${toolName}`);
+      return handler(toolInput);
+    }
+  );
+  return result.output;
 }
 
 /**

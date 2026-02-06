@@ -39,7 +39,13 @@
     "promo:trailer": "tsx src/workflows/promo-video.ts --style trailer",
 
     "social:week": "tsx src/workflows/social-week.ts",
-    "social:quotes": "tsx src/workflows/social-quotes.ts"
+    "social:quotes": "tsx src/workflows/social-quotes.ts",
+
+    "pipeline": "tsx src/pipeline/post-recording.ts",
+    "pipeline:notes": "tsx src/pipeline/post-recording.ts show-notes",
+    "pipeline:social": "tsx src/pipeline/post-recording.ts social",
+    "pipeline:chapters": "tsx src/pipeline/post-recording.ts chapters",
+    "pipeline:help": "tsx src/pipeline/post-recording.ts help"
   },
   "keywords": [
     "letsvibe",
