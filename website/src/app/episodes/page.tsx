@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default async function EpisodesPage() {
-  const episodes = await getAllEpisodes();
+  const episodes = (await getAllEpisodes()).sort((a, b) => b.number - a.number);
   const latest = episodes.find((ep) => ep.status === 'live') || episodes[0];
   const rest = episodes.filter((ep) => ep.number !== latest?.number);
 

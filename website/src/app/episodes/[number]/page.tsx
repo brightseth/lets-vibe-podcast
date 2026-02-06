@@ -332,7 +332,7 @@ export default async function EpisodePage({
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a
-              href="https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"
+              href="https://open.spotify.com/show/0xtkJKB5n0CUBPwrCMCFzq"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
@@ -348,7 +348,7 @@ export default async function EpisodePage({
               Apple Podcasts
             </a>
             <a
-              href="https://youtu.be/1kWtAUDdvJc"
+              href="https://www.youtube.com/@LetsVibePodcast"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"

@@ -10,32 +10,60 @@ export const metadata: Metadata = {
 export default function LinksPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Listen — Podcast Platforms */}
       <section className="border-b border-[var(--border)]">
         <div className="max-w-[640px] mx-auto px-6 py-24 md:py-32">
           <div className="animate-fade-in">
-            <p className="text-[var(--accent)] text-sm font-medium tracking-wide uppercase mb-6">
-              Daily Newsletter
+            <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-6">
+              Subscribe to the Podcast
             </p>
             <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
-              Let's Vibe! Links
+              Never miss an episode
             </h1>
-            <p className="text-xl md:text-2xl text-[var(--muted)] leading-relaxed">
-              A daily digest of the best links on creativity, AI, music, and
-              technology.
+            <p className="text-xl text-[var(--muted)] leading-relaxed mb-10">
+              New episodes weekly. Subscribe wherever you listen.
             </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://open.spotify.com/show/0xtkJKB5n0CUBPwrCMCFzq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+              >
+                Spotify
+              </a>
+              <a
+                href="https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+              >
+                Apple Podcasts
+              </a>
+              <a
+                href="https://www.youtube.com/@LetsVibePodcast"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+              >
+                YouTube
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Subscribe Section */}
+      {/* Newsletter Section */}
       <section className="border-b border-[var(--border)]">
         <div className="max-w-[640px] mx-auto px-6 py-20">
           <div className="animate-fade-in-delay-1">
             <div className="mb-12">
-              <h2 className="text-2xl font-light mb-4">Subscribe</h2>
+              <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-6">
+                Daily Newsletter
+              </p>
+              <h2 className="text-2xl font-light mb-4">Let&apos;s Vibe! Links</h2>
               <p className="text-[var(--muted)] leading-relaxed">
-                Join us every morning. One email, no spam, unsubscribe anytime.
+                A daily digest of the best links on creativity, AI, music, and technology. One email, no spam, unsubscribe anytime.
               </p>
             </div>
 
