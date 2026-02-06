@@ -80,9 +80,12 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
       'CXO of Ledger. He interviewed Rick Rubin on Tetragrammaton about "The Way of Code." Texts with Rick daily about vibe coding. Indiana → Winamp → Beats → LVMH → Ledger.',
     description:
       'Seth recaps ClawCon (1000 RSVPs, line around the block), Ian shares the Rick Rubin vibe coding origin story, and together they unpack why OpenClaw has captured the zeitgeist. Plus: Ian\'s 2am security scare and a practical guide to getting started safely.',
-    duration: '55 min',
+    duration: '58 min',
     date: 'Feb 5, 2026',
     status: 'live',
+    spotifyUrl: 'https://open.spotify.com/show/letsvibe',
+    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
+    youtubeUrl: 'https://www.youtube.com/watch?v=tlyWhCRzJWY',
     topics: ['OpenClaw', 'Rick Rubin', 'ClawCon', 'Security', 'Vibe Coding'],
     showNotes: `Seth reports from ClawCon in San Francisco — 1000 RSVPs, a line around the block, lobster tails on heads, and Ashton Kutcher hiding under a hat. Meanwhile, Anthropic just dropped Claude 4.6.
 
@@ -104,15 +107,18 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
 - Avoid installing random things from ClawHub
 - "Living in the future is cheating" — try it to see what's coming`,
     chapters: [
-      { time: '0:00', title: 'ClawCon Recap — 1000 RSVPs, Line Around the Block' },
-      { time: '5:00', title: 'Ian\'s Origin Story (Speed Run)' },
-      { time: '12:00', title: 'Winamp, Beats, LVMH, Ledger' },
-      { time: '20:00', title: 'The Rick Rubin Vibe Coding Story' },
-      { time: '28:00', title: 'What Does Rick Think of OpenClaw?' },
-      { time: '32:00', title: 'Why OpenClaw Captured the Zeitgeist' },
-      { time: '40:00', title: 'The 2am rm -rf Moment — Security Reality' },
-      { time: '45:00', title: 'Digital Abundance Needs Digital Scarcity' },
-      { time: '48:00', title: 'Practical Setup — Getting Started Safely' },
+      { time: '0:00', title: 'AI Burnout & The Pac-Man Power Pellet' },
+      { time: '4:00', title: 'ClawCon Recap — 1000 RSVPs, Line Around the Block' },
+      { time: '8:00', title: 'Ian\'s Origin Story (Speed Run)' },
+      { time: '13:00', title: 'Winamp, Beats, Apple Music, LVMH, Ledger' },
+      { time: '19:00', title: 'Command Line Renaissance & Blind Coding' },
+      { time: '23:00', title: 'The Rick Rubin Vibe Coding Story' },
+      { time: '30:00', title: 'The Creative Act & Why Creativity Is Making Things' },
+      { time: '33:00', title: 'What Does Rick Think of OpenClaw?' },
+      { time: '36:00', title: 'Why OpenClaw Captured the Zeitgeist' },
+      { time: '42:00', title: 'The 2am rm -rf Moment — Security Reality' },
+      { time: '47:00', title: 'Digital Abundance Needs Digital Scarcity' },
+      { time: '51:00', title: 'Practical Setup — Getting Started Safely' },
     ],
     links: [
       { label: 'OpenClaw', url: 'https://github.com/anthropics/open-claw' },
