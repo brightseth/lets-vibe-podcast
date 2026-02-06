@@ -72,42 +72,56 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
   },
   {
     number: 2,
-    slug: 'seth-interviews-ian',
-    title: 'Seth Interviews Ian',
+    slug: 'openclaw-and-the-rick-rubin-connection',
+    title: 'OpenClaw & The Rick Rubin Connection',
     guest: 'Ian Rogers',
     guestHandle: '@iancr',
     guestBio:
-      'CXO of Ledger. Former Chief Digital Officer at LVMH, founder of Topspin Media, built Beats Music. He interviewed Rick Rubin on Tetragrammaton about "The Way of Code." Texts with Rick daily about vibe coding.',
+      'CXO of Ledger. He interviewed Rick Rubin on Tetragrammaton about "The Way of Code." Texts with Rick daily about vibe coding. Indiana → Winamp → Beats → LVMH → Ledger.',
     description:
-      'Seth turns the tables and interviews Ian about his 30-year arc: the BA in Computer Science that no longer exists, Topspin Media, building Beats Music with Jimmy Iovine, transforming LVMH as CDO, and the vibe coding awakening. Plus: what Rick Rubin texts him every day, and the OpenClaw hackathon tutorial.',
-    duration: 'TBD',
-    date: 'Feb 6, 2026',
-    status: 'upcoming',
-    topics: ['Ian Rogers', 'Beats Music', 'LVMH', 'Rick Rubin', 'OpenClaw'],
-    showNotes: `Seth interviews Ian Rogers about his full arc — one of the most interesting people in tech who's never done an extended interview about his journey.
+      'Seth recaps ClawCon (1000 RSVPs, line around the block), Ian shares the Rick Rubin vibe coding origin story, and together they unpack why OpenClaw has captured the zeitgeist. Plus: Ian\'s 2am security scare and a practical guide to getting started safely.',
+    duration: '55 min',
+    date: 'Feb 5, 2026',
+    status: 'live',
+    topics: ['OpenClaw', 'Rick Rubin', 'ClawCon', 'Security', 'Vibe Coding'],
+    showNotes: `Seth reports from ClawCon in San Francisco — 1000 RSVPs, a line around the block, lobster tails on heads, and Ashton Kutcher hiding under a hat. Meanwhile, Anthropic just dropped Claude 4.6.
 
-**The Origin Story**: A Bachelor of Arts in Computer Science (a degree that no longer exists), early internet days, and founding Topspin Media — Shopify for musicians before Shopify existed.
+**Ian's Origin Story (Speed Run)**: Indiana kid with computers at 8, skateboard punk at 14, CS degree at IU, showed the Beastie Boys the internet backstage at Lollapalooza in 1994. Then: Winamp (30M users, 10% of the internet), Yahoo Music, Topspin, Beats Music with Jimmy Iovine and Dr. Dre, Apple Music, LVMH as Chief Digital Officer, and now Ledger.
 
-**The Music Industry Arc**: How do you end up building Beats Music with Jimmy Iovine and Dr. Dre? The Apple acquisition, what Apple was like from the inside, and the unexpected pivot to LVMH as Chief Digital Officer.
+**The Rick Rubin Story**: Ian texted Rick from a Hong Kong coffee shop asking if he knew he was the meme for vibe coding. Rick wrote back: "Not really, but I think I'm the meme for it." Then Rick dropped everything to write "The Way of Code" based on the Tao. Rick texts Ian every day about vibe coding. Ian: "I think there will be a day in the future when Rick doesn't text me every day about vibe coding, and I will be very sad."
 
-**The Vibe Coding Awakening**: Rick Rubin texts Ian every day about vibe coding. The Pro Tools parallel — Ian was there for that revolution too. His Claude Code New Year: RSVP systems, art galleries, and music projects shipped with "minimal keyboard time."
+**Why OpenClaw Captured the Zeitgeist**: It's both useful AND scary. It commoditized and disintermediated the big models. You can delegate tasks to AI now — not just ask questions. Ian's example: someone texted him a bug report, he pasted it into OpenClaw, and 10 minutes later the fix was pushed live while he was in another meeting.
 
-**Tutorial Segment**: "Agents Propose, Humans Sign" — Ian's OpenClaw hackathon project for Ledger agent intents. AI agents draft transaction proposals, but only humans with hardware wallets can approve them.`,
+**The Security Reality**: Ian installed OpenClaw on a train, connected WhatsApp and email, went to bed, then woke up at 2am and typed \`rm -rf claude\`. "I know enough about security to be freaked out by it."
+
+**The Thesis**: "You can't have digital abundance without digital scarcity." Cryptographic proof becomes essential when agents can act on your behalf.
+
+**Practical Setup (Minimum Viable Safe)**:
+- Use a separate machine (old laptop, Android phone, or VPS)
+- Hostinger has Claude code machines for ~$10/mo
+- Start with Telegram or Signal (not your main WhatsApp/email)
+- Tell it who to be: "You are my assistant. Be professional. I care about privacy."
+- Avoid installing random things from ClawHub
+- "Living in the future is cheating" — try it to see what's coming`,
     chapters: [
-      { time: '0:00', title: 'Turn the Tables — Seth interviews Ian' },
-      { time: '5:00', title: 'The BA in Computer Science' },
-      { time: '15:00', title: 'Topspin Media — Shopify for musicians' },
-      { time: '25:00', title: 'Beats Music → Apple Music' },
-      { time: '35:00', title: 'LVMH — Chief Digital Officer' },
-      { time: '45:00', title: 'The Vibe Coding Awakening — Rick Rubin texts' },
-      { time: '55:00', title: 'Tutorial: Agents Propose, Humans Sign (OpenClaw)' },
+      { time: '0:00', title: 'ClawCon Recap — 1000 RSVPs, Line Around the Block' },
+      { time: '5:00', title: 'Ian\'s Origin Story (Speed Run)' },
+      { time: '12:00', title: 'Winamp, Beats, LVMH, Ledger' },
+      { time: '20:00', title: 'The Rick Rubin Vibe Coding Story' },
+      { time: '28:00', title: 'What Does Rick Think of OpenClaw?' },
+      { time: '32:00', title: 'Why OpenClaw Captured the Zeitgeist' },
+      { time: '40:00', title: 'The 2am rm -rf Moment — Security Reality' },
+      { time: '45:00', title: 'Digital Abundance Needs Digital Scarcity' },
+      { time: '48:00', title: 'Practical Setup — Getting Started Safely' },
     ],
     links: [
+      { label: 'OpenClaw', url: 'https://github.com/anthropics/open-claw' },
+      { label: 'Ian interviews Rick Rubin — The Way of Code', url: 'https://www.tetragrammaton.com/ian-rogers' },
+      { label: 'The Creative Act by Rick Rubin (Audiobook)', url: 'https://www.audible.com/pd/The-Creative-Act-Audiobook/B0BTS764Q3' },
       { label: "Ian's blog: Reflections on a Claude Code New Year", url: 'https://fistfulayen.com/2026/01/13/reflections-on-a-claude-code-new-year/' },
-      { label: 'Ian on X', url: 'https://x.com/iancr' },
-      { label: 'Ian\'s repo: ledger-agent-intents', url: 'https://github.com/fistfulayen/ledger-agent-intents' },
-      { label: 'Episode 2 prep notes', url: '/prep/episode-2' },
-      { label: 'OpenClaw tutorial plan', url: '/plan/ep2' },
+      { label: 'Hostinger Claude Code VPS', url: 'https://www.hostinger.com/' },
+      { label: 'Hetzner Cloud', url: 'https://www.hetzner.com/cloud' },
+      { label: 'Pete Steinberger\'s blog', url: 'https://steipete.com/' },
     ],
   },
 ];
