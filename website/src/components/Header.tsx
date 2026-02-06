@@ -12,37 +12,31 @@ export function Header() {
             <span className="text-lg tracking-tight">Let&apos;s Vibe!</span>
           </Link>
 
-          {/* Minimal nav */}
+          {/* Minimal nav — Episodes first, like every real podcast site */}
           <nav className="flex items-center gap-6">
             <Link
-              href="/clips"
+              href="/episodes"
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
             >
-              Clips
+              Episodes
             </Link>
             <Link
-              href="/#canon"
+              href="/about"
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
             >
-              Canon
+              About
             </Link>
             <Link
-              href="/#guests"
+              href="/links"
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
             >
-              Guests
+              Subscribe
             </Link>
             <Link
-              href="/#tools"
+              href="/studio"
               className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
             >
-              Tools
-            </Link>
-            <Link
-              href="/#follow"
-              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-            >
-              Follow
+              Studio
             </Link>
           </nav>
         </div>
