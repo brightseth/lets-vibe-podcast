@@ -34,11 +34,33 @@
       "Bash(dig:*)",
       "Bash(nslookup:*)",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Bash(whois:*)"
 >>>>>>> Stashed changes
 =======
       "Bash(whois:*)",
       "Bash(npm run build:*)"
+>>>>>>> Stashed changes
+=======
+      "Bash(whois:*)",
+      "Bash(npm run build:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(npx tsx:*)",
+      "Bash(wc:*)",
+      "mcp__gmail__gmail_search",
+      "WebFetch(domain:www.acquired.fm)",
+      "WebFetch(domain:www.joerogan.com)",
+      "WebFetch(domain:lexfridman.com)",
+      "WebFetch(domain:dwarkesh.com)",
+      "WebFetch(domain:a16z.com)",
+      "WebFetch(domain:www.tetragrammacron.com)",
+      "WebFetch(domain:www.allinpodcast.co)",
+      "WebFetch(domain:joerogan.com)",
+      "WebFetch(domain:allin.com)",
+      "WebFetch(domain:www.tetragrammaton.com)",
+      "WebFetch(domain:letsvibe.fm)"
 >>>>>>> Stashed changes
     ]
   }
