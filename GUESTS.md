@@ -40,12 +40,15 @@
 | **Contact** | Twitter DM |
 | **Target Date** | Thursday, Feb 13 |
 
-### Episode 4-6: Outreach Targets
+### Episode 4-6: Outreach (DMs Drafted Feb 8)
 | Episode | Target | Twitter | Connection | Status |
 |---------|--------|---------|------------|--------|
-| Ep 4 (Feb 20) | steipete (Peter Steinberger) | [@steipete](https://twitter.com/steipete) | Twitter DM / /vibe | TARGET |
-| Ep 5 (Feb 27) | Simon Willison | [@simonw](https://twitter.com/simonw) | Twitter DM | TARGET |
-| Ep 6 (Mar 6) | Gene Kogan | [@genekogan](https://twitter.com/genekogan) | Seth knows him | TARGET |
+| Ep 4 (Feb 20) | Boris Cherny | [@bcherny](https://twitter.com/bcherny) | Twitter DM | DM DRAFTED |
+| Ep 4 (Feb 20) | steipete (Peter Steinberger) | [@steipete](https://twitter.com/steipete) | Twitter DM / /vibe | DM DRAFTED |
+| Ep 5 (Feb 27) | Andrej Karpathy | [@karpathy](https://twitter.com/karpathy) | Twitter DM | DM DRAFTED |
+| Ep 5 (Feb 27) | Gene Kogan | [@genekogan](https://twitter.com/genekogan) | Seth knows him | DM DRAFTED |
+| Ep 6 (Mar 6) | Simon Willison | [@simonw](https://twitter.com/simonw) | Twitter DM | DM DRAFTED |
+| Ep 6 (Mar 6) | Riley Brown | [@rileybrown_ai](https://twitter.com/rileybrown_ai) | Twitter DM | DM DRAFTED |
 
 ---
 
@@ -153,13 +156,19 @@ Seth
 | Date | Guest | Method | Response |
 |------|-------|--------|----------|
 | Jan 8 | tez | Twitter DM | Yes! |
-| | | | |
+| Feb 8 | Andrej Karpathy | Twitter DM | Pending |
+| Feb 8 | Peter Steinberger | Twitter DM | Pending |
+| Feb 8 | Boris Cherny | Twitter DM | Pending |
+| Feb 8 | Simon Willison | Twitter DM | Pending |
+| Feb 8 | Gene Kogan | Twitter DM | Pending |
+| Feb 8 | Riley Brown | Twitter DM | Pending |
 
 ### Recorded
 | Date | Guest | Episode # | Status |
 |------|-------|-----------|--------|
 | Jan 30 | Ian Rogers | Ep 1 | PUBLISHED |
+| Feb 5 | Ian Rogers | Ep 2 | PUBLISHED |
 
 ---
 
-*Last updated: February 1, 2026*
+*Last updated: February 8, 2026*

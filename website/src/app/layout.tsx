@@ -36,6 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="alternate" type="application/rss+xml" title="Let's Vibe! Podcast" href="/feed.xml" />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">

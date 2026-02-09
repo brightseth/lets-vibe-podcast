@@ -12,11 +12,11 @@
 | Episode | Guest / Format | Record Date | Status |
 |---------|---------------|-------------|--------|
 | **Ep 1** | Ian interviews Seth | Thu, Jan 30 | **PUBLISHED** |
-| **Ep 2** | Seth interviews Ian | Thu, Feb 5, 12pm PST / 9pm CET | SCHEDULED |
+| **Ep 2** | Seth interviews Ian | Thu, Feb 5, 12pm PST / 9pm CET | **PUBLISHED** |
 | **Ep 3** | tez (confirmed) | Thu, Feb 13 | CONFIRM |
-| **Ep 4** | steipete (target) | Thu, Feb 20 | OUTREACH |
-| **Ep 5** | Simon Willison (target) | Thu, Feb 27 | OUTREACH |
-| **Ep 6** | Gene Kogan (target) | Thu, Mar 6 | OUTREACH |
+| **Ep 4** | Boris Cherny or steipete | Thu, Feb 20 | OUTREACH (Feb 8) |
+| **Ep 5** | Karpathy or Gene Kogan | Thu, Feb 27 | OUTREACH (Feb 8) |
+| **Ep 6** | Simon Willison or Riley Brown | Thu, Mar 6 | OUTREACH (Feb 8) |
 
 ---
 
@@ -31,12 +31,16 @@
   - YouTube: https://youtu.be/1kWtAUDdvJc
   - Website: https://letsvibe.fm
 
-## Episode 2: Ian's Story - SCHEDULED
+## Episode 2: OpenClaw & The Rick Rubin Connection - PUBLISHED
 
-- **Format:** Seth interviews Ian
-- **Record Date:** Thursday, Feb 5, 12pm PST / 9pm CET via Riverside
-- **Theme:** LVMH to Ledger, Beats Music, Topspin, Rick Rubin relationship, Bachelor of Arts in CS, why vibe coding clicked
-- **Prep:** `EPISODE_2_OUTLINE.md`, `EPISODE_2_TALKING_NOTES.md`
+- **Recorded:** February 5, 2026
+- **Published:** February 5, 2026
+- **Duration:** ~58 minutes
+- **Links:**
+  - Spotify: https://open.spotify.com/episode/5Z0L991KKkLf34mVTORBDl
+  - Apple Podcasts: https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247
+  - YouTube: https://www.youtube.com/watch?v=tlyWhCRzJWY
+  - Website: https://letsvibe.fm/episodes/2
 
 ## Episode 3: tez - CONFIRM
 
@@ -89,10 +93,13 @@
 
 | Target | Connection | Lead Time | Status |
 |--------|------------|-----------|--------|
-| tez | Already said yes | Confirmed | CONFIRM date |
-| steipete | Twitter DM / /vibe | 2-4 weeks | DRAFT outreach |
-| Simon Willison | Twitter DM | 4-6 weeks | DRAFT outreach |
-| Gene Kogan | Seth knows him | Direct | DRAFT outreach |
+| tez | Already said yes | Confirmed | CONFIRM Feb 13 date |
+| Boris Cherny | Twitter DM | 2-4 weeks | DM DRAFTED (Feb 8) |
+| steipete | Twitter DM / /vibe | 2-4 weeks | DM DRAFTED (Feb 8) |
+| Karpathy | Twitter DM | 4-6 weeks | DM DRAFTED (Feb 8) |
+| Simon Willison | Twitter DM | 4-6 weeks | DM DRAFTED (Feb 8) |
+| Gene Kogan | Seth knows him | Direct | DM DRAFTED (Feb 8) |
+| Riley Brown | Twitter DM | 2-4 weeks | DM DRAFTED (Feb 8) |
 
 ### Long Lead (Q2 2026)
 
@@ -104,5 +111,5 @@
 
 ---
 
-*Last updated: February 1, 2026*
-*Status: Episode 1 live, weekly cadence begins*
+*Last updated: February 8, 2026*
+*Status: Episodes 1 & 2 live. Outreach sent for Eps 3-6.*
