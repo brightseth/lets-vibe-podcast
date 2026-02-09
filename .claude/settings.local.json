@@ -35,6 +35,7 @@
       "Bash(nslookup:*)",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Bash(whois:*)"
 >>>>>>> Stashed changes
 =======
@@ -42,6 +43,8 @@
       "Bash(npm run build:*)"
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
       "Bash(whois:*)",
       "Bash(npm run build:*)",
       "Bash(grep:*)",
@@ -60,7 +63,15 @@
       "WebFetch(domain:joerogan.com)",
       "WebFetch(domain:allin.com)",
       "WebFetch(domain:www.tetragrammaton.com)",
+<<<<<<< Updated upstream
       "WebFetch(domain:letsvibe.fm)"
+>>>>>>> Stashed changes
+=======
+      "WebFetch(domain:letsvibe.fm)",
+      "Bash(npx next build:*)",
+      "Bash(echo:*)",
+      "Bash(npx vercel env:*)",
+      "Bash(find:*)"
 >>>>>>> Stashed changes
     ]
   }
