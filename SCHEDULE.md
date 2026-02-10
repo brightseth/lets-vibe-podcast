@@ -82,6 +82,7 @@ Seth is fully occupied with NODE Foundation Grand Opening. No recordings during 
 - European listeners get it by afternoon
 - Data shows 5 AM releases get max downloads
 
+<<<<<<< Updated upstream
 **Time Zone Coverage:**
 | Time Zone | Local Time | Context |
 |-----------|------------|---------|
@@ -92,6 +93,20 @@ Seth is fully occupied with NODE Foundation Grand Opening. No recordings during 
 
 **Consistency is Key:**
 Whatever schedule you pick, stick to it religiously. Listeners will expect new episodes at the same time each week. Set up automated publishing in Spotify for Creators.
+=======
+## Seth + Ian Sync Call - Feb 14
+
+- **Date:** Friday, February 14, 10am MST (Tucson) / 6pm CET
+- **Purpose:** Sync call — strategy, guest pipeline, keep the paddling cadence
+- **Notes:** Not a recording session. Let Eps 1 & 2 stew, line up guests for the long game.
+
+## Episode 3: tez - CONFIRM
+
+- **Format:** First outside guest
+- **Target Date:** TBD (was Feb 13 — being patient on guest scheduling)
+- **Status:** tez said "sure, let's give it a shot" - need to confirm date
+- **Topic:** AI-optimistic building, digital art collecting, why we need more builders
+>>>>>>> Stashed changes
 
 ---
 
@@ -268,6 +283,7 @@ Seth + Lukas
 
 ---
 
+<<<<<<< Updated upstream
 ## Recording Buffer Strategy
 
 ### Always Maintain a 2-Episode Buffer
@@ -343,3 +359,7 @@ This schedule was informed by:
 
 *Last updated: January 8, 2026*
 *Status: Pre-launch planning*
+=======
+*Last updated: February 9, 2026*
+*Status: Episodes 1 & 2 live. Sync call with Ian scheduled Feb 14. Outreach sent for Eps 3-6.*
+>>>>>>> Stashed changes

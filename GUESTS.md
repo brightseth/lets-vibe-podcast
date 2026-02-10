@@ -62,7 +62,20 @@
 | Grimes | [@Grimezsz](https://twitter.com/Grimezsz) | - | Artist, AI experimenter | Elf.tech, AI voice | Management |
 | RAC | [@RAC](https://twitter.com/RAC) | @rac | Grammy winner, crypto | Music + crypto + AI | Twitter DM |
 
+<<<<<<< Updated upstream
 ### Tier 3: Collectors / Tastemakers
+=======
+### Tier 3: Ian's Network
+
+| Name | Twitter | Who They Are | Why | Contact Strategy |
+|------|---------|--------------|-----|------------------|
+| Pascal Gauthier | [@_pgauthier](https://twitter.com/_pgauthier) | CEO of Ledger, Ian's boss | Crypto + security + hardware, Ian relationship | Through Ian, once things settle |
+
+- LVMH alumni
+- Beats/Apple Music network
+- Ledger ecosystem
+- Tetragrammaton guests
+>>>>>>> Stashed changes
 
 | Name | Twitter | Farcaster | Who They Are | Why | Contact Strategy |
 |------|---------|-----------|--------------|-----|------------------|
