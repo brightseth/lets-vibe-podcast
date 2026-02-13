@@ -141,5 +141,25 @@ See `PRODUCTION_PLAYBOOK.md` for full details.
 *Project: ~/Projects/lets-vibe-podcast*
 *Website: https://letsvibe.fm*
 
+<<<<<<< Updated upstream
 ## Git Workflow
 Always commit and push changes before ending a session. Seth works across multiple machines (desktop/laptop).
+=======
+---
+
+## @seth Reporting
+
+When you make significant decisions, encounter blockers, or complete major tasks, report to the central @seth agent:
+
+```bash
+echo '{"type":"TYPE","summary":"SUMMARY","from":"lets-vibe-podcast"}' > ~/.seth/inbox/$(date +%s).json
+```
+
+Types: `decision` | `task` | `update` | `urgent` | `calendar`
+
+Report when:
+- A significant architectural or design decision is made
+- A blocker is discovered that might affect other projects
+- A major feature or milestone is completed
+- Something urgent needs cross-project attention
+>>>>>>> Stashed changes

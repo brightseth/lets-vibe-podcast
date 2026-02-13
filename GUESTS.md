@@ -71,6 +71,24 @@
 |------|---------|--------------|-----|------------------|
 | Pascal Gauthier | [@_pgauthier](https://twitter.com/_pgauthier) | CEO of Ledger, Ian's boss | Crypto + security + hardware, Ian relationship | Through Ian, once things settle |
 
+<<<<<<< Updated upstream
+=======
+### Tier 2: Digital Art / AI Art
+
+| Name | Twitter | Who They Are | Why |
+|------|---------|--------------|-----|
+| Gene Kogan | [@genekogan](https://twitter.com/genekogan) | Abraham.ai founder | AI art OG, Seth's contact |
+| Claire Silver | [@clairesilver12](https://twitter.com/clairesilver12) | AI artist, advocate | Voice of AI-assisted art |
+| Holly Herndon | [@hollyherndon](https://twitter.com/hollyherndon) | AI music pioneer | Holly+, voice cloning art |
+| Refik Anadol | [@refikinadol](https://twitter.com/refikinadol) | Data sculpture artist | Mainstream AI art success |
+
+### Tier 3: Ian's Network
+
+| Name | Twitter | Who They Are | Why | Contact Strategy |
+|------|---------|--------------|-----|------------------|
+| Pascal Gauthier | [@_pgauthier](https://twitter.com/_pgauthier) | CEO of Ledger, Ian's boss | Crypto + security + hardware, Ian relationship | Through Ian, once things settle |
+
+>>>>>>> Stashed changes
 - LVMH alumni
 - Beats/Apple Music network
 - Ledger ecosystem
