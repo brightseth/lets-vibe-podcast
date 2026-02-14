@@ -142,9 +142,12 @@ See `PRODUCTION_PLAYBOOK.md` for full details.
 *Website: https://letsvibe.fm*
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Git Workflow
 Always commit and push changes before ending a session. Seth works across multiple machines (desktop/laptop).
 =======
+=======
+>>>>>>> Stashed changes
 ---
 
 ## @seth Reporting
@@ -162,4 +165,7 @@ Report when:
 - A blocker is discovered that might affect other projects
 - A major feature or milestone is completed
 - Something urgent needs cross-project attention
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

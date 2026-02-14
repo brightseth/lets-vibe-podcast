@@ -88,6 +88,9 @@
 |------|---------|--------------|-----|------------------|
 | Pascal Gauthier | [@_pgauthier](https://twitter.com/_pgauthier) | CEO of Ledger, Ian's boss | Crypto + security + hardware, Ian relationship | Through Ian, once things settle |
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 - LVMH alumni
 - Beats/Apple Music network
