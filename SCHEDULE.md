@@ -112,6 +112,12 @@ Whatever schedule you pick, stick to it religiously. Listeners will expect new e
 - **Purpose:** Sync call — strategy, guest pipeline, keep the paddling cadence
 - **Notes:** Not a recording session. Let Eps 1 & 2 stew, line up guests for the long game.
 
+## Seth + Ian Sync Call - Feb 14
+
+- **Date:** Friday, February 14, 10am MST (Tucson) / 6pm CET
+- **Purpose:** Sync call — strategy, guest pipeline, keep the paddling cadence
+- **Notes:** Not a recording session. Let Eps 1 & 2 stew, line up guests for the long game.
+
 ## Episode 3: tez - CONFIRM
 
 - **Format:** First outside guest
@@ -298,6 +304,7 @@ Seth + Lukas
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Recording Buffer Strategy
 
 ### Always Maintain a 2-Episode Buffer
@@ -373,6 +380,10 @@ This schedule was informed by:
 
 *Last updated: January 8, 2026*
 *Status: Pre-launch planning*
+=======
+*Last updated: February 9, 2026*
+*Status: Episodes 1 & 2 live. Sync call with Ian scheduled Feb 14. Outreach sent for Eps 3-6.*
+>>>>>>> Stashed changes
 =======
 *Last updated: February 9, 2026*
 *Status: Episodes 1 & 2 live. Sync call with Ian scheduled Feb 14. Outreach sent for Eps 3-6.*
