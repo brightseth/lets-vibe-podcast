@@ -144,9 +144,12 @@ See `PRODUCTION_PLAYBOOK.md` for full details.
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Git Workflow
 Always commit and push changes before ending a session. Seth works across multiple machines (desktop/laptop).
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -170,6 +173,9 @@ Report when:
 - Something urgent needs cross-project attention
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
