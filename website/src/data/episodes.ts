@@ -142,7 +142,7 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
       'Matt Medved joins Seth as cohost. From terminal terror to building personal software, launching an AI agent named Alfred on X and waking up to meme coin chaos, the crypto ugly cousins, and why "autonomish" is the only honest word for where we actually are with AI agents.',
     duration: '~55 min',
     date: 'Feb 25, 2026',
-    status: 'recorded',
+    status: 'live',
     topics: ['Agents', 'OpenClaw', 'Vibe Coding', 'Crypto', 'Personal Software', 'Alfred'],
     showNotes: `Matt Medved — CEO of Now Media, Art Basel Digital Art Council member, and newly minted vibe coder — joins Seth for the first episode without Ian.
 
