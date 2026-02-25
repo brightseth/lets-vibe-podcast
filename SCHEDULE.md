@@ -13,7 +13,7 @@
 |---------|---------------|-------------|--------|
 | **Ep 1** | Ian interviews Seth | Thu, Jan 30 | **PUBLISHED** |
 | **Ep 2** | Seth interviews Ian | Thu, Feb 5, 12pm PST / 9pm CET | **PUBLISHED** |
-| **Ep 3** | tez (confirmed) | Thu, Feb 13 | CONFIRM |
+| **Ep 3** | Matt Medved (cohost) | Tue, Feb 25 | **RECORDED** |
 | **Ep 4** | Boris Cherny or steipete | Thu, Feb 20 | OUTREACH (Feb 8) |
 | **Ep 5** | Karpathy or Gene Kogan | Thu, Feb 27 | OUTREACH (Feb 8) |
 | **Ep 6** | Simon Willison or Riley Brown | Thu, Mar 6 | OUTREACH (Feb 8) |
@@ -42,12 +42,20 @@
   - YouTube: https://www.youtube.com/watch?v=tlyWhCRzJWY
   - Website: https://letsvibe.fm/episodes/2
 
-## Episode 3: tez - CONFIRM
+## Seth + Ian Sync Call - Feb 14
 
-- **Format:** First outside guest
-- **Target Date:** Thursday, Feb 13
-- **Status:** tez said "sure, let's give it a shot" - need to confirm date
-- **Topic:** AI-optimistic building, digital art collecting, why we need more builders
+- **Date:** Friday, February 14, 10am MST (Tucson) / 6pm CET
+- **Purpose:** Sync call — strategy, guest pipeline, keep the paddling cadence
+- **Notes:** Not a recording session. Let Eps 1 & 2 stew, line up guests for the long game.
+
+## Episode 3: Matt Medved — The Media Builder - RECORDED
+
+- **Format:** Seth + Matt cohost (first episode without Ian)
+- **Recorded:** Tuesday, February 25, 2026, 12:15pm MST via Riverside
+- **Duration:** ~55 minutes
+- **Status:** RECORDED — awaiting Riverside processing
+- **Topics:** Alfred the AI butler, OpenClaw agents, meme coin chaos, "autonomish," personal software, terminal transformation, crypto ugly cousins
+- **Key moments:** "Autonomish" coined, Alfred meme coin chaos story, "electric screwdriver in my head," "don't make fitness apps"
 
 ---
 
@@ -111,5 +119,5 @@
 
 ---
 
-*Last updated: February 8, 2026*
-*Status: Episodes 1 & 2 live. Outreach sent for Eps 3-6.*
+*Last updated: February 25, 2026*
+*Status: Episodes 1 & 2 live. Episode 3 recorded with Matt Medved. tez still in pipeline for future episode.*

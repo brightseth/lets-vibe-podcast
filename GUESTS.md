@@ -28,17 +28,25 @@
 | **Topic** | Ian's journey - LVMH to Ledger, Beats Music, Topspin, Rick Rubin relationship, Bachelor of Arts in CS, why vibe coding clicked |
 | **Format** | Seth interviews Ian via Riverside |
 
-### Episode 3: tez - CONFIRMED
+### Episode 3: Matt Medved — The Media Builder - RECORDED
+| Field | Value |
+|-------|-------|
+| **Guest** | Matt Medved (cohost) |
+| **Twitter** | [@mattmedved](https://twitter.com/mattmedved) |
+| **Status** | **RECORDED** — February 25, 2026 via Riverside |
+| **Topic** | Terminal transformation, Alfred the AI butler (OpenClaw), meme coin chaos, "autonomish" agents, personal software, building with leverage |
+| **Format** | Seth + Matt cohost (first episode without Ian) |
+| **Duration** | ~55 min |
+| **Key Quotes** | "Terminal went from a window where I wasn't supposed to be to a window into imagination" / "Autonomish" / "Electric screwdriver in my head" |
+
+### tez - CONFIRMED (Rescheduling)
 | Field | Value |
 |-------|-------|
 | **Guest** | tez |
 | **Twitter** | [@thefunnyguysNFT](https://twitter.com/thefunnyguysNFT) |
-| **Farcaster** | @tez |
-| **Status** | **CONFIRMED** - said "sure, lets give it a shot" - need to confirm Feb 13 date |
+| **Status** | **CONFIRMED** - said yes, need to reschedule |
 | **Topic** | AI-optimistic building, digital art collecting, why we need more builders |
 | **Origin** | He suggested Seth do a podcast - natural first outside guest |
-| **Contact** | Twitter DM |
-| **Target Date** | Thursday, Feb 13 |
 
 ### Episode 4-6: Outreach (DMs Drafted Feb 8)
 | Episode | Target | Twitter | Connection | Status |
@@ -91,6 +99,11 @@
 | Refik Anadol | [@refikinadol](https://twitter.com/refikinadol) | Data sculpture artist | Mainstream AI art success |
 
 ### Tier 3: Ian's Network
+
+| Name | Twitter | Who They Are | Why | Contact Strategy |
+|------|---------|--------------|-----|------------------|
+| Pascal Gauthier | [@_pgauthier](https://twitter.com/_pgauthier) | CEO of Ledger, Ian's boss | Crypto + security + hardware, Ian relationship | Through Ian, once things settle |
+
 - LVMH alumni
 - Beats/Apple Music network
 - Ledger ecosystem
@@ -168,7 +181,8 @@ Seth
 |------|-------|-----------|--------|
 | Jan 30 | Ian Rogers | Ep 1 | PUBLISHED |
 | Feb 5 | Ian Rogers | Ep 2 | PUBLISHED |
+| Feb 25 | Matt Medved | Ep 3 | RECORDED |
 
 ---
 
-*Last updated: February 8, 2026*
+*Last updated: February 25, 2026*

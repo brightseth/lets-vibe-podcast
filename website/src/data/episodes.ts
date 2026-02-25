@@ -137,12 +137,46 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     guest: 'Matt Medved',
     guestHandle: '@mattmedved',
     guestBio:
-      'Co-founder and CEO of nft now. Art Basel Digital Art Council. Built the premier web3 media platform, now vibecoding his way into AI. Executive Producer of Let\'s Vibe!',
+      'Co-founder and CEO of Now Media (nft now). Art Basel Digital Art Council. Built the premier web3 media platform, now vibecoding his way into AI. Creator of Alfred, his OpenClaw AI butler.',
     description:
-      'Matt Medved joins Seth as cohost. From building nft now into the leading web3 media brand to discovering vibe coding — why the best media builders are becoming software builders, and what happens when you give a media CEO access to Claude Code.',
-    duration: '~45 min',
+      'Matt Medved joins Seth as cohost. From terminal terror to building personal software, launching an AI agent named Alfred on X and waking up to meme coin chaos, the crypto ugly cousins, and why "autonomish" is the only honest word for where we actually are with AI agents.',
+    duration: '~55 min',
     date: 'Feb 25, 2026',
-    status: 'upcoming',
-    topics: ['Media + AI', 'Vibe Coding', 'nft now', 'Building in Public', 'Distribution'],
+    status: 'recorded',
+    topics: ['Agents', 'OpenClaw', 'Vibe Coding', 'Crypto', 'Personal Software', 'Alfred'],
+    showNotes: `Matt Medved — CEO of Now Media, Art Basel Digital Art Council member, and newly minted vibe coder — joins Seth for the first episode without Ian.
+
+**Matt's Journey**: From music journalist to Billboard to co-founding nft now, Matt hadn't written a line of code before January 2026. After Seth onboarded him to Claude Code, he went from "terminal felt like diffusing a bomb" to running 5-7 Claude Code windows simultaneously and building personal software daily.
+
+**Alfred the AI Butler**: Matt's OpenClaw agent, named after Batman's butler, evolved from a passive briefing bot into a chief of staff orchestrating multiple Claude Code sessions. "I'm going to bed. These are the things I'd love to wake up to tomorrow." That was the big unlock.
+
+**The Launch That Broke Everything**: Matt gave Alfred a Twitter account (@IAmYourAlfred) expecting crickets. Within minutes: hundreds of followers, competing meme coins on Solana and Base, people demanding wallet addresses. The crypto degens had automated scanners looking for new agent accounts tied to people with followings.
+
+**Autonomish**: Seth coins the term for where AI agents actually are — not fully autonomous (too brittle), not fully human-controlled (not agentic). Like Julian Edelman saying he's "Jewish-ish." We may be in this middle ground forever.
+
+**Personal Software**: Matt's framework for getting started — don't build a fitness app. Build tools that automate your own rote work so you can focus on your zone of genius. Start with reps, not outcomes.
+
+**The Electric Screwdriver**: Seth describes the new creator mindset — seeing every piece of software as deconstructable and reconstructable. "I have an electric screwdriver in my head." The critical stance: why download a gazillion-gigabyte photo app when you can build the exact piece you need?
+
+**The Plea**: Don't make fitness apps. We need New York, Berlin, and weird cultural communities taking these tools and building bold moonshots that won't come out of Silicon Valley.`,
+    chapters: [
+      { time: '0:00', title: 'How Are You Feeling? Matt\'s AI Awakening' },
+      { time: '5:00', title: 'Terminal: From Bomb Defusal to Window of Imagination' },
+      { time: '10:00', title: 'The Hottest Programming Language Is English' },
+      { time: '15:00', title: 'Producer vs. Creator — When the Roles Collapse' },
+      { time: '20:00', title: 'Meet Alfred: The AI Butler Who Runs the Show' },
+      { time: '27:00', title: 'Meme Coin Chaos — Crypto\'s Ugly Cousins' },
+      { time: '35:00', title: 'Autonomish: The Honest Word for AI Agents' },
+      { time: '40:00', title: 'Personal Software & Learning with Leverage' },
+      { time: '48:00', title: 'The Electric Screwdriver in Your Head' },
+      { time: '52:00', title: 'Don\'t Make Fitness Apps — Swing for the Fences' },
+    ],
+    links: [
+      { label: 'Matt Medved on X', url: 'https://x.com/mattmedved' },
+      { label: 'Alfred on X', url: 'https://x.com/IAmYourAlfred' },
+      { label: 'Now Media (nft now)', url: 'https://nftnow.com' },
+      { label: 'OpenClaw', url: 'https://github.com/anthropics/open-claw' },
+      { label: '/vibe — Social layer for Claude Code', url: 'https://slashvibe.dev' },
+    ],
   },
 ];
