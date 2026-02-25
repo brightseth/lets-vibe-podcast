@@ -130,4 +130,19 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
       { label: 'Pete Steinberger\'s blog', url: 'https://steipete.com/' },
     ],
   },
+  {
+    number: 3,
+    slug: 'matt-medved-the-media-builder',
+    title: 'The Media Builder',
+    guest: 'Matt Medved',
+    guestHandle: '@mattmedved',
+    guestBio:
+      'Co-founder and CEO of nft now. Art Basel Digital Art Council. Built the premier web3 media platform, now vibecoding his way into AI. Executive Producer of Let\'s Vibe!',
+    description:
+      'Matt Medved joins Seth as cohost. From building nft now into the leading web3 media brand to discovering vibe coding — why the best media builders are becoming software builders, and what happens when you give a media CEO access to Claude Code.',
+    duration: '~45 min',
+    date: 'Feb 25, 2026',
+    status: 'upcoming',
+    topics: ['Media + AI', 'Vibe Coding', 'nft now', 'Building in Public', 'Distribution'],
+  },
 ];
