@@ -29,7 +29,7 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
   }, []);
 
   // Build the embed URL with privacy-enhanced mode
-  const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?rel=0&modestbranding=1`;
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`;
 
   return (
     <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-[var(--surface)]">
