@@ -145,7 +145,7 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     status: 'live',
     topics: ['Agents', 'OpenClaw', 'Vibe Coding', 'Crypto', 'Personal Software', 'Alfred'],
     spotifyUrl: 'https://open.spotify.com/episode/0DF0J1i1zXE6GqA6ntMRTG',
-    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
+    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247?i=1000751609946',
     youtubeUrl: 'https://www.youtube.com/watch?v=2tly_AjQNM4',
     showNotes: `Matt Medved — CEO of Now Media, Art Basel Digital Art Council member, and newly minted vibe coder — joins Seth for the first episode without Ian.
 
