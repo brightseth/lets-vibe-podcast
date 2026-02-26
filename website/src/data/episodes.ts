@@ -144,6 +144,9 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     date: 'Feb 25, 2026',
     status: 'live',
     topics: ['Agents', 'OpenClaw', 'Vibe Coding', 'Crypto', 'Personal Software', 'Alfred'],
+    spotifyUrl: 'https://open.spotify.com/show/0xtkJKB5n0CUBPwrCMCFzq',
+    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
+    youtubeUrl: 'https://www.youtube.com/watch?v=2tly_AiQNM4',
     showNotes: `Matt Medved — CEO of Now Media, Art Basel Digital Art Council member, and newly minted vibe coder — joins Seth for the first episode without Ian.
 
 **Matt's Journey**: From music journalist to Billboard to co-founding nft now, Matt hadn't written a line of code before January 2026. After Seth onboarded him to Claude Code, he went from "terminal felt like diffusing a bomb" to running 5-7 Claude Code windows simultaneously and building personal software daily.
