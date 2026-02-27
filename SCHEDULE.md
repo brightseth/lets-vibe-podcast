@@ -14,9 +14,9 @@
 | **Ep 1** | Ian interviews Seth | Thu, Jan 30 | **PUBLISHED** |
 | **Ep 2** | Seth interviews Ian | Thu, Feb 5, 12pm PST / 9pm CET | **PUBLISHED** |
 | **Ep 3** | Matt Medved (cohost) | Tue, Feb 25 | **RECORDED** |
-| **Ep 4** | Boris Cherny or steipete | Thu, Feb 20 | OUTREACH (Feb 8) |
-| **Ep 5** | Karpathy or Gene Kogan | Thu, Feb 27 | OUTREACH (Feb 8) |
-| **Ep 6** | Simon Willison or Riley Brown | Thu, Mar 6 | OUTREACH (Feb 8) |
+| **Ep 4** | Lukas Amacher & 0xfff (CONTXT) | Wed/Thu, Mar 4-5 | SCHEDULING |
+| **Ep 5** | TBD | TBD | Pipeline |
+| **Ep 6** | TBD | TBD | Pipeline |
 
 ---
 
@@ -56,6 +56,16 @@
 - **Status:** RECORDED — awaiting Riverside processing
 - **Topics:** Alfred the AI butler, OpenClaw agents, meme coin chaos, "autonomish," personal software, terminal transformation, crypto ugly cousins
 - **Key moments:** "Autonomish" coined, Alfred meme coin chaos story, "electric screwdriver in my head," "don't make fitness apps"
+
+## Episode 4: Lukas Amacher & 0xfff — CONTXT - SCHEDULING
+
+- **Format:** Seth hosts, two guests (Lukas Amacher + 0xfff)
+- **Target Date:** Wednesday Mar 4 or Thursday Mar 5, 2026
+- **Topic:** Vibecoding origin stories, building CONTXT (contxt.art), digital art collecting meets AI tooling
+- **Guests:**
+  - Lukas Amacher — Managing Director of 1of1 collection at DIALECTIC (Zug). Curates one of the world's premier digital art collections. Law + Philosophy background. Musician (Ethimm).
+  - 0xfff — Digital artist and builder. Known for onchain/generative work.
+- **Status:** Need to confirm date and send Riverside invite
 
 ---
 
@@ -119,5 +129,5 @@
 
 ---
 
-*Last updated: February 25, 2026*
-*Status: Episodes 1 & 2 live. Episode 3 recorded with Matt Medved. tez still in pipeline for future episode.*
+*Last updated: February 27, 2026*
+*Status: Episodes 1-3 live. Episode 4 scheduling with Lukas Amacher & 0xfff. tez still in pipeline for future episode.*

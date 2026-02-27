@@ -48,15 +48,25 @@
 | **Topic** | AI-optimistic building, digital art collecting, why we need more builders |
 | **Origin** | He suggested Seth do a podcast - natural first outside guest |
 
-### Episode 4-6: Outreach (DMs Drafted Feb 8)
-| Episode | Target | Twitter | Connection | Status |
-|---------|--------|---------|------------|--------|
-| Ep 4 (Feb 20) | Boris Cherny | [@bcherny](https://twitter.com/bcherny) | Twitter DM | DM DRAFTED |
-| Ep 4 (Feb 20) | steipete (Peter Steinberger) | [@steipete](https://twitter.com/steipete) | Twitter DM / /vibe | DM DRAFTED |
-| Ep 5 (Feb 27) | Andrej Karpathy | [@karpathy](https://twitter.com/karpathy) | Twitter DM | DM DRAFTED |
-| Ep 5 (Feb 27) | Gene Kogan | [@genekogan](https://twitter.com/genekogan) | Seth knows him | DM DRAFTED |
-| Ep 6 (Mar 6) | Simon Willison | [@simonw](https://twitter.com/simonw) | Twitter DM | DM DRAFTED |
-| Ep 6 (Mar 6) | Riley Brown | [@rileybrown_ai](https://twitter.com/rileybrown_ai) | Twitter DM | DM DRAFTED |
+### Episode 4: Lukas Amacher & 0xfff — CONTXT - SCHEDULING
+| Field | Value |
+|-------|-------|
+| **Guests** | Lukas Amacher + 0xfff |
+| **Twitter** | [@lukas_amacher](https://twitter.com/lukas_amacher) · [@0xfff](https://twitter.com/0xfff) |
+| **Status** | **SCHEDULING** — targeting Wed Mar 4 or Thu Mar 5 |
+| **Topic** | Vibecoding origin stories, building CONTXT (contxt.art), digital art collecting meets AI, 1of1 collection |
+| **Format** | Seth hosts, two guests |
+| **Connection** | Direct — Seth knows them |
+
+### Future Pipeline (DMs Drafted Feb 8)
+| Target | Twitter | Connection | Status |
+|--------|---------|------------|--------|
+| Boris Cherny | [@bcherny](https://twitter.com/bcherny) | Twitter DM | DM DRAFTED |
+| steipete (Peter Steinberger) | [@steipete](https://twitter.com/steipete) | Twitter DM / /vibe | DM DRAFTED |
+| Andrej Karpathy | [@karpathy](https://twitter.com/karpathy) | Twitter DM | DM DRAFTED |
+| Gene Kogan | [@genekogan](https://twitter.com/genekogan) | Seth knows him | DM DRAFTED |
+| Simon Willison | [@simonw](https://twitter.com/simonw) | Twitter DM | DM DRAFTED |
+| Riley Brown | [@rileybrown_ai](https://twitter.com/rileybrown_ai) | Twitter DM | DM DRAFTED |
 
 ---
 
@@ -185,4 +195,4 @@ Seth
 
 ---
 
-*Last updated: February 25, 2026*
+*Last updated: February 27, 2026*

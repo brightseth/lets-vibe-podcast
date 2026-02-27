@@ -182,4 +182,19 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
       { label: '/vibe — Social layer for Claude Code', url: 'https://slashvibe.dev' },
     ],
   },
+  {
+    number: 4,
+    slug: 'contxt-the-vibecoding-collectors',
+    title: 'CONTXT & The Vibecoding Collectors',
+    guest: 'Lukas Amacher & 0xfff',
+    guestHandle: '@lukas_amacher & @0xfff',
+    guestBio:
+      'Lukas is Managing Director of the 1of1 collection at DIALECTIC — one of the world\'s premier digital art collections (Beeple, Refik Anadol, IX Shells). 0xfff is a digital artist and builder. Together they\'re building CONTXT (contxt.art), a new project at the intersection of art and AI.',
+    description:
+      'Lukas Amacher and 0xfff join Seth to share their vibecoding origin stories and unveil CONTXT — their new project bridging digital art curation and AI tooling. From managing world-class NFT collections to building with Claude Code.',
+    duration: '~45 min',
+    date: 'Mar 5, 2026',
+    status: 'upcoming',
+    topics: ['Digital Art', 'Vibecoding', 'CONTXT', 'Collecting', '1of1', 'Art + AI'],
+  },
 ];
