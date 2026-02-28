@@ -186,15 +186,15 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     number: 4,
     slug: 'contxt-the-vibecoding-collectors',
     title: 'CONTXT & The Vibecoding Collectors',
-    guest: 'Lukas Amacher & 0xfff',
+    guest: 'Lukas Amacher & David Simon (0xfff)',
     guestHandle: '@lukas_amacher & @0xfff',
     guestBio:
-      'Lukas is Managing Director of the 1of1 collection at DIALECTIC — one of the world\'s premier digital art collections (Beeple, Refik Anadol, IX Shells). 0xfff is a digital artist and builder. Together they\'re building CONTXT (contxt.art), a new project at the intersection of art and AI.',
+      'Lukas is Managing Director of the 1of1 collection at DIALECTIC — one of the world\'s premier digital art collections. David Simon (0xfff) is a digital artist and builder. Together they\'re building CONTXT (contxt.art) — voice-first tools that let you speak to exhibitions, build your cultural archive, and turn every artist into a catalog raisonné.',
     description:
-      'Lukas Amacher and 0xfff join Seth to share their vibecoding origin stories and unveil CONTXT — their new project bridging digital art curation and AI tooling. From managing world-class NFT collections to building with Claude Code.',
+      'Lukas and David join Seth to share their vibecoding origin stories and unveil CONTXT. Voice as the magic feature, Pokemon Go for culture, why the digital version of a book is a conversation, and shipping features at world record pace with Claude Code.',
     duration: '~45 min',
-    date: 'Mar 5, 2026',
+    date: 'Mar 4, 2026',
     status: 'upcoming',
-    topics: ['Digital Art', 'Vibecoding', 'CONTXT', 'Collecting', '1of1', 'Art + AI'],
+    topics: ['CONTXT', 'Vibecoding', 'Digital Art', 'Museums', 'Voice AI', 'Catalog Raisonné'],
   },
 ];

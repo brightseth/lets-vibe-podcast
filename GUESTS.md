@@ -48,15 +48,15 @@
 | **Topic** | AI-optimistic building, digital art collecting, why we need more builders |
 | **Origin** | He suggested Seth do a podcast - natural first outside guest |
 
-### Episode 4: Lukas Amacher & 0xfff — CONTXT - SCHEDULING
+### Episode 4: Lukas Amacher & David Simon (0xfff) — CONTXT - CONFIRMED
 | Field | Value |
 |-------|-------|
-| **Guests** | Lukas Amacher + 0xfff |
-| **Twitter** | [@lukas_amacher](https://twitter.com/lukas_amacher) · [@0xfff](https://twitter.com/0xfff) |
-| **Status** | **SCHEDULING** — targeting Wed Mar 4 or Thu Mar 5 |
-| **Topic** | Vibecoding origin stories, building CONTXT (contxt.art), digital art collecting meets AI, 1of1 collection |
+| **Guests** | Lukas Amacher + David Simon (0xfff) |
+| **Emails** | lukas@contxt.art · david@contxt.art |
+| **Status** | **CONFIRMED** — Wed Mar 4, 12pm MST via Riverside |
+| **Topic** | Vibecoding origin stories, building CONTXT, voice as magic feature, catalog raisonné for every artist, "digital version of a book is a conversation," Pokemon Go for culture |
 | **Format** | Seth hosts, two guests |
-| **Connection** | Direct — Seth knows them |
+| **Connection** | Direct — Seth is angel investing in CONTXT |
 
 ### Future Pipeline (DMs Drafted Feb 8)
 | Target | Twitter | Connection | Status |
