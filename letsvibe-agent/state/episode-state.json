@@ -1,0 +1,49 @@
+{
+  "episodes": {
+    "1": {
+      "number": 1,
+      "title": "The Netscape Moment",
+      "guest": null,
+      "recordingDate": "2025-01-30",
+      "publishDate": "2025-01-30",
+      "status": "published",
+      "platforms": {
+        "spotify": "https://open.spotify.com/show/0xtkJKB5n0CUBPwrCMCFzq",
+        "apple": "https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247",
+        "youtube": "https://www.youtube.com/@LetsVibePodcast"
+      }
+    },
+    "2": {
+      "number": 2,
+      "title": "OpenClaw & The Rick Rubin Connection",
+      "guest": null,
+      "recordingDate": "2025-02-05",
+      "publishDate": "2025-02-05",
+      "status": "published",
+      "platforms": {
+        "spotify": "https://open.spotify.com/show/0xtkJKB5n0CUBPwrCMCFzq",
+        "apple": "https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247",
+        "youtube": "https://www.youtube.com/@LetsVibePodcast"
+      }
+    },
+    "3": {
+      "number": 3,
+      "title": "The Media Builder",
+      "guest": "Matt Medved",
+      "recordingDate": "2025-02-25",
+      "publishDate": null,
+      "status": "recorded",
+      "notes": "Cohost format (no Ian). ~55 min. Key moments: Alfred agent, meme coin chaos, autonomish, personal software, electric screwdriver in my head. Awaiting Riverside processing."
+    },
+    "4": {
+      "number": 4,
+      "title": null,
+      "guest": null,
+      "recordingDate": null,
+      "publishDate": null,
+      "status": "planning",
+      "notes": "Outreach drafted Feb 8 for Karpathy, steipete, Boris Cherny, Simon Willison, Gene Kogan, Riley Brown. tez confirmed but needs scheduling."
+    }
+  },
+  "updatedAt": "2026-02-28T00:00:00.000Z"
+}

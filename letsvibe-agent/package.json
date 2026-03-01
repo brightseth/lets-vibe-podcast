@@ -45,7 +45,12 @@
     "pipeline:notes": "tsx src/pipeline/post-recording.ts show-notes",
     "pipeline:social": "tsx src/pipeline/post-recording.ts social",
     "pipeline:chapters": "tsx src/pipeline/post-recording.ts chapters",
-    "pipeline:help": "tsx src/pipeline/post-recording.ts help"
+    "pipeline:help": "tsx src/pipeline/post-recording.ts help",
+
+    "daemon": "npx tsx src/core/main.ts",
+    "daemon:start": "pm2 start ecosystem.config.cjs",
+    "daemon:stop": "pm2 stop levi-core levi-heartbeat",
+    "daemon:logs": "pm2 logs levi-core --lines 50"
   },
   "keywords": [
     "letsvibe",
