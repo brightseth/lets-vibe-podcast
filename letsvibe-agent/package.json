@@ -47,6 +47,9 @@
     "pipeline:chapters": "tsx src/pipeline/post-recording.ts chapters",
     "pipeline:help": "tsx src/pipeline/post-recording.ts help",
 
+    "research": "tsx src/skills/ecosystem-scanner.ts",
+    "research:latest": "cat state/research/$(ls -t state/research/*.md 2>/dev/null | head -1)",
+
     "daemon": "npx tsx src/core/main.ts",
     "daemon:start": "pm2 start ecosystem.config.cjs",
     "daemon:stop": "pm2 stop levi-core levi-heartbeat",

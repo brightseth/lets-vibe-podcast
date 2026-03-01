@@ -72,6 +72,11 @@ const PERMISSION_MAP: Record<string, PermissionEntry> = {
     label: "Draft + Notify",
     description: "Research potential guest and compile brief",
   },
+  "ecosystem-research": {
+    tier: 2,
+    label: "Draft + Notify",
+    description: "Scan vibecoding ecosystem for trends, tools, guest leads, episode ideas",
+  },
 
   // ---------------------------------------------------------------------------
   // Tier 1 — Require Approval (draft only, wait for Seth)

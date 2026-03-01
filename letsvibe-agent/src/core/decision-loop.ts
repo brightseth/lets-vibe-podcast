@@ -72,6 +72,10 @@ export interface WorldState {
     hasMessages: boolean;
     messageCount: number;
   };
+  research: {
+    /** Hours since last ecosystem research digest */
+    hoursSinceLastDigest: number | null;
+  };
   lastTick: {
     /** ISO timestamp of last completed tick */
     completedAt: string | null;
@@ -173,6 +177,29 @@ export function readWorldState(): WorldState {
     ).length;
   }
 
+  // --- Research digest age ---
+  const researchDir = join(STATE_DIR, "research");
+  let hoursSinceLastDigest: number | null = null;
+  if (existsSync(researchDir)) {
+    const digests = readdirSync(researchDir)
+      .filter((f) => f.endsWith(".json"))
+      .sort()
+      .reverse();
+    if (digests.length > 0) {
+      try {
+        const latest = JSON.parse(
+          readFileSync(join(researchDir, digests[0]), "utf-8"),
+        ) as { generatedAt?: string };
+        if (latest.generatedAt) {
+          hoursSinceLastDigest =
+            (Date.now() - new Date(latest.generatedAt).getTime()) / (1000 * 60 * 60);
+        }
+      } catch {
+        // Ignore
+      }
+    }
+  }
+
   // --- Last tick ---
   let lastTickCompletedAt: string | null = null;
   let hoursSinceLastTick: number | null = null;
@@ -198,6 +225,7 @@ export function readWorldState(): WorldState {
     social: { pendingDrafts, hoursSinceLastPost },
     outreach: { pendingTargets, staleOutreach },
     inbox: { hasMessages: messageCount > 0, messageCount },
+    research: { hoursSinceLastDigest },
     lastTick: { completedAt: lastTickCompletedAt, hoursSince: hoursSinceLastTick },
   };
 }
@@ -210,6 +238,7 @@ export function formatWorldState(world: WorldState): string {
     `episodes=${world.episodes.total}(${world.episodes.needsProcessing}rec/${world.episodes.readyToPublish}rdy)`,
     `social=${world.social.pendingDrafts}drafts`,
     `outreach=${world.outreach.pendingTargets}tgt/${world.outreach.staleOutreach}stale`,
+    `research=${world.research.hoursSinceLastDigest !== null ? Math.round(world.research.hoursSinceLastDigest) + "h" : "never"}`,
     `inbox=${world.inbox.messageCount}`,
   ];
   return parts.join(" | ");
@@ -300,6 +329,21 @@ const ASSESSMENT_RULES: AssessmentRule[] = [
     meta: (w) => ({ readyCount: w.episodes.readyToPublish }),
   },
 
+  // Priority 45 — Ecosystem research scan (daily, morning, if no recent digest)
+  {
+    condition: (w) => {
+      if (!w.time.isMorning) return false;
+      if (!w.time.isWeekday) return false;
+      // Check if we have a recent digest (< 20 hours old)
+      if (w.research?.hoursSinceLastDigest !== null &&
+          w.research?.hoursSinceLastDigest !== undefined &&
+          w.research.hoursSinceLastDigest < 20) return false;
+      return true;
+    },
+    taskType: "ecosystem-research",
+    priority: 45,
+  },
+
   // Priority 50 — Periodic analytics collection (once a day, morning)
   {
     condition: (w) => {
@@ -369,6 +413,13 @@ async function getSkillDispatcher(taskType: string): Promise<SkillFn | null> {
         const files = (meta?.files as string[]) ?? [];
         // TODO: wire to src/pipeline/post-recording.ts
         return `Pipeline: ${files.length} transcript(s) queued for processing`;
+      };
+
+    case "ecosystem-research":
+      return async () => {
+        const { generateResearchDigest } = await import("../skills/ecosystem-scanner.js");
+        const digest = await generateResearchDigest();
+        return `Research: ${digest.categories.length} categories, ${digest.guestLeads.length} guest leads, ${digest.episodeIdeas.length} episode ideas`;
       };
 
     case "analytics-collect":
