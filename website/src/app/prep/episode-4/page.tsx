@@ -19,7 +19,7 @@ export default function Episode4Prep() {
             CONTXT &amp; The Vibecoding Collectors
           </h1>
           <p className="text-xl text-gray-400">
-            Wednesday Mar 4, 12:00pm MST &middot; Riverside
+            Thursday Mar 5 &middot; Riverside
           </p>
           <p className="text-sm text-gray-500 mt-4">
             Seth hosts Lukas Amacher &middot; ~45 min conversational
