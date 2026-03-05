@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Episode 4 Prep — CONTXT: Lukas Amacher & David Simon (0xfff) | Let's Vibe!",
+  title: "Episode 4 Prep — CONTXT: Lukas Amacher & 0xfff | Let's Vibe!",
   description:
-    "Recording prep for Episode 4. Seth hosts Lukas Amacher and David Simon (0xfff) of CONTXT.",
+    "Recording prep for Episode 4. Seth hosts Lukas Amacher and 0xfff of CONTXT.",
 };
 
 export default function Episode4Prep() {
@@ -22,7 +22,7 @@ export default function Episode4Prep() {
             Wednesday Mar 4, 12:00pm MST &middot; Riverside
           </p>
           <p className="text-sm text-gray-500 mt-4">
-            Seth hosts Lukas Amacher &amp; David Simon (0xfff) &middot; ~45 min conversational
+            Seth hosts Lukas Amacher &amp; 0xfff &middot; ~45 min conversational
           </p>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function Episode4Prep() {
           <div className="space-y-4">
             <div className="p-5 bg-[var(--surface)] rounded-lg border border-[var(--border)]">
               <p className="text-lg leading-relaxed">
-                &ldquo;Today I&apos;m joined by two people who&apos;ve been living at the intersection of art and technology for years &mdash; Lukas Amacher, who runs one of the world&apos;s most important digital art collections, and David Simon, artist known as 0xfff. They&apos;re building something called CONTXT that I think is going to change how we experience culture.&rdquo;
+                &ldquo;Today I&apos;m joined by two people who&apos;ve been living at the intersection of art and technology for years &mdash; Lukas Amacher, who runs one of the world&apos;s most important digital art collections, and the artist 0xfff. They&apos;re building something called CONTXT that I think is going to change how we experience culture.&rdquo;
               </p>
             </div>
             <div className="p-5 bg-amber-50 rounded-lg border border-amber-200">
@@ -87,7 +87,7 @@ export default function Episode4Prep() {
               <h3 className="font-medium mb-3">Questions</h3>
               <ul className="space-y-3 text-[var(--muted)] text-sm">
                 <li>&rarr; &ldquo;Lukas &mdash; you run the 1of1 collection. Beeple, Refik Anadol, IX Shells. How do you go from curating world-class digital art to sitting in a terminal writing code?&rdquo;</li>
-                <li>&rarr; &ldquo;David &mdash; you&apos;re an artist. You make the work. What happens when you suddenly have this tool that can build anything?&rdquo;</li>
+                <li>&rarr; &ldquo;0xfff &mdash; you&apos;re an artist. You make the work. What happens when you suddenly have this tool that can build anything?&rdquo;</li>
                 <li>&rarr; &ldquo;You said you catch yourself three times a day going &apos;what the fuck is going on?&apos; Walk me through one of those moments.&rdquo;</li>
                 <li>&rarr; &ldquo;There was a moment where it felt like we were the only ones. Now it feels like the tech bros have co-opted the narrative again. Is that fair?&rdquo;</li>
               </ul>
@@ -109,9 +109,9 @@ export default function Episode4Prep() {
                 </p>
               </div>
               <div className="p-4 bg-[var(--surface)] rounded-lg border border-[var(--border)]">
-                <p className="text-sm font-medium mb-2">David&apos;s Arc</p>
+                <p className="text-sm font-medium mb-2">0xfff&apos;s Arc</p>
                 <p className="text-[var(--muted)] text-xs">
-                  Digital artist (0xfff) &rarr; onchain generative work &rarr; now building CONTXT&apos;s product + design system &rarr; Claude Code &rarr; Figma pipeline
+                  Digital artist &rarr; onchain generative work &rarr; now building CONTXT&apos;s product + design system &rarr; Claude Code &rarr; Figma pipeline
                 </p>
               </div>
             </div>
@@ -183,14 +183,14 @@ export default function Episode4Prep() {
               <h3 className="font-medium mb-3">Questions</h3>
               <ul className="space-y-3 text-[var(--muted)] text-sm">
                 <li>&rarr; &ldquo;Lukas, they say you&apos;re shipping features at world record pace. What does a day look like?&rdquo;</li>
-                <li>&rarr; &ldquo;David &mdash; you built a Claude Code to Figma pipeline. Explain that. You run a hundred design iterations overnight?&rdquo;</li>
+                <li>&rarr; &ldquo;0xfff &mdash; you built a Claude Code to Figma pipeline. Explain that. You run a hundred design iterations overnight?&rdquo;</li>
                 <li>&rarr; &ldquo;You completed a bootstrapping process in a month that used to take months. What broke? What surprised you?&rdquo;</li>
-                <li>&rarr; &ldquo;David, you said you found a way to actually use your token allowance every night. What is it?&rdquo;</li>
+                <li>&rarr; &ldquo;0xfff, you said you found a way to actually use your token allowance every night. What is it?&rdquo;</li>
               </ul>
             </div>
 
             <div className="p-5 bg-amber-50 rounded-lg border border-amber-200">
-              <p className="text-sm font-medium text-amber-900 mb-2">David&apos;s Design Unlock</p>
+              <p className="text-sm font-medium text-amber-900 mb-2">0xfff&apos;s Design Unlock</p>
               <p className="text-amber-800 italic">
                 &ldquo;I tell Claude to read my codebase, extract a design token, and put it into Figma visualized for me. Then I run Ralph loops on interaction specifications. Tonight I&apos;ll tell Claude: do a hundred different design iterations. Tomorrow morning I pick C7.&rdquo;
               </p>
@@ -206,8 +206,8 @@ export default function Episode4Prep() {
           <h3 className="font-medium text-red-900 mb-3">Spicy Territory (if time allows)</h3>
           <ul className="space-y-2 text-red-800 text-sm">
             <li>&bull; <strong>The Ick Theory:</strong> Lukas has a whole framework &mdash; cool &rarr; ick &rarr; cringe. Bouldering crossed the threshold. Has crypto? Has AI?</li>
-            <li>&bull; <strong>Curiosity vs. Vanity:</strong> Lukas says the core drive is curiosity. David says it&apos;s vanity. Who&apos;s right?</li>
-            <li>&bull; <strong>Does software still need scale?</strong> David&apos;s question: &ldquo;In the new age of software, do we need Snapchat-scale or is a million power users enough?&rdquo;</li>
+            <li>&bull; <strong>Curiosity vs. Vanity:</strong> Lukas says the core drive is curiosity. 0xfff says it&apos;s vanity. Who&apos;s right?</li>
+            <li>&bull; <strong>Does software still need scale?</strong> 0xfff&apos;s question: &ldquo;In the new age of software, do we need Snapchat-scale or is a million power users enough?&rdquo;</li>
             <li>&bull; <strong>Your sons trying to impress their girlfriends:</strong> The best framing for consumer pull. How does CONTXT reach someone who doesn&apos;t know Hans Ulrich Obrist from John Oliver?</li>
           </ul>
         </div>
@@ -220,7 +220,7 @@ export default function Episode4Prep() {
           <h3 className="text-2xl font-light mb-4">Wrap Up</h3>
           <div className="space-y-2 text-gray-400 text-sm">
             <p>&rarr; Where can people find CONTXT? contxt.art</p>
-            <p>&rarr; Where can people find Lukas and David?</p>
+            <p>&rarr; Where can people find Lukas and 0xfff?</p>
             <p>&rarr; Tease upcoming &mdash; more guests, Ian returning</p>
             <p>&rarr; Subscribe, rate, share. letsvibe.fm</p>
           </div>
