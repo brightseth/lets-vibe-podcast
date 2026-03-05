@@ -34,7 +34,7 @@ export default function Episode4Prep() {
           <ul className="space-y-2 text-blue-800">
             <li>&bull; First episode with an <strong>outside guest</strong> &mdash; let Lukas tell his story, you steer</li>
             <li>&bull; <strong>Tone:</strong> Two friends who&apos;ve been in the trenches of digital art together. Not a pitch meeting.</li>
-            <li>&bull; <strong>Note:</strong> David Simon (0xfff) was originally joining but is heads-down on CONTXT&apos;s institution-facing app redesign. Reference him naturally &mdash; he&apos;s the artist/product designer building alongside Lukas.</li>
+            <li>&bull; <strong>Note:</strong> David Simon was originally joining but is heads-down on CONTXT&apos;s institution-facing app redesign. Reference him naturally &mdash; he&apos;s the artist/product designer building alongside Lukas.</li>
             <li>&bull; CONTXT is pre-launch &mdash; this is an <strong>unveiling</strong>, not a product demo. Focus on the vision and the vibecoding journey.</li>
             <li>&bull; You&apos;re an angel investor &mdash; <strong>don&apos;t hide it</strong>, but don&apos;t make the episode an ad. Acknowledge it naturally.</li>
             <li>&bull; <strong>Don&apos;t</strong> go deep on token/fundraising mechanics on air</li>
@@ -58,7 +58,7 @@ export default function Episode4Prep() {
           <div className="space-y-4">
             <div className="p-5 bg-[var(--surface)] rounded-lg border border-[var(--border)]">
               <p className="text-lg leading-relaxed">
-                &ldquo;Today I&apos;m joined by Lukas Amacher, who runs one of the world&apos;s most important digital art collections and is building something called CONTXT with the artist David Simon &mdash; known as 0xfff &mdash; that I think is going to change how we experience culture.&rdquo;
+                &ldquo;Today I&apos;m joined by Lukas Amacher, who runs one of the world&apos;s most important digital art collections and is building something called CONTXT with the artist David Simon that I think is going to change how we experience culture.&rdquo;
               </p>
             </div>
             <div className="p-5 bg-amber-50 rounded-lg border border-amber-200">
@@ -88,7 +88,7 @@ export default function Episode4Prep() {
               <h3 className="font-medium mb-3">Questions</h3>
               <ul className="space-y-3 text-[var(--muted)] text-sm">
                 <li>&rarr; &ldquo;Lukas &mdash; you run the 1of1 collection. Beeple, Refik Anadol, IX Shells. How do you go from curating world-class digital art to sitting in a terminal writing code?&rdquo;</li>
-                <li>&rarr; &ldquo;Your co-founder David &mdash; 0xfff &mdash; is an artist who makes the work. What happens when someone like that suddenly has a tool that can build anything?&rdquo;</li>
+                <li>&rarr; &ldquo;Your co-founder David &mdash; is an artist who makes the work. What happens when someone like that suddenly has a tool that can build anything?&rdquo;</li>
                 <li>&rarr; &ldquo;You said you catch yourself three times a day going &apos;what the fuck is going on?&apos; Walk me through one of those moments.&rdquo;</li>
                 <li>&rarr; &ldquo;There was a moment where it felt like we were the only ones. Now it feels like the tech bros have co-opted the narrative again. Is that fair?&rdquo;</li>
               </ul>
@@ -110,7 +110,7 @@ export default function Episode4Prep() {
                 </p>
               </div>
               <div className="p-4 bg-[var(--surface)] rounded-lg border border-[var(--border)]">
-                <p className="text-sm font-medium mb-2">David Simon (0xfff)&apos;s Arc</p>
+                <p className="text-sm font-medium mb-2">David Simon&apos;s Arc</p>
                 <p className="text-[var(--muted)] text-xs">
                   Digital artist &rarr; onchain generative work &rarr; now building CONTXT&apos;s product + design system &rarr; Claude Code &rarr; Figma pipeline. (Not on this episode &mdash; heads-down on redesign)
                 </p>
@@ -221,7 +221,7 @@ export default function Episode4Prep() {
           <h3 className="text-2xl font-light mb-4">Wrap Up</h3>
           <div className="space-y-2 text-gray-400 text-sm">
             <p>&rarr; Where can people find CONTXT? contxt.art</p>
-            <p>&rarr; Where can people find Lukas? And David (0xfff)?</p>
+            <p>&rarr; Where can people find Lukas? And David?</p>
             <p>&rarr; Tease upcoming &mdash; more guests, Ian returning</p>
             <p>&rarr; Subscribe, rate, share. letsvibe.fm</p>
           </div>
