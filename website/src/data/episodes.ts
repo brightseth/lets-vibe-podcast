@@ -184,17 +184,61 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
   },
   {
     number: 4,
-    slug: 'contxt-the-vibecoding-collectors',
-    title: 'CONTXT & The Vibecoding Collectors',
-    guest: 'Lukas Amacher & David Simon (0xfff)',
-    guestHandle: '@lukas_amacher & @0xfff',
+    slug: 'the-art-world-runs-on-narrative',
+    title: 'The Art World Runs on Narrative',
+    guest: 'Lukas Amacher',
+    guestHandle: '@scriptedFantasy',
     guestBio:
-      'Lukas is Managing Director of the 1of1 collection at DIALECTIC — one of the world\'s premier digital art collections. David Simon (0xfff) is a digital artist and builder. Together they\'re building CONTXT (contxt.art) — voice-first tools that let you speak to exhibitions, build your cultural archive, and turn every artist into a catalog raisonné.',
+      'Lukas is Managing Director of the 1of1 collection at DIALECTIC — one of the world\'s premier digital art collections (Beeple, Refik Anadol, IX Shells). Entrepreneur since 22, art collector since 18. Now co-founding CONTXT (contxt.art) with David Simon — building conversational infrastructure for the art world with Claude Code.',
     description:
-      'Lukas and David join Seth to share their vibecoding origin stories and unveil CONTXT. Voice as the magic feature, Pokemon Go for culture, why the digital version of a book is a conversation, and shipping features at world record pace with Claude Code.',
-    duration: '~45 min',
-    date: 'Mar 4, 2026',
-    status: 'upcoming',
-    topics: ['CONTXT', 'Vibecoding', 'Digital Art', 'Museums', 'Voice AI', 'Catalog Raisonné'],
+      'Lukas Amacher went from curating world-class digital art to shipping 10 features a day with Claude Code. He joins Seth to unveil CONTXT — a platform that turns exhibitions into conversations and gives every artist their own source of truth. From the $2B museum mediation problem to Ralph loops over lunch, Footnote as "Batman lights for agentic scrapers," and why the LLM is the most ridiculous tool to know thyself.',
+    duration: '~47 min',
+    date: 'Mar 5, 2026',
+    status: 'live',
+    topics: ['CONTXT', 'Vibecoding', 'Digital Art', 'Museums', 'Source of Truth', 'Ralph Loops', 'Narrative'],
+    showNotes: `Lukas Amacher — collector, curator, entrepreneur — never learned to code. Then Claude Code happened. Now he ships 10 features a day and says the distinction between "computer user" and "developer" is evaporating.
+
+**Origin Story**: Lukas started his first company at 22, sold it at 29. Bought his first artwork — a Fred Sandback drawing — at 18. Ran the 1of1 collection at DIALECTIC showing Beeple, Refik Anadol, IX Shells at Christie's. Met Seth in Dubai in February 2024. Then October 2025 at the 25 Hours Hotel: Seth couldn't cross the street because his laptop was still finishing a Claude Code task.
+
+**CONTXT — The Product**: "Keep knowledge omnipresent in your physical experiences. But only make it visible in the moment you need it." American museums spend $2B/year on mediation. The best technology was an in-person curator tour. CONTXT makes that available 24/7 through voice — stand in front of an artwork, ask questions, get a conversation.
+
+**The Marlene Moment**: A curator from HEK (House of Electronic Arts, Switzerland) came in skeptical. Lukas set up her own exhibition. She asked derivative-of-the-derivative questions about specific artworks. "Answered everything to perfection. Zero slop."
+
+**Footnote — Source of Truth for Artists**: LLMs are getting trained on public data whether artists want it or not. Footnote creates a unified, machine-readable source of truth for an artist's practice — not "link in bio" (that's for humans), but "Batman lights for agentic scrapers." Control your narrative before the models write it for you.
+
+**The Design Workflow**: Forget Figma. Tell Claude to generate 20 competing HTML iterations. Open in browser. "I like C7." Write a PRD around C7. Then "Ralph the PRD" — an agentic loop that breaks specs into stories with test suites, runs 6+ hours unattended. "David's walking out, he's like let's go have lunch. I gotta Ralph the PRD."
+
+**The Token Problem**: "Not using your token allowance is like leaving intelligence on the wayside." Lukas can't find enough meaningful work to burn through their allocation. The humans are the bottleneck.
+
+**Conversational Infrastructure**: Not just narrative infrastructure — conversational. "Real inclusivity happens if you invite people to the conversation. Because we can scale conversation now through AI, we can create actual inclusivity."
+
+**The Close**: At the Virgil Abloh show at Grand Palais, kids were airdropping files from display computers. "That's cultural energy. Much more valuable than trader energy." Art is the connective tissue between people and ideas. What you end up with is... context.`,
+    chapters: [
+      { time: '0:00', title: 'Introduction — From Klaus to CONTXT' },
+      { time: '5:00', title: 'The 25 Hours Hotel — Seth\'s Claude Code Moment' },
+      { time: '8:00', title: 'Dubai 2024 — Meeting at 1of1' },
+      { time: '11:00', title: 'From Collector to Coder — "I Ship 10 Features a Day"' },
+      { time: '16:00', title: 'Software Codifies Human Behavior' },
+      { time: '19:00', title: 'Workflow Evolution — Whisper Flow + Claude Code' },
+      { time: '22:00', title: 'David & The Art of Collaboration' },
+      { time: '25:00', title: 'CONTXT — "What Am I Looking At?"' },
+      { time: '28:00', title: 'The $2B Mediation Problem' },
+      { time: '31:00', title: 'The Marlene Moment — Zero Slop' },
+      { time: '33:00', title: 'Farm to Table — One Link Import' },
+      { time: '35:00', title: 'Footnote — Batman Lights for Agentic Scrapers' },
+      { time: '38:00', title: '"I Like C7" — The Design Pipeline' },
+      { time: '40:00', title: 'Ralph the PRD — 6-Hour Lunch Break Loops' },
+      { time: '42:00', title: 'The Token Allowance Problem' },
+      { time: '44:00', title: 'Venice Biennale 2030 — Process vs Outcome' },
+      { time: '46:00', title: 'Know Thyself — Art as Connective Tissue' },
+    ],
+    links: [
+      { label: 'CONTXT', url: 'https://contxt.art' },
+      { label: 'Lukas on X (@scriptedFantasy)', url: 'https://x.com/scriptedFantasy' },
+      { label: '1of1 Collection at DIALECTIC', url: 'https://dialectic.ch' },
+      { label: 'HEK — House of Electronic Arts Basel', url: 'https://hek.ch' },
+      { label: 'Holly Herndon & Mat Dryhurst', url: 'https://hollyherndon.com' },
+      { label: '/vibe — Social layer for Claude Code', url: 'https://slashvibe.dev' },
+    ],
   },
 ];
