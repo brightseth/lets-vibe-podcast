@@ -195,6 +195,7 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     duration: '~47 min',
     date: 'Mar 5, 2026',
     status: 'live',
+    spotifyUrl: 'https://open.spotify.com/episode/1klZcTwJZ2DM4YgpGtbrns',
     youtubeUrl: 'https://youtu.be/Lq_5J063h5A',
     appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
     topics: ['CONTXT', 'Vibecoding', 'Digital Art', 'Museums', 'Source of Truth', 'Ralph Loops', 'Narrative'],
