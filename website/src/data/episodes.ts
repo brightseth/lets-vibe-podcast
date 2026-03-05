@@ -195,6 +195,8 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     duration: '~47 min',
     date: 'Mar 5, 2026',
     status: 'live',
+    youtubeUrl: 'https://youtu.be/Lq_5J063h5A',
+    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
     topics: ['CONTXT', 'Vibecoding', 'Digital Art', 'Museums', 'Source of Truth', 'Ralph Loops', 'Narrative'],
     showNotes: `Lukas Amacher — collector, curator, entrepreneur — never learned to code. Then Claude Code happened. Now he ships 10 features a day and says the distinction between "computer user" and "developer" is evaporating.
 
