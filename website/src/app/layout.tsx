@@ -4,11 +4,11 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Let's Vibe! - A podcast for creative folks learning to vibe code",
-  description: "Weekly conversations with creators shaping AI-assisted creativity. Hosted by Seth Goldstein and Ian Rogers.",
+  title: "Let's Vibe! - A weekly conversation about creativity in the age of AI",
+  description: "Seth Goldstein and Ian Rogers talk to creative builders shipping with AI. Vibe coding, art, music, agents, and why this feels like the Netscape moment.",
   openGraph: {
     title: "Let's Vibe! — Creativity in the Age of AI",
-    description: "Two founders in their 50s building with Claude Code. Seth Goldstein & Ian Rogers on vibe coding, AI creativity, and why this feels like the Netscape moment.",
+    description: "Seth Goldstein and Ian Rogers talk to creative builders shipping with AI. Vibe coding, art, music, agents, and why this feels like the Netscape moment.",
     url: "https://letsvibe.fm",
     siteName: "Let's Vibe!",
     type: "website",
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
         url: "https://letsvibe.fm/og.png",
         width: 1200,
         height: 630,
-        alt: "Let's Vibe! — Episode 1: The Netscape Moment",
+        alt: "Let's Vibe! — A weekly conversation about creativity in the age of AI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Let's Vibe! — Creativity in the Age of AI",
-    description: "Two founders in their 50s building with Claude Code. Seth Goldstein & Ian Rogers on vibe coding, AI creativity, and why this feels like the Netscape moment.",
+    description: "Seth Goldstein and Ian Rogers talk to creative builders shipping with AI. Vibe coding, art, music, agents, and why this feels like the Netscape moment.",
     images: ["https://letsvibe.fm/og.png"],
   },
 };
