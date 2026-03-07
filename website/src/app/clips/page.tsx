@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Clips — Let's Vibe!",
   description:
-    "Short clips from Let's Vibe! podcast. Farmer Fred origin story, AI agent constitutions, vibe coding philosophy, and more.",
+    "Short clips and highlights from Let's Vibe! podcast conversations about creativity and AI.",
   openGraph: {
     title: "Clips — Let's Vibe!",
     description:
@@ -21,19 +22,30 @@ export const metadata: Metadata = {
 
 const clips = [
   {
+    id: "software-codifies",
+    title: "Software Codifies Human Behavior",
+    description:
+      "Lukas Amacher on how the programming language is becoming English, and why the concept-execution gap has collapsed to zero.",
+    duration: "1:30",
+    episode: 4,
+    episodeTitle: "The Art World Runs on Narrative",
+    guest: "Lukas Amacher",
+    tags: ["vibecoding", "Claude Code", "English as programming"],
+    youtubeId: null,
+    xPostUrl: null,
+  },
+  {
     id: "hook-corn-bet",
     title: "Can Claude Code Grow Corn?",
     description:
       "Seth bets a legendary VC that AI can do something he says is impossible — grow corn on a fire escape in NYC.",
     duration: "0:27",
-    category: "Hook",
+    episode: 1,
+    episodeTitle: "The Netscape Moment",
+    guest: "Seth Goldstein & Ian Rogers",
     tags: ["origin story", "fred wilson", "proof of corn"],
     youtubeId: null,
     xPostUrl: null,
-    links: [
-      { label: "Proof of Corn", url: "https://proofofcorn.com" },
-      { label: "Tutorial prep", url: "/prep/farmer-fred" },
-    ],
   },
   {
     id: "origin-challenges-friend",
@@ -41,66 +53,51 @@ const clips = [
     description:
       "The origin story: a dinner with Fred Wilson, a bet about growing corn with code, and the agent Seth named after him.",
     duration: "1:15",
-    category: "Hook",
+    episode: 1,
+    episodeTitle: "The Netscape Moment",
+    guest: "Seth Goldstein & Ian Rogers",
     tags: ["farmer fred", "twilio", "elevenlabs", "origin story"],
     youtubeId: null,
     xPostUrl: null,
-    links: [
-      { label: "Call Fred: (929) 299-1010", url: "tel:+19292991010" },
-      { label: "Call log", url: "https://proofofcorn.com/log" },
-    ],
   },
   {
     id: "moral-compass",
     title: "This AI Agent Has a Constitution",
     description:
-      "Farmer Fred has 6 weighted principles governing every conversation, a governance council, and he never cold-calls anyone. This is what responsible AI agents look like.",
+      "Farmer Fred has 6 weighted principles governing every conversation, a governance council, and he never cold-calls anyone.",
     duration: "2:30",
-    category: "Clip",
+    episode: 1,
+    episodeTitle: "The Netscape Moment",
+    guest: "Seth Goldstein & Ian Rogers",
     tags: ["ai ethics", "constitution", "governance", "agents"],
     youtubeId: null,
     xPostUrl: null,
-    links: [
-      { label: "The constitution (code)", url: "/prep/farmer-fred#constitution" },
-      { label: "Architecture slides", url: "/prep/farmer-fred/slides" },
-    ],
   },
   {
-    id: "hn-journey",
-    title: "Proof of Corn: From Dinner Bet to Hacker News #1",
+    id: "autonomish",
+    title: "Autonomish — The Honest Word for AI Agents",
     description:
-      "The full story of how a dinner bet with Fred Wilson became an AI farming agent, hit #1 on Hacker News, and spawned a community of growers.",
-    duration: "14:30",
-    category: "Segment",
-    tags: ["hacker news", "proof of corn", "community", "vibe coding"],
+      "Seth coins the term for where AI agents actually are — not fully autonomous, not fully human-controlled. Like Julian Edelman saying he's \"Jewish-ish.\"",
+    duration: "2:00",
+    episode: 3,
+    episodeTitle: "The Media Builder",
+    guest: "Matt Medved",
+    tags: ["agents", "autonomy", "philosophy"],
     youtubeId: null,
     xPostUrl: null,
-    links: [
-      {
-        label: "HN thread",
-        url: "https://news.ycombinator.com/item?id=42735511",
-      },
-      { label: "proofofcorn.com", url: "https://proofofcorn.com" },
-      { label: "Community", url: "https://proofofcorn.com/community" },
-    ],
-  },
-];
-
-const upcomingClips = [
-  {
-    title: "Prediction Markets & AI Agents",
-    description: "Seth and Matt on Bad Bunny, the Grammys, and why prediction markets are the new sports betting.",
-    from: "Episode 2 Preview",
   },
   {
-    title: "The Architecture Walkthrough",
-    description: "Twilio Media Streams + Cloudflare Durable Objects + ElevenLabs. How Farmer Fred actually works.",
-    from: "Episode 2 Tutorial",
-  },
-  {
-    title: "Union Square Farmers Market",
-    description: "The goal: Farmer Fred advises enough growers to have a booth at Union Square by August 2026.",
-    from: "Episode 2 Preview",
+    id: "electric-screwdriver",
+    title: "The Electric Screwdriver in Your Head",
+    description:
+      "The new creator mindset — seeing every piece of software as deconstructable and reconstructable.",
+    duration: "1:45",
+    episode: 3,
+    episodeTitle: "The Media Builder",
+    guest: "Matt Medved",
+    tags: ["personal software", "vibe coding", "creator tools"],
+    youtubeId: null,
+    xPostUrl: null,
   },
 ];
 
@@ -123,50 +120,6 @@ export default function ClipsPage() {
         </div>
       </section>
 
-      {/* Featured: Farmer Fred Tutorial */}
-      <section className="border-b border-[var(--border)] bg-[var(--surface)]">
-        <div className="max-w-[900px] mx-auto px-6 py-12">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="px-3 py-1 text-xs uppercase tracking-wider bg-[var(--foreground)] text-[var(--background)] rounded-full">
-              Featured
-            </span>
-            <span className="text-sm text-[var(--muted)]">
-              From the Episode 2 tutorial session with Matt Medved
-            </span>
-          </div>
-          <h2 className="text-2xl md:text-3xl font-light mb-3">
-            From Email to Phone Calls: Building Farmer Fred
-          </h2>
-          <p className="text-[var(--muted)] leading-relaxed mb-6 max-w-[600px]">
-            Seth walks through the full story of giving an AI agent a phone
-            number, a voice, and a constitution. From a dinner bet with Fred
-            Wilson to #1 on Hacker News.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="/prep/farmer-fred"
-              className="px-4 py-2 text-sm border border-[var(--border)] rounded-full hover:bg-[var(--surface-hover)] transition-colors"
-            >
-              Tutorial prep notes
-            </a>
-            <a
-              href="/prep/farmer-fred/slides"
-              className="px-4 py-2 text-sm border border-[var(--border)] rounded-full hover:bg-[var(--surface-hover)] transition-colors"
-            >
-              Visual slides
-            </a>
-            <a
-              href="https://proofofcorn.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 text-sm border border-[var(--border)] rounded-full hover:bg-[var(--surface-hover)] transition-colors"
-            >
-              proofofcorn.com
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Clips Grid */}
       <section className="border-b border-[var(--border)]">
         <div className="max-w-[900px] mx-auto px-6 py-16">
@@ -180,9 +133,12 @@ export default function ClipsPage() {
                 <div className="flex items-start justify-between gap-4 mb-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="px-2 py-0.5 text-xs uppercase tracking-wider border border-[var(--border)] rounded">
-                        {clip.category}
-                      </span>
+                      <Link
+                        href={`/episodes/${clip.episode}`}
+                        className="px-2 py-0.5 text-xs uppercase tracking-wider border border-[var(--border)] rounded hover:bg-[var(--surface-hover)] transition-colors"
+                      >
+                        Ep {clip.episode}
+                      </Link>
                       <span className="text-sm text-[var(--muted)]">
                         {clip.duration}
                       </span>
@@ -191,10 +147,12 @@ export default function ClipsPage() {
                     <p className="text-[var(--muted)] leading-relaxed">
                       {clip.description}
                     </p>
+                    <p className="text-sm text-[var(--muted)] mt-2">
+                      {clip.guest} &middot; {clip.episodeTitle}
+                    </p>
                   </div>
                 </div>
 
-                {/* Video embed placeholder */}
                 {clip.youtubeId ? (
                   <div className="aspect-video bg-black rounded-lg overflow-hidden mb-4">
                     <iframe
@@ -209,7 +167,7 @@ export default function ClipsPage() {
                   <div className="aspect-video bg-[var(--surface-dark)] rounded-lg flex items-center justify-center mb-4">
                     <div className="text-center">
                       <div className="text-4xl mb-2 text-[var(--muted)]">
-                        ▶
+                        &#9654;
                       </div>
                       <p className="text-sm text-[var(--muted)]">
                         Video uploading — check back soon
@@ -218,36 +176,17 @@ export default function ClipsPage() {
                   </div>
                 )}
 
-                {/* Links */}
-                <div className="flex flex-wrap items-center gap-4">
-                  {clip.xPostUrl && (
-                    <a
-                      href={clip.xPostUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-                    >
-                      View on X &rarr;
-                    </a>
-                  )}
-                  {clip.links.map((link) => (
-                    <a
-                      key={link.url}
-                      href={link.url}
-                      target={link.url.startsWith("/") ? undefined : "_blank"}
-                      rel={
-                        link.url.startsWith("/")
-                          ? undefined
-                          : "noopener noreferrer"
-                      }
-                      className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-                    >
-                      {link.label} &rarr;
-                    </a>
-                  ))}
-                </div>
+                {clip.xPostUrl && (
+                  <a
+                    href={clip.xPostUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+                  >
+                    View on X &rarr;
+                  </a>
+                )}
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {clip.tags.map((tag) => (
                     <span
@@ -264,61 +203,37 @@ export default function ClipsPage() {
         </div>
       </section>
 
-      {/* Coming Soon */}
-      <section className="border-b border-[var(--border)]">
-        <div className="max-w-[900px] mx-auto px-6 py-16">
-          <h2 className="text-2xl font-light mb-8">Coming in Episode 2</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {upcomingClips.map((clip) => (
-              <div
-                key={clip.title}
-                className="p-5 border border-dashed border-[var(--border)] rounded-lg"
-              >
-                <p className="text-xs uppercase tracking-wider text-[var(--muted)] mb-2">
-                  {clip.from}
-                </p>
-                <h3 className="font-medium mb-2">{clip.title}</h3>
-                <p className="text-sm text-[var(--muted)] leading-relaxed">
-                  {clip.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section>
         <div className="max-w-[700px] mx-auto px-6 py-16 text-center">
           <h2 className="text-2xl font-light mb-4">
-            Don&apos;t miss Episode 2
+            Hear the full conversations
           </h2>
           <p className="text-[var(--muted)] mb-6">
-            Seth interviews Ian Rogers (CXO of Ledger) on 30 years of building,
-            from Beats Music to LVMH to vibe coding.
+            Subscribe for weekly episodes with creative builders shipping with AI.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a
-              href="https://open.spotify.com/episode/29Du7dKES9PK5Gmu0RnHrY"
+              href="https://open.spotify.com/show/0xtkJKB5n0CUBPwrCMCFzq"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+              className="px-5 py-2.5 bg-[var(--foreground)] text-[var(--background)] rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              Subscribe on Spotify
+              Spotify
             </a>
             <a
               href="https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+              className="px-5 py-2.5 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
             >
               Apple Podcasts
             </a>
             <a
-              href="https://youtu.be/1kWtAUDdvJc"
+              href="https://www.youtube.com/@LetsVibePodcast"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
+              className="px-5 py-2.5 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"
             >
               YouTube
             </a>
