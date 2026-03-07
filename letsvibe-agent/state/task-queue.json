@@ -1,0 +1,17 @@
+{
+  "tasks": [],
+  "completed": [
+    {
+      "id": "levi-1772346060303-bzlf",
+      "type": "social-draft",
+      "priority": 20,
+      "status": "completed",
+      "tier": 2,
+      "createdAt": "2026-03-01T06:21:00.303Z",
+      "startedAt": "2026-03-01T06:21:00.303Z",
+      "completedAt": "2026-03-01T06:21:00.303Z",
+      "result": "Social drafts: generated"
+    }
+  ],
+  "lastSavedAt": "2026-03-01T06:21:02.954Z"
+}

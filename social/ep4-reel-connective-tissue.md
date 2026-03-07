@@ -12,7 +12,7 @@ At the Virgil Abloh show at Grand Palais, kids were airdropping files from the d
 
 "That's cultural energy. Much more valuable than trader energy."
 
-@scriptedFantasy (Lukas Amacher) on why art connects people to ideas — not to price tags.
+@scrptdfntsy (Lukas Amacher) on why art connects people to ideas — not to price tags.
 
 Full episode: link in bio
 

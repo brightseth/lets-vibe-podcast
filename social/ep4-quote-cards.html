@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .card {
+    width: 1080px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    page-break-after: always;
+    position: relative;
+  }
+
+  .card-white {
+    background: #FAFAFA;
+    color: #111;
+  }
+
+  .card-black {
+    background: #111;
+    color: #FAFAFA;
+  }
+
+  .quote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 1.25;
+    text-align: center;
+    max-width: 900px;
+  }
+
+  .card-white .quote { color: #111; }
+  .card-black .quote { color: #FAFAFA; }
+
+  .attribution {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 48px;
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  .branding {
+    position: absolute;
+    bottom: 60px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    opacity: 0.15;
+  }
+
+  .ep-label {
+    position: absolute;
+    top: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.4;
+  }
+
+  .divider {
+    width: 60px;
+    height: 2px;
+    margin-top: 40px;
+    opacity: 0.2;
+  }
+  .card-white .divider { background: #111; }
+  .card-black .divider { background: #FAFAFA; }
+
+  /* Alternate cards for visual variety */
+  .card:nth-child(odd) { background: #FAFAFA; color: #111; }
+  .card:nth-child(even) { background: #111; color: #FAFAFA; }
+  .card:nth-child(even) .divider { background: #FAFAFA; }
+  .card:nth-child(odd) .divider { background: #111; }
+</style>
+</head>
+<body>
+
+<!-- Card 1 -->
+<div class="card card-white">
+  <span class="ep-label">Episode 4 — The Art World Runs on Narrative</span>
+  <p class="quote">"Software codifies human behavior. The programming language is becoming English."</p>
+  <div class="divider"></div>
+  <p class="attribution">Lukas Amacher — CONTXT</p>
+  <span class="branding">LET'S VIBE!</span>
+</div>
+
+<!-- Card 2 -->
+<div class="card card-black">
+  <span class="ep-label" style="color:#FAFAFA">Episode 4 — The Art World Runs on Narrative</span>
+  <p class="quote">"I'm playing video games with actual problems. Solving them as I go along."</p>
+  <div class="divider"></div>
+  <p class="attribution">Lukas Amacher — CONTXT</p>
+  <span class="branding" style="color:#FAFAFA">LET'S VIBE!</span>
+</div>
+
+<!-- Card 3 -->
+<div class="card card-white">
+  <span class="ep-label">Episode 4 — The Art World Runs on Narrative</span>
+  <p class="quote">"Not using your token allowance is like leaving intelligence on the wayside."</p>
+  <div class="divider"></div>
+  <p class="attribution">Lukas Amacher — CONTXT</p>
+  <span class="branding">LET'S VIBE!</span>
+</div>
+
+<!-- Card 4 -->
+<div class="card card-black">
+  <span class="ep-label" style="color:#FAFAFA">Episode 4 — The Art World Runs on Narrative</span>
+  <p class="quote">"The LLM is the most ridiculous tool to know thyself."</p>
+  <div class="divider"></div>
+  <p class="attribution">Lukas Amacher — CONTXT</p>
+  <span class="branding" style="color:#FAFAFA">LET'S VIBE!</span>
+</div>
+
+<!-- Card 5 -->
+<div class="card card-white">
+  <span class="ep-label">Episode 4 — The Art World Runs on Narrative</span>
+  <p class="quote">"Art is the connective tissue between people and ideas — rather than an ownable object."</p>
+  <div class="divider"></div>
+  <p class="attribution">Lukas Amacher — CONTXT</p>
+  <span class="branding">LET'S VIBE!</span>
+</div>
+
+<!-- Card 6 — CTA -->
+<div class="card card-black">
+  <span class="ep-label" style="color:#FAFAFA">New Episode</span>
+  <p class="quote" style="font-size: 58px;">"The Art World Runs on Narrative"</p>
+  <div class="divider"></div>
+  <p class="attribution" style="opacity: 0.7; font-size: 22px;">Lukas Amacher &times; Seth Goldstein</p>
+  <p class="attribution" style="opacity: 0.4; margin-top: 16px;">Listen now &mdash; link in bio</p>
+  <span class="branding" style="color:#FAFAFA">LET'S VIBE!</span>
+</div>
+
+</body>
+</html>

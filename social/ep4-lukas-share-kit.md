@@ -49,7 +49,7 @@ https://youtu.be/Lq_5J063h5A
 
 ## Instagram Caption
 
-From art collector to shipping 10 features a day — @scriptedFantasy (Lukas Amacher) joins Let's Vibe! to talk about CONTXT, the platform turning exhibitions into conversations.
+From art collector to shipping 10 features a day — @scrptdfntsy (Lukas Amacher) joins Let's Vibe! to talk about CONTXT, the platform turning exhibitions into conversations.
 
 We cover the $2B museum mediation problem, why "Ralph the PRD" is the new lunch break ritual, and how the LLM became the most ridiculous tool to know thyself.
 

@@ -1,0 +1,17 @@
+{
+  "agent": "levi",
+  "state": "active",
+  "health": "green",
+  "lastTick": "2026-03-01T06:21:00.303Z",
+  "summary": "Tick: 1 enqueued, 1 executed, 0 pending, 0 awaiting approval",
+  "metrics": {
+    "tickDurationSec": 0,
+    "tasksEnqueued": 1,
+    "tasksExecuted": 1,
+    "tasksPending": 0,
+    "tasksAwaitingApproval": 0,
+    "completedToday": 1,
+    "failedToday": 0
+  },
+  "updatedAt": "2026-03-01T06:21:00.303Z"
+}

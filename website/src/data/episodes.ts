@@ -187,7 +187,7 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     slug: 'the-art-world-runs-on-narrative',
     title: 'The Art World Runs on Narrative',
     guest: 'Lukas Amacher',
-    guestHandle: '@scriptedFantasy',
+    guestHandle: '@scrptdfntsy',
     guestBio:
       'Lukas is Managing Director of the 1of1 collection at DIALECTIC — one of the world\'s premier digital art collections (Beeple, Refik Anadol, IX Shells). Entrepreneur since 22, art collector since 18. Now co-founding CONTXT (contxt.art) with David Simon — building conversational infrastructure for the art world with Claude Code.',
     description:
@@ -237,7 +237,7 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     ],
     links: [
       { label: 'CONTXT', url: 'https://contxt.art' },
-      { label: 'Lukas on X (@scriptedFantasy)', url: 'https://x.com/scriptedFantasy' },
+      { label: 'Lukas on X (@scrptdfntsy)', url: 'https://x.com/scrptdfntsy' },
       { label: '1of1 Collection at DIALECTIC', url: 'https://dialectic.ch' },
       { label: 'HEK — House of Electronic Arts Basel', url: 'https://hek.ch' },
       { label: 'Holly Herndon & Mat Dryhurst', url: 'https://hollyherndon.com' },
