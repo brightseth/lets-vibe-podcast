@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import { SubscribeForm } from "./subscribe-form"
 
 export const metadata: Metadata = {
-  title: "Let's Vibe! Links - Daily Curated Links",
+  title: "Subscribe — Let's Vibe!",
   description:
-    "A daily digest of the best links on creativity, AI, music, and technology. Curated by Seth Goldstein and Ian Rogers.",
+    "Weekly episode companion with the best links on creativity, AI, and vibecoding. Curated by Seth Goldstein and Ian Rogers.",
 }
 
 export default function LinksPage() {
@@ -59,11 +59,11 @@ export default function LinksPage() {
           <div className="animate-fade-in-delay-1">
             <div className="mb-12">
               <p className="text-sm uppercase tracking-widest text-[var(--muted)] mb-6">
-                Daily Newsletter
+                Weekly Newsletter
               </p>
-              <h2 className="text-2xl font-light mb-4">Let&apos;s Vibe! Links</h2>
+              <h2 className="text-2xl font-light mb-4">The Episode Companion</h2>
               <p className="text-[var(--muted)] leading-relaxed">
-                A daily digest of the best links on creativity, AI, music, and technology. One email, no spam, unsubscribe anytime.
+                Each week: links from the episode, tools mentioned, guest resources, and what we're building. One email, no spam, unsubscribe anytime.
               </p>
             </div>
 
