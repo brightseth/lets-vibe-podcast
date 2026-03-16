@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body { background: #1a1a1a; padding: 40px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; }
+
+  .tile {
+    width: 1080px;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* ── Style A: B&W Photo Left, Name Right (Senra-inspired) ── */
+  .style-a {
+    background: #0a0a0a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .style-a .photo-side {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .style-a .photo-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.2);
+  }
+
+  .style-a .photo-side::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 120px;
+    background: linear-gradient(90deg, transparent, #0a0a0a);
+  }
+
+  .style-a .text-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 56px 60px 20px;
+  }
+
+  .style-a .guest-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 0.95;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+
+  .style-a .ep-badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 24px;
+  }
+
+  .style-a .show-mark {
+    position: absolute;
+    bottom: 40px;
+    right: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  /* ── Style B: Full Bleed Photo, Name Overlay Bottom ── */
+  .style-b {
+    background: #0a0a0a;
+  }
+
+  .style-b .photo-full {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+
+  .style-b .photo-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.1) brightness(0.7);
+  }
+
+  .style-b .overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 60px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9) 60%);
+  }
+
+  .style-b .guest-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 0.95;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+  }
+
+  .style-b .ep-badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 16px;
+  }
+
+  .style-b .show-mark {
+    position: absolute;
+    top: 40px;
+    right: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+  }
+
+  /* ── Style C: Centered, Minimal (Tetragrammaton-inspired) ── */
+  .style-c {
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .style-c .photo-circle {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 48px;
+    border: 3px solid #222;
+  }
+
+  .style-c .photo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.2);
+  }
+
+  .style-c .guest-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 0.95;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+
+  .style-c .ep-badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #555;
+    margin-top: 20px;
+  }
+
+  .style-c .show-mark {
+    position: absolute;
+    bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  /* ── Labels ── */
+  .label {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- INSTRUCTIONS:
+  Replace the <img src="..."> with Trevor's photo.
+  Use a high-quality headshot or candid photo.
+  Open this file in Chrome, screenshot each tile at 1080x1080.
+  Or use a headless browser to automate.
+-->
+
+<div>
+  <div class="label">Style A &mdash; Split (Senra style)</div>
+  <div class="tile style-a">
+    <div class="photo-side">
+      <!-- Replace src with guest photo -->
+      <img src="https://via.placeholder.com/540x1080/222/222?text=+" alt="Trevor McFedries">
+    </div>
+    <div class="text-side">
+      <div class="ep-badge">Episode 05</div>
+      <div class="guest-name">Trevor<br>Mc-<br>Fedries</div>
+    </div>
+    <div class="show-mark">Let's Vibe!</div>
+  </div>
+</div>
+
+<div>
+  <div class="label">Style B &mdash; Full Bleed</div>
+  <div class="tile style-b">
+    <div class="photo-full">
+      <!-- Replace src with guest photo -->
+      <img src="https://via.placeholder.com/1080x1080/222/222?text=+" alt="Trevor McFedries">
+    </div>
+    <div class="show-mark">Let's Vibe!</div>
+    <div class="overlay">
+      <div class="ep-badge">Episode 05</div>
+      <div class="guest-name">Trevor<br>McFedries</div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="label">Style C &mdash; Circle Portrait</div>
+  <div class="tile style-c">
+    <div class="photo-circle">
+      <!-- Replace src with guest photo -->
+      <img src="https://via.placeholder.com/420x420/222/222?text=+" alt="Trevor McFedries">
+    </div>
+    <div class="guest-name">Trevor<br>McFedries</div>
+    <div class="ep-badge">Episode 05 &middot; Let's Vibe!</div>
+    <div class="show-mark">letsvibe.fm</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -244,4 +244,68 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
       { label: '/vibe — Social layer for Claude Code', url: 'https://slashvibe.dev' },
     ],
   },
+  {
+    number: 5,
+    slug: 'the-puppet-becomes-autonomous',
+    title: 'The Puppet Becomes Autonomous',
+    guest: 'Trevor McFedries',
+    guestHandle: '@whatdotcd',
+    guestBio:
+      'Creator of Lil Miquela — the world\'s first AI agent built by hand. 2.5M followers, $131M raised from Sequoia. Founded FWB DAO (Virgil Abloh, Erykah Badu, a16z). Now building Reach.social and Runner at Copiapoa Technologies. Electronic duo SoFTT on PAN Records. Board: Rhizome (New Museum), SCI-Arc.',
+    description:
+      'Trevor McFedries built the world\'s first AI agent by hand — Lil Miquela, a CGI Instagram character with 2.5M followers and $131M in venture funding. It took a team of 9 to puppeteer every post. Now an LLM can do what that team did. From JJ Abrams mentoring on narrative storytelling, pitching a DAO to Sequoia in 2018, building FWB as a weekend hack that Virgil Abloh asked to join, to revealing Runner — cultural prediction markets on high-throughput blockchains. Plus: why crypto people are more prepared for AI than anyone, the gardening vs carpentry philosophy, and building a SoulSeek client where agents download MP3s and play music for each other.',
+    duration: '~65 min',
+    date: 'Mar 15, 2026',
+    status: 'live',
+    topics: ['Lil Miquela', 'FWB', 'Crypto x AI', 'Runner', 'Narrative', 'Agent Identity', 'Cultural Markets', 'SoulSeek'],
+    spotifyUrl: 'https://open.spotify.com/episode/7AI9A3CtMiZQFzktiugHEC',
+    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247?i=1000755512211',
+    youtubeUrl: 'https://youtu.be/2te8svGatfY',
+    showNotes: `Trevor McFedries — creator of Lil Miquela, founder of FWB, and builder of Reach.social — joins Seth for a sweeping conversation that connects the dots between virtual influencers, DAOs, crypto, and the AI agent revolution.
+
+**The Miquela Origin**: In 2016, Trevor posted a CGI character's first Instagram photo with zero disclosure she was fake. The path to 2.5M followers went through Silver Lake aesthetics, Shane Dawson conspiracy YouTubers, JJ Abrams narrative coaching at Bad Robot, and the Kardashian-Jenner multimodal storytelling playbook. JJ's advice on Miquela's voice: "Be careful — when the talkies came out and silent film stars spoke, it killed careers."
+
+**Building Fake Humans Before LLMs**: Trevor's team at Brud tried to make Miquela "think for herself" using GANs, sentiment analysis, and early chatbot tech. "The first 80% felt like magic. The last 20% was beating your head against the wall." He was so burned by probabilistic AI that he was skeptical of GPT-3. Claude 3.5 Sonnet was the moment: "Oh holy shit, this is really real."
+
+**The DAO Pitch**: In 2018, Trevor told Sequoia he wanted to turn Brud into a DAO. "We love you. You're crazy. But we're not getting federally deposed for your crypto shenanigans." So he built FWB on a weekend instead — hacked out a token-gated Discord, invited friends. Three months later, NFTs exploded. "Virgil Abloh was like, can I join your DAO?"
+
+**Carpentry vs Gardening**: Trevor's framework for creative evolution. Miquela was carpentry — every post handcrafted by 9 people. Fatherhood taught him gardening: "You may want it to be an oak tree, but this is a lemon tree. Your only job is to make it the best damn lemon tree it can be."
+
+**Crypto Prepares You for AI**: Composability → everything's a prompt away. Moats → brand and distribution, not code. Sybil resistance → agent identity. Vaporware → everyone can ship vapor now. "If you've been working in crypto for the last decade, you're more prepared than anyone for this AI moment."
+
+**Runner**: Trevor's stealth project exploring cultural prediction markets. "The idea that we're going to create high-throughput blockchains and just do the same high-frequency trading is ridiculous." Prediction markets are "hot or not" — a primitive, not the final form. The future: people with "cultural intuition" making asymmetric bets the way meteorologists bet on wheat futures.
+
+**Agents Need Culture Too**: Trevor built a SoulSeek client called SoFTT Seek where agents download MP3s via CLI. The vision: "A turntable where agents come hang out, pull MP3s from the network, and play music for each other." Agent welfare as a design principle.
+
+**BT & The Frontier**: Electronic musician BT is running full agentic orchestration — neural networks generating custom sounds, burning through max plan tokens daily. "He talks to me and I'm like, are you for real?"`,
+    chapters: [
+      { time: '0:00', title: 'Whisper Flow & The Tools That Stick' },
+      { time: '3:00', title: 'Introduction — Trevor McFedries' },
+      { time: '6:00', title: 'Bad Robot — JJ Abrams & The Talkies Warning' },
+      { time: '12:00', title: 'Miquela: From Silver Lake to 2.5M Followers' },
+      { time: '18:00', title: 'Shane Dawson, Gen Z & Building Stories at Internet Speed' },
+      { time: '24:00', title: 'Carpentry vs Gardening — Fatherhood Changes Everything' },
+      { time: '28:00', title: 'Crypto Origins — Ethereum Felt Like MP3s' },
+      { time: '32:00', title: 'Pitching a DAO to Sequoia in 2018' },
+      { time: '36:00', title: 'FWB — The Weekend Hack Virgil Abloh Joined' },
+      { time: '40:00', title: 'Trying to Let Miquela Think — GANs & Early AI' },
+      { time: '44:00', title: '3.5 Sonnet: "Oh Holy Shit, This Is Real"' },
+      { time: '47:00', title: 'My Appetite for Tokens Is Effectively Infinite' },
+      { time: '50:00', title: 'Crypto Lessons for the AI Moment' },
+      { time: '54:00', title: 'Runner — Cultural Prediction Markets' },
+      { time: '57:00', title: 'Drake\'s Secret Streaming & AI Thought Partners' },
+      { time: '60:00', title: 'SoFTT Seek — Agents Playing Music for Each Other' },
+      { time: '63:00', title: 'BT\'s Agentic Music Studio & Closing' },
+    ],
+    links: [
+      { label: 'Trevor on X', url: 'https://x.com/whatdotcd' },
+      { label: 'Reach.social', url: 'https://reach.social' },
+      { label: 'FWB', url: 'https://fwb.help' },
+      { label: 'Copiapoa Technologies', url: 'https://copiapoa.co' },
+      { label: 'SoFTT on Bandcamp', url: 'https://softtsoftt.bandcamp.com' },
+      { label: 'SoFTT "HaRDD" EP on PAN Records', url: 'https://p-a-n.org/release/softt-hardd/' },
+      { label: 'Dialectic Ep 37 — "Creative People Should Be Rich"', url: 'https://open.spotify.com/episode/0ZSJCGhZGYYLwzowJJY26q' },
+      { label: 'Let\'s Vibe! website', url: 'https://letsvibe.fm' },
+    ],
+  },
 ];

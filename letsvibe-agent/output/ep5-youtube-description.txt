@@ -1,0 +1,60 @@
+Trevor McFedries built the first AI agent by hand — before agents were even a category. Lil Miquela grew from a solo project lurking 3D forums for skin shaders into a 3-million-follower virtual character backed by $131M from Sequoia, with JJ Abrams mentoring narrative storytelling from a Bad Robot office.
+
+In this conversation, Trevor traces the full arc: growing up in an Iowa factory town crushed by NAFTA, finding punk rock and computers, DJing as Skeet Skeet, getting signed to Interscope, joining Spotify in its early days, building Lil Miquela, pitching a DAO to Sequoia in 2018 (they said no), launching Friends With Benefits as a weekend hack that attracted Virgil Abloh, Erykah Badu, and Mike Shinoda — and now building cultural prediction markets and SoulSeek clients for AI agents.
+
+We dig into why crypto builders are more prepared for AI than anyone, the shift from carpentry to gardening as a creative philosophy, Drake's secret streaming patterns as a framework for AI thought partners, and why his appetite for tokens is "effectively infinite."
+
+CHAPTERS:
+0:00 — Intro & Whisper Flow
+2:00 — The age of agents and Lil Miquela's legacy
+5:00 — Excitement and disappointment in AI revolutions
+7:00 — Iowa origin story: pewters, punk rock, and Hackers
+9:30 — Music: from straight edge to DJ Skeet Skeet
+13:30 — Football, San Jose State, and pulling the rip cord
+16:30 — MySpace, blog house, Silicon Valley angel meetups
+18:00 — Creator economy advocacy: Interscope, Shwayze, TRL
+22:00 — Managing Banks, learning the music business machine
+23:30 — Spotify early days with Sean Parker and D.A. Wallach
+26:00 — Building Lil Miquela: Hatsune Miku, Pixar, Disney as tech company
+29:30 — Behind the scenes: 3D production, Isaac Bratzel, the uncanny valley
+31:50 — Pitching VCs: "Kylie Jenner times a thousand"
+33:00 — Growing Miquela: 500 to 3M followers
+35:00 — JJ Abrams on narrative: network TV, the talkies, voice
+38:00 — Carpentry vs gardening: fatherhood, Miami, spirituality
+40:00 — Crypto origin, pitching a DAO to Sequoia, getting shut down
+43:00 — FWB: weekend hack, Virgil Abloh, timing as everything
+45:00 — Could Miquela think for herself? Early chatbots and LLMs
+47:00 — Claude 3.5 Sonnet: "oh shit, this is real"
+48:30 — Why OpenAI and Anthropic are still undervalued
+51:00 — Crypto lessons that apply to AI: composability, sybil, vaporware
+53:00 — NFTs and agent identity: proving uniqueness
+55:00 — OpenClaw, agent orchestration, scaling distribution
+57:00 — Drake's streaming data: revealed preference vs stated preference
+59:00 — AI as thought partner for vulnerable creative ideas
+60:00 — Runner: cultural prediction markets on blockchains
+62:00 — Tools: Pencil.dev, OpenClaw hooks, SoFTT Seek
+65:00 — BT's full agentic music production
+67:00 — Agents need culture: the Mos Eisley cantina vision
+
+Guest:
+Trevor McFedries — @whatdotcd
+Creator of Lil Miquela, founder of FWB (Friends With Benefits), builder of Runner
+
+Host:
+Seth Goldstein
+
+Links:
+• Trevor on X: https://x.com/whatdotcd
+• Let's Vibe! website: https://letsvibe.fm
+• Subscribe for weekly episodes about creativity in the age of AI
+
+---
+
+Let's Vibe! is a weekly podcast for creative folks learning to build with AI. We explore the intersection of human creativity and artificial intelligence through conversations with artists, builders, and thinkers shaping this space.
+
+Subscribe for new episodes every week and join the conversation about creativity in the age of AI.
+
+---
+Let's Vibe! — Creativity in the age of AI
+New episodes weekly.
+https://letsvibe.fm
