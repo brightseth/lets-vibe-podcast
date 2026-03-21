@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1a1a1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+  .tile {
+    width: 1080px;
+    height: 1080px;
+    background: #0a0a0a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-side {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-side::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 120px;
+    background: linear-gradient(90deg, transparent, #0a0a0a);
+  }
+
+  .text-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 56px 60px 20px;
+  }
+
+  .guest-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 0.95;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+
+  .ep-badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 24px;
+  }
+
+  .show-mark {
+    position: absolute;
+    bottom: 40px;
+    right: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+  <div class="tile">
+    <div class="photo-side">
+      <img src="ep5-trevor-mcfedries-portrait.png" alt="Trevor McFedries">
+    </div>
+    <div class="text-side">
+      <div class="ep-badge">Episode 05</div>
+      <div class="guest-name">TREVOR<br>MCFEDRIES</div>
+    </div>
+    <div class="show-mark">letsvibe.fm</div>
+  </div>
+</body>
+</html>
