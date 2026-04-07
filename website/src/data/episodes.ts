@@ -322,7 +322,8 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     date: 'Apr 7, 2026',
     status: 'live',
     spotifyUrl: 'https://open.spotify.com/episode/6tZ2rMkRkl63QSoUusiLgg',
-    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
+    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247?i=1000760111749',
+    youtubeUrl: 'https://www.youtube.com/watch?v=HLuRmIjHmyQ',
     topics: ['Visualize Value', 'Claude Code', 'Identity Crisis', 'Ethereum', 'Craft', 'CryptoPunks', 'EVM.NOW', 'Permissionless'],
     showNotes: `Jalil Wahdatehagh — the developer behind every major Visualize Value project — joins Seth from a small village south of Munich for a conversation that goes far deeper than code.
 
