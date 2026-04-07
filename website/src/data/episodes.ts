@@ -320,7 +320,9 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
       'Jalil Wahdatehagh built every major system behind Visualize Value — Checks, Opepen, MINT protocol. But when AI coding tools let his creative partner Jack Butcher start shipping prototypes, Jalil hit an identity crisis. "I considered stopping and throwing everything away." Then Claude Code arrived in the terminal and felt like home. A conversation about craft, creative paralysis, and what it means to bet on one thing when you can build anything.',
     duration: '39 min',
     date: 'Apr 7, 2026',
-    status: 'recorded',
+    status: 'live',
+    spotifyUrl: 'https://open.spotify.com/show/0xtkJKB5n0CUBPwrCMCFzq',
+    appleUrl: 'https://podcasts.apple.com/us/podcast/lets-vibe/id1873355247',
     topics: ['Visualize Value', 'Claude Code', 'Identity Crisis', 'Ethereum', 'Craft', 'CryptoPunks', 'EVM.NOW', 'Permissionless'],
     showNotes: `Jalil Wahdatehagh — the developer behind every major Visualize Value project — joins Seth from a small village south of Munich for a conversation that goes far deeper than code.
 
