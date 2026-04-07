@@ -315,46 +315,56 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
     guest: 'Jalil Wahdatehagh',
     guestHandle: '@jalilwahdat',
     guestBio:
-      'Lead developer and technical co-creator behind Visualize Value — Jack Butcher\'s studio. Built Checks, Opepen Edition (87K+ ETH traded), Self Checkout ($114K at Art Basel Miami), Gas Wars (Art Blocks), and the open-source MINT protocol. Just shipped VVriter — an MCP server that encodes Jack\'s entire voice (50,000 tweets) for AI agents. Based south of Munich, father of four, runs 1001.digital UG. Dropped out of university twice, failed four startups, then built his way into VV without permission. Calls himself a "gardener."',
+      'Lead developer and technical co-creator behind Visualize Value — Jack Butcher\'s studio. Built Checks, Opepen Edition (87K+ ETH traded), and the open-source MINT protocol. Based south of Munich, father of four, runs 1001.digital UG. Dropped out of university twice, failed four startups, then built his way into VV without permission. Now maintaining the Sign In With Ethereum standard and just launched EVM.NOW — a next-generation block explorer.',
     description:
-      'Jalil Wahdatehagh built every major system behind Visualize Value — from Checks to a pay-what-you-want kiosk that made $114K at Art Basel Miami. Now he\'s built VVriter, an MCP server that encodes Jack Butcher\'s voice into a tool for AI agents. Four failed startups, a partnership that collapsed, and a markdown file with 50,000 tweets. What happens when your creative partner learns to vibe code — and when an AI can write in his voice?',
+      'Jalil Wahdatehagh built every major system behind Visualize Value — Checks, Opepen, MINT protocol. But when AI coding tools let his creative partner Jack Butcher start shipping prototypes, Jalil hit an identity crisis. "I considered stopping and throwing everything away." Then Claude Code arrived in the terminal and felt like home. A conversation about craft, creative paralysis, and what it means to bet on one thing when you can build anything.',
     duration: '~45 min',
     date: 'Apr 7, 2026',
-    status: 'upcoming',
-    topics: ['Visualize Value', 'VVriter', 'MCP', 'Vibecoding', 'Onchain Art', 'Art Basel', 'Open Source', 'Permissionless'],
-    showNotes: `Jalil Sebastian Wahdatehagh is the person who built everything behind Visualize Value — the smart contracts, the onchain renderers, the physical installation hardware. He joins Seth for a conversation about what it means to be the builder when the non-builder learns to build.
+    status: 'recorded',
+    topics: ['Visualize Value', 'Claude Code', 'Identity Crisis', 'Ethereum', 'Craft', 'CryptoPunks', 'EVM.NOW', 'Permissionless'],
+    showNotes: `Jalil Wahdatehagh — the developer behind every major Visualize Value project — joins Seth from a small village south of Munich for a conversation that goes far deeper than code.
 
-**The Permissionless Apprentice**: Jalil dropped out of university twice, married young, started a family, and attempted four startups — all failed. His fourth collapsed in 2020 after a nine-year partnership dissolved. He nearly quit. Then he found Jack Butcher's Visualize Value courses, went solo, and built his way into the VV orbit without asking permission. He literally called his first project "The Permissionless Apprentice."
+**The Permissionless Apprentice**: Jalil grew up in a tiny village in Germany surrounded by forest. The internet was his gateway to the world. He never planned to become a software engineer, but that's what happened — dropped out of university twice, failed four startups (healthcare, org development), did agency work to make ends meet. Then he discovered Jack Butcher through a Naval retweet, bought one of his products, and decided to build a digital version of it without asking. He emailed Jack first and got a polite no. A couple months later he just built the thing and sent it over. "That was like a big learning — you can just build something and try to be helpful." That's how the partnership started.
 
-**VVriter — Your Voice as an MCP Server**: VV just open-sourced VVriter, an MCP server that packages Jack Butcher's entire knowledge base — 50,000 tweets, 400 visuals, and a precise writing profile — into a tool that AI agents can invoke. Their position: "AI will write about our ideas regardless. Rather than cede control, we encoded our source material into a tool that ensures outputs sound authentically like us." jackbutcher.md has 334 stars on GitHub. A human distilled into a markdown file.
+**The CryptoPunks Revelation**: Jack sent Jalil the CryptoPunks smart contract in early 2021 and it changed everything. "The web had gone from right-click inspect to entirely minified JavaScript bundles you can't decipher at all. And here I am on Etherscan reading the source code in plain text." Less than 250 lines of code handling massive value, running without interruption, permissionless. "The stakes feel so high when you deploy something that you cannot change."
 
-**Jack Is Vibecoding**: In January 2026, Jack wrote: "I've been down the Claude Code rabbit hole the last couple of weeks, transitioning from technically illiterate to technically illiterate but with an infinitely patient teacher." He shipped Pattern (pattern.vv.xyz) as his first vibecoded product. Jalil has been writing Solidity from scratch for years. What happens to the technical partner when the creative partner can ship code?
+**The Identity Crisis**: As AI coding tools emerged, Jack started building prototypes himself with Cursor and Claude artifacts. For Jalil — who had always been "the one who writes the code" — this was devastating. "I couldn't enjoy the outcome if my signature wasn't on there." He went through months of genuine darkness: "I considered stopping and throwing everything away. I was so pissed at the state of programming." Then Claude Code arrived — in the terminal, in a tool he already used. "It felt home. I'm the author. I'm co-author of my code."
 
-**Art Basel Hong Kong — Work, Luck, Play**: VV just showed at Art Basel HK through Asprey Studio — sterling silver hand sculptures, predetermined dice sets, a participatory installation with Starbucks. At the same fair, Botto (a DAO-governed AI artist) exhibited and has now made $6M+. Two radically different visions of art in the age of AI, showing at the same event.
+**The Creative Block Nobody Talks About**: Seth asks if Jalil became more creative as Jack became more technical. The answer is surprising: the opposite happened. "The window of opportunity that opens so wide is actually a big hindrance. A creative block rather than an unlock." Building Checks with Jack was six weeks of total focus — "one thing in this world and nothing else." Now every idea becomes a prototype in 90 minutes and gets thrown away. "Everything is opportunity costs. You do one thing for two days, throw it away. Huge anxiety." What's hardest now? "Betting on something."
 
-**The MINT Protocol & Open Source Philosophy**: VV open-sources nearly everything — MINT protocol, VVriter, and most tooling. The counterintuitive bet: giving away infrastructure creates more value than hoarding it.
+**EVM.NOW — The Band Moment Returns**: Jalil's intern — a 22-year-old professional athlete who became friends with Jalil after reading his dying grandmother's autobiography on Amazon — showed up with a working prototype of a better block explorer. They locked in for three weeks and built EVM.NOW, a tool for interacting with smart contracts more intuitively than Etherscan. "That felt again like the band moment. Locking ourselves up to build something we can fully bet on."
 
-**The Infinity Checks Exploit**: When a smart contract exploit hit Infinity Checks, Jalil and Jack took full responsibility and refunded everyone. The vulnerability of building in public.`,
+**Building for Humans, Not Agents**: Seth asks if Jalil now designs for AI agents. Jalil pushes back thoughtfully, citing Vitalik: "We're building this technology for humans." He doesn't buy the notion of fully automated agents: "They don't have a will, they don't have desires and wish striving towards beauty. That's a human thing." But he acknowledges VV's conceptual clarity — the logic and structure in the art — will appeal to agents when they start collecting. "They love it when things make sense and are connected to one another."
+
+**The Marfa Exercise**: In October, Jack and Jalil sat down in Marfa, Texas and let agents analyze their smart contracts. An AI wrote a white paper for a 70-line contract that was so good, other developers praised it without realizing it was AI-generated. "Yeah, thank you, Claude."`,
     chapters: [
-      { time: '0:00', title: 'Introduction — The Gardener' },
-      { time: '5:00', title: 'Four Failed Startups — The 2020 Collapse' },
-      { time: '10:00', title: 'The Permissionless Apprentice — Building Without Permission' },
-      { time: '15:00', title: 'Jack Is Vibecoding — What Changes for the Builder?' },
-      { time: '20:00', title: 'VVriter — Encoding a Human Voice for AI' },
-      { time: '25:00', title: 'jackbutcher.md — 50,000 Tweets in a Markdown File' },
-      { time: '30:00', title: 'Art Basel Hong Kong — Work, Luck, Play' },
-      { time: '35:00', title: 'Self Checkout — Software Meets Hardware at $114K' },
-      { time: '40:00', title: 'Open Source as Moat — MINT Protocol' },
+      { time: '0:00', title: 'Introduction — Meeting at NODE' },
+      { time: '3:00', title: 'A Small Village in Germany — The Internet as Gateway' },
+      { time: '5:00', title: 'Four Failed Startups — Healthcare, Org Dev, Agency Work' },
+      { time: '8:00', title: 'Finding Jack Butcher Through a Naval Retweet' },
+      { time: '11:00', title: 'The Permissionless Apprentice — Just Build It and Send It' },
+      { time: '14:00', title: 'Jack Pulls the VV Community Into Ethereum (2021)' },
+      { time: '17:00', title: 'The CryptoPunks Contract — 250 Lines That Changed Everything' },
+      { time: '21:00', title: 'Open Zeppelin Extensions and Learning Solidity' },
+      { time: '23:00', title: 'Claude Code — "It Felt Home"' },
+      { time: '26:00', title: 'The Identity Crisis — "I Was So Pissed at the State of Programming"' },
+      { time: '30:00', title: 'Creative Block — When You Can Build Anything, You Build Nothing' },
+      { time: '33:00', title: 'Musical Chairs — The Anxiety of Infinite Possibility' },
+      { time: '36:00', title: 'EVM.NOW — The Band Moment Returns' },
+      { time: '39:00', title: 'Building for Humans, Not Agents' },
+      { time: '42:00', title: 'The Marfa Exercise — Claude Writes a White Paper' },
+      { time: '44:00', title: 'What\'s Next — Sign In With Ethereum and Finding Lost Creativity' },
     ],
     links: [
       { label: 'Jalil on X', url: 'https://x.com/jalilwahdat' },
-      { label: 'VVriter — MCP server for Jack\'s voice', url: 'https://github.com/visualizevalue/vvriter' },
-      { label: 'jackbutcher.md — 50K tweets distilled', url: 'https://github.com/visualizevalue/jackbutcher.md' },
-      { label: 'MINT Protocol', url: 'https://docs.mint.vv.xyz' },
+      { label: 'EVM.NOW — Next-generation block explorer', url: 'https://evm.now' },
+      { label: 'Visualize Value', url: 'https://visualizevalue.com' },
       { label: 'Opepen', url: 'https://opepen.art' },
-      { label: 'Pattern — Jack\'s first vibecoded product', url: 'https://pattern.vv.xyz' },
-      { label: 'Asprey Studio x Jack Butcher', url: 'https://aspreystudio.com/pages/jack-butcher' },
+      { label: 'Checks', url: 'https://checks.art' },
+      { label: 'MINT Protocol', url: 'https://docs.mint.vv.xyz' },
       { label: 'Visualize Value on GitHub', url: 'https://github.com/visualizevalue' },
+      { label: 'CryptoPunks contract on Etherscan', url: 'https://etherscan.io/address/0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB#code' },
+      { label: 'NODE Foundation', url: 'https://node.foundation' },
       { label: 'Let\'s Vibe! website', url: 'https://letsvibe.fm' },
     ],
   },
