@@ -318,7 +318,7 @@ Seth draws an analogy to Oliver Sacks' stories, illustrating the feeling of sudd
       'Lead developer and technical co-creator behind Visualize Value — Jack Butcher\'s studio. Built Checks, Opepen Edition (87K+ ETH traded), and the open-source MINT protocol. Based south of Munich, father of four, runs 1001.digital UG. Dropped out of university twice, failed four startups, then built his way into VV without permission. Now maintaining the Sign In With Ethereum standard and just launched EVM.NOW — a next-generation block explorer.',
     description:
       'Jalil Wahdatehagh built every major system behind Visualize Value — Checks, Opepen, MINT protocol. But when AI coding tools let his creative partner Jack Butcher start shipping prototypes, Jalil hit an identity crisis. "I considered stopping and throwing everything away." Then Claude Code arrived in the terminal and felt like home. A conversation about craft, creative paralysis, and what it means to bet on one thing when you can build anything.',
-    duration: '~45 min',
+    duration: '39 min',
     date: 'Apr 7, 2026',
     status: 'recorded',
     topics: ['Visualize Value', 'Claude Code', 'Identity Crisis', 'Ethereum', 'Craft', 'CryptoPunks', 'EVM.NOW', 'Permissionless'],
