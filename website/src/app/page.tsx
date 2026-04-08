@@ -182,7 +182,7 @@ export default async function Home() {
               Apple Podcasts
             </a>
             <a
-              href="https://www.youtube.com/@LetsVibePodcast"
+              href="https://www.youtube.com/@godsbreak"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"

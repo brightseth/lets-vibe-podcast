@@ -41,7 +41,7 @@ export default function LinksPage() {
                 Apple Podcasts
               </a>
               <a
-                href="https://www.youtube.com/@LetsVibePodcast"
+                href="https://www.youtube.com/@godsbreak"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-[var(--border)] rounded-full text-sm hover:bg-[var(--surface)] transition-colors"

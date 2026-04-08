@@ -56,12 +56,18 @@ export default async function ConfirmPage({
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-md mx-auto px-6 py-24 text-center">
         <div className="mb-6 text-5xl">✓</div>
-        <h1 className="text-3xl font-light mb-4">You're in!</h1>
+        <h1 className="text-3xl font-light mb-4">
+          {result.alreadyConfirmed ? "Already confirmed" : "You're in!"}
+        </h1>
         <p className="text-[var(--muted)] mb-2">
-          Your subscription to Let's Vibe! Links is confirmed.
+          {result.alreadyConfirmed
+            ? "Your subscription to Let's Vibe! Links is active."
+            : "Your subscription to Let's Vibe! Links is confirmed."}
         </p>
         <p className="text-[var(--muted)] mb-8">
-          You'll receive your first daily digest tomorrow morning.
+          {result.alreadyConfirmed
+            ? "The next daily digest will arrive tomorrow morning."
+            : "You'll receive your first daily digest tomorrow morning."}
         </p>
         <Link
           href="/"

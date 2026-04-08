@@ -18,16 +18,21 @@ export async function subscribeToLinks(email: string) {
   // Check if already subscribed
   const { data: existing } = await supabase
     .from("subscribers")
-    .select("id, status")
+    .select("id, status, confirmation_token")
     .eq("email", email.toLowerCase())
-    .single()
+    .maybeSingle()
 
   if (existing?.status === "confirmed") {
     return { error: "You're already subscribed!" }
   }
 
-  // Generate new confirmation token
-  const confirmationToken = crypto.randomUUID()
+  // If there's already a pending row for this email, keep the existing token
+  // so any previously-sent confirmation email still works. Only rotate the
+  // token if there's no row, or the row was previously unsubscribed.
+  const confirmationToken =
+    existing?.status === "pending" && existing.confirmation_token
+      ? existing.confirmation_token
+      : crypto.randomUUID()
 
   // Insert or update subscriber
   const { data: subscriber, error } = await supabase
@@ -72,19 +77,43 @@ export async function confirmSubscription(token: string) {
 
   const supabase = createAdminClient()
 
+  // Look up the subscriber by token first, regardless of status, so we can
+  // distinguish between already-confirmed, pending-needs-confirm, and truly
+  // invalid tokens. The upsert in subscribeToLinks can rotate the token on
+  // re-signup, which would otherwise make the original email's link look
+  // "expired" to the recipient.
+  const { data: existing } = await supabase
+    .from("subscribers")
+    .select("id, email, status")
+    .eq("confirmation_token", token)
+    .maybeSingle()
+
+  if (!existing) {
+    return { error: "Invalid or expired confirmation link" }
+  }
+
+  if (existing.status === "confirmed") {
+    // Already confirmed — treat as success so a re-click or bookmark revisit
+    // doesn't show a scary error.
+    return { success: true, email: existing.email, alreadyConfirmed: true }
+  }
+
+  if (existing.status === "unsubscribed") {
+    return { error: "This email has been unsubscribed. Please subscribe again." }
+  }
+
   const { data, error } = await supabase
     .from("subscribers")
     .update({
       status: "confirmed",
       confirmed_at: new Date().toISOString(),
     })
-    .eq("confirmation_token", token)
-    .eq("status", "pending")
+    .eq("id", existing.id)
     .select()
     .single()
 
   if (error || !data) {
-    return { error: "Invalid or expired confirmation link" }
+    return { error: "Something went wrong confirming your subscription. Please try again." }
   }
 
   return { success: true, email: data.email }
